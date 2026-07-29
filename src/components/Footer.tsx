@@ -1,4 +1,4 @@
-import { Instagram, Youtube } from 'lucide-react';
+import { Instagram, Youtube, Linkedin } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 export function Footer() {
@@ -30,6 +30,9 @@ export function Footer() {
           <span>&copy; {currentYear} {t('hero.title')}. {t('footer.rights')}</span>
         </div>
         <div className="flex gap-4">
+          <a href="https://www.linkedin.com/in/drsamuelsilvamed/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-gray-300 hover:bg-white hover:text-black transition-all duration-300" aria-label="LinkedIn">
+            <Linkedin className="w-6 h-6" />
+          </a>
           <a href="https://www.instagram.com/drsamuelsilva.med" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-gray-300 hover:bg-white hover:text-black transition-all duration-300" aria-label="Instagram">
             <Instagram className="w-6 h-6" />
           </a>
