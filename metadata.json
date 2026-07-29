@@ -1,0 +1,6 @@
+{
+  "name": "Plantilla de Marca Personal",
+  "description": "Una landing page elegante de marca personal con secciones para libros, podcasts y newsletter.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
