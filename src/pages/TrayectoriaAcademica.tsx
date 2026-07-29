@@ -69,20 +69,62 @@ export function TrayectoriaAcademica() {
             </div>
           </section>
 
-          {/* Instituciones */}
+          {/* Formación, Certificaciones y Colaboraciones */}
           <section>
-            <h3 className="text-sm uppercase tracking-widest font-semibold mb-12 text-gray-400 border-b border-gray-200 pb-4">{t('acad.inst.title')}</h3>
-            <div className="flex flex-wrap gap-x-12 gap-y-8 items-center justify-center md:justify-start opacity-70">
-              <span className="font-serif text-xl">Universidad de Aquino Bolivia</span>
-              <span className="font-serif text-xl">Organización Panamericana de la Salud (OPS)</span>
-              <span className="font-serif text-xl">Stanford University</span>
-              <span className="font-serif text-xl">Google Cloud</span>
-              <span className="font-serif text-xl">Anthropic</span>
-              <span className="font-serif text-xl">Universidade Federal do Rio Grande do Norte</span>
-              <span className="font-serif text-xl">Universidade Aberta do SUS</span>
-              <span className="font-serif text-xl">Escola Superior de Redes</span>
-              <span className="font-serif text-xl">World Vision</span>
-              <span className="font-serif text-xl">Lifewind International</span>
+            <h3 className="text-sm uppercase tracking-widest font-semibold mb-8 text-gray-400 border-b border-gray-200 pb-4">
+              Formación, Certificaciones y Colaboraciones
+            </h3>
+            
+            <p className="text-lg md:text-xl text-gray-600 font-light leading-relaxed mb-16">
+              Una trayectoria construida mediante aprendizaje continuo en universidades, organismos internacionales, instituciones tecnológicas y organizaciones dedicadas a la salud global y el desarrollo.
+            </p>
+
+            <div className="flex flex-col gap-16">
+              
+              {/* EDUCACIÓN SUPERIOR */}
+              <div>
+                <h4 className="text-xs font-sans tracking-widest uppercase text-gray-400 mb-8">Educación Superior</h4>
+                <div className="flex flex-wrap items-center gap-12 md:gap-16">
+                  <img src="/UDABOL.png" alt="UDABOL" className="h-12 md:h-14 object-contain grayscale opacity-75 hover:opacity-100 transition-opacity mix-blend-multiply cursor-pointer" draggable="false" />
+                </div>
+              </div>
+
+              {/* EDUCACIÓN CONTINUA */}
+              <div>
+                <h4 className="text-xs font-sans tracking-widest uppercase text-gray-400 mb-8">Educación Continua</h4>
+                <div className="flex flex-wrap items-center gap-12 md:gap-16">
+                  <img src="/Stanford-University-Logo.jpg" alt="Stanford University" className="h-12 md:h-14 object-contain grayscale opacity-75 hover:opacity-100 transition-opacity mix-blend-multiply cursor-pointer" draggable="false" />
+                  <img src="/UNASUS.jpg" alt="UNA-SUS" className="h-12 md:h-14 object-contain grayscale opacity-75 hover:opacity-100 transition-opacity mix-blend-multiply cursor-pointer" draggable="false" />
+                </div>
+              </div>
+
+              {/* SALUD GLOBAL */}
+              <div>
+                <h4 className="text-xs font-sans tracking-widest uppercase text-gray-400 mb-8">Salud Global</h4>
+                <div className="flex flex-wrap items-center gap-12 md:gap-16">
+                  <img src="/OPS.png" alt="Organización Panamericana de la Salud" className="h-12 md:h-14 object-contain grayscale opacity-75 hover:opacity-100 transition-opacity mix-blend-multiply cursor-pointer" draggable="false" />
+                  <img src="/Medical_Ambassadors_International_logo.png" alt="Medical Ambassadors International" className="h-12 md:h-14 object-contain grayscale opacity-75 hover:opacity-100 transition-opacity mix-blend-multiply cursor-pointer" draggable="false" />
+                </div>
+              </div>
+
+              {/* TECNOLOGÍA E INTELIGENCIA ARTIFICIAL */}
+              <div>
+                <h4 className="text-xs font-sans tracking-widest uppercase text-gray-400 mb-8">Tecnología e Inteligencia Artificial</h4>
+                <div className="flex flex-wrap items-center gap-12 md:gap-16">
+                  <img src="/CLOUD.png" alt="Google Cloud" className="h-12 md:h-14 object-contain grayscale opacity-75 hover:opacity-100 transition-opacity mix-blend-multiply cursor-pointer" draggable="false" />
+                  <img src="/Anthropic_logo.svg.webp" alt="Anthropic" className="h-12 md:h-14 object-contain grayscale opacity-75 hover:opacity-100 transition-opacity mix-blend-multiply cursor-pointer" draggable="false" />
+                </div>
+              </div>
+
+              {/* LIDERAZGO Y DESARROLLO */}
+              <div>
+                <h4 className="text-xs font-sans tracking-widest uppercase text-gray-400 mb-8">Liderazgo y Desarrollo</h4>
+                <div className="flex flex-wrap items-center gap-12 md:gap-16">
+                  <img src="/World_Vision_new_logo.png" alt="World Vision" className="h-12 md:h-14 object-contain grayscale opacity-75 hover:opacity-100 transition-opacity mix-blend-multiply cursor-pointer" draggable="false" />
+                  <img src="/REDES.png" alt="Escola Superior de Redes" className="h-12 md:h-14 object-contain grayscale opacity-75 hover:opacity-100 transition-opacity mix-blend-multiply cursor-pointer" draggable="false" />
+                </div>
+              </div>
+
             </div>
           </section>
 
