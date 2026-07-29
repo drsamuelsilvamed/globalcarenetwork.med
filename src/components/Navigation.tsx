@@ -11,10 +11,11 @@ export function Navigation() {
 
   const links = [
     { label: t('nav.home'), href: '/' },
-    { label: t('nav.about'), href: '/#about' },
+    { label: t('nav.about'), href: '/sobre-mi' },
+    { label: t('nav.trajectory'), href: '/mi-trayectoria' },
     { label: t('nav.academic'), href: '/trayectoria' },
-    { label: t('nav.articles'), href: '/#articulos' },
-    { label: t('nav.podcast'), href: '/#podcast' },
+    { label: t('nav.articles'), href: '/articulos' },
+    { label: t('nav.podcast'), href: '/podcast' },
     { label: t('nav.gcn'), href: '/global-care-network' },
     { label: t('nav.contact'), href: '/#contacto' },
   ];
@@ -34,13 +35,13 @@ export function Navigation() {
         {/* Desktop Nav */}
         <nav className="hidden xl:flex bg-white/10 backdrop-blur-md border border-white/10 rounded-full px-8 py-3 items-center gap-6">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
-              href={link.href}
+              to={link.href}
               className="text-white hover:text-gray-300 font-sans text-xs tracking-wide transition-colors uppercase whitespace-nowrap"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -92,14 +93,14 @@ export function Navigation() {
             
             <nav className="flex flex-col gap-6 items-center mt-8 pb-12">
               {links.map((link) => (
-                <a
+                <Link
                   key={link.href}
-                  href={link.href}
+                  to={link.href}
                   onClick={() => setIsOpen(false)}
                   className="text-white text-xl font-serif tracking-wide hover:text-gray-300 uppercase text-center"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
           </motion.div>

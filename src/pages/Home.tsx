@@ -4,9 +4,6 @@ import { AreasColaboracion } from '../components/AreasColaboracion';
 import { About } from '../components/About';
 import { GlobalCareNetwork } from '../components/GlobalCareNetwork';
 import { QueHago } from '../components/QueHago';
-import { Formacion } from '../components/Formacion';
-import { FilosofiaVision } from '../components/FilosofiaVision';
-import { Instagram } from '../components/Instagram';
 import { Contacto } from '../components/Contacto';
 import { Footer } from '../components/Footer';
 import { ArticulosPlaceholder, PodcastPlaceholder } from '../components/Placeholders';
@@ -16,15 +13,12 @@ export function Home() {
     <main className="min-h-screen bg-brand-cream font-sans selection:bg-brand-black selection:text-white flex flex-col">
       <Navigation />
       <Hero />
-      <AreasColaboracion />
       <About />
       <QueHago />
       <ArticulosPlaceholder />
       <PodcastPlaceholder />
       <GlobalCareNetwork />
-      <Formacion />
-      <FilosofiaVision />
-      <Instagram />
+      <AreasColaboracion />
       <Contacto />
       <Footer />
     </main>

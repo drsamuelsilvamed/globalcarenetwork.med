@@ -19,6 +19,7 @@ const translations = {
     'nav.subtitle': 'Médico · Investigador · Salud Global · Bioética · Inteligencia Artificial',
     'nav.home': 'Inicio',
     'nav.about': 'Sobre mí',
+    'nav.trajectory': 'Mi Trayectoria',
     'nav.academic': 'Trayectoria Académica',
     'nav.articles': 'Artículos',
     'nav.podcast': 'Podcast',
@@ -115,6 +116,7 @@ const translations = {
     'about.p2': 'Durante más de trece años he servido en Bolivia desarrollando proyectos de salud, formación y misión en comunidades rurales y contextos con acceso limitado a recursos.',
     'about.p3': 'Mi trabajo integra medicina, bioética, salud global, inteligencia artificial y cosmovisión cristiana con el propósito de fortalecer personas, instituciones y organizaciones comprometidas con el servicio integral.',
     'about.btn': 'Conocer mi trayectoria',
+    'about.readmore': 'Saber más sobre mí',
     
     'about.m.tag': 'Misión Personal',
     'about.m.title': 'Mi llamado',
@@ -254,6 +256,7 @@ const translations = {
     'nav.subtitle': 'Médico · Pesquisador · Saúde Global · Bioética · Inteligência Artificial',
     'nav.home': 'Início',
     'nav.about': 'Sobre mim',
+    'nav.trajectory': 'Minha Trajetória',
     'nav.academic': 'Trajetória Acadêmica',
     'nav.articles': 'Artigos',
     'nav.podcast': 'Podcast',
@@ -350,6 +353,7 @@ const translations = {
     'about.p2': 'Por mais de treze anos, servi na Bolívia desenvolvendo projetos de saúde, treinamento e missão em comunidades rurais e contextos com acesso limitado a recursos.',
     'about.p3': 'Meu trabalho integra medicina, bioética, saúde global, inteligência artificial e cosmovisão cristã com o propósito de fortalecer pessoas, instituições e organizações comprometidas com o serviço integral.',
     'about.btn': 'Conhecer minha trajetória',
+    'about.readmore': 'Saber mais sobre mim',
     
     'about.m.tag': 'Missão Pessoal',
     'about.m.title': 'Meu chamado',
@@ -488,6 +492,7 @@ const translations = {
     'nav.title': 'Missionary Doctor',
     'nav.home': 'Home',
     'nav.about': 'About me',
+    'nav.trajectory': 'My Trajectory',
     'nav.academic': 'Academic Trajectory',
     'nav.articles': 'Articles',
     'nav.podcast': 'Podcast',
@@ -584,6 +589,7 @@ const translations = {
     'about.p2': 'For over thirteen years, I have served in Bolivia developing health, training, and mission projects in rural communities and contexts with limited access to resources.',
     'about.p3': 'My work integrates medicine, bioethics, global health, artificial intelligence, and a Christian worldview with the purpose of strengthening people, institutions, and organizations committed to holistic service.',
     'about.btn': 'Discover my trajectory',
+    'about.readmore': 'Learn more about me',
     
     'about.m.tag': 'Personal Mission',
     'about.m.title': 'My Calling',
