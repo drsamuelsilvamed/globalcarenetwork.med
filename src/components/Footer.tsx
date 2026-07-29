@@ -29,12 +29,12 @@ export function Footer() {
         <div className="flex flex-col md:flex-row gap-2 items-center text-xs font-sans">
           <span>&copy; {currentYear} {t('hero.title')}. {t('footer.rights')}</span>
         </div>
-        <div className="flex gap-6">
-          <a href="https://www.instagram.com/drsamuelsilva.med" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Instagram">
-            <Instagram className="w-5 h-5" />
+        <div className="flex gap-4">
+          <a href="https://www.instagram.com/drsamuelsilva.med" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-gray-300 hover:bg-white hover:text-black transition-all duration-300" aria-label="Instagram">
+            <Instagram className="w-6 h-6" />
           </a>
-          <a href="https://www.youtube.com/@GlobalCareNetwork1" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="YouTube">
-            <Youtube className="w-5 h-5" />
+          <a href="https://www.youtube.com/@GlobalCareNetwork1" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-gray-300 hover:bg-white hover:text-black transition-all duration-300" aria-label="YouTube">
+            <Youtube className="w-6 h-6" />
           </a>
         </div>
       </div>

@@ -2,7 +2,6 @@ import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
-import { ArrowDown } from 'lucide-react';
 
 export function MiTrayectoria() {
   const { t } = useLanguage();
@@ -110,36 +109,6 @@ export function MiTrayectoria() {
                   </div>
                 </motion.div>
               ))}
-            </div>
-          </section>
-
-          {/* Simplified visual timeline for mobile/reading */}
-          <section className="py-12 bg-gray-50 p-8 md:p-12 border border-gray-100 hidden md:block">
-            <div className="text-center">
-              <div className="flex flex-col items-center gap-4 text-gray-500 font-light">
-                <span className="text-black font-semibold">2011</span>
-                <span>🌍 {t('gcn.history.2011.title')}</span>
-                <ArrowDown className="w-4 h-4 my-2 text-black" />
-                
-                <span className="text-black font-semibold">2011–2022</span>
-                <span>🤝 {t('gcn.history.2011_2022.title')}</span>
-                <ArrowDown className="w-4 h-4 my-2 text-black" />
-
-                <span className="text-black font-semibold">2023</span>
-                <span>🩺 {t('gcn.history.2023.title')}</span>
-                <ArrowDown className="w-4 h-4 my-2 text-black" />
-
-                <span className="text-black font-semibold">2024</span>
-                <span>💻 {t('gcn.history.2024.title')}</span>
-                <ArrowDown className="w-4 h-4 my-2 text-black" />
-
-                <span className="text-black font-semibold">2025</span>
-                <span>🔬 {t('gcn.history.2025.title')}</span>
-                <ArrowDown className="w-4 h-4 my-2 text-black" />
-
-                <span className="text-black font-semibold text-lg">2026</span>
-                <span className="text-xl font-serif text-black">🌐 Global Care Network</span>
-              </div>
             </div>
           </section>
 

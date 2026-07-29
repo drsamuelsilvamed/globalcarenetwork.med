@@ -46,22 +46,18 @@ export function Navigation() {
         </nav>
 
         {/* Language Selector Desktop */}
-        <div className="hidden xl:flex gap-2 text-white/80 text-xs font-sans font-medium uppercase bg-white/10 backdrop-blur-md border border-white/10 rounded-full px-4 py-3">
-           <button onClick={() => setLanguage('ES')} className={`transition-colors ${language === 'ES' ? 'text-white' : 'hover:text-white'}`}>ES</button>
-           <span className="opacity-50">|</span>
-           <button onClick={() => setLanguage('PT')} className={`transition-colors ${language === 'PT' ? 'text-white' : 'hover:text-white'}`}>PT</button>
-           <span className="opacity-50">|</span>
-           <button onClick={() => setLanguage('EN')} className={`transition-colors ${language === 'EN' ? 'text-white' : 'hover:text-white'}`}>EN</button>
+        <div className="hidden xl:flex p-1 bg-white/10 backdrop-blur-md border border-white/20 rounded-full items-center">
+           <button onClick={() => setLanguage('ES')} className={`px-3 py-1.5 rounded-full text-xs font-sans font-semibold uppercase transition-all duration-300 ${language === 'ES' ? 'bg-white text-black shadow-sm' : 'text-white/80 hover:text-white'}`}>ES</button>
+           <button onClick={() => setLanguage('PT')} className={`px-3 py-1.5 rounded-full text-xs font-sans font-semibold uppercase transition-all duration-300 ${language === 'PT' ? 'bg-white text-black shadow-sm' : 'text-white/80 hover:text-white'}`}>PT</button>
+           <button onClick={() => setLanguage('EN')} className={`px-3 py-1.5 rounded-full text-xs font-sans font-semibold uppercase transition-all duration-300 ${language === 'EN' ? 'bg-white text-black shadow-sm' : 'text-white/80 hover:text-white'}`}>EN</button>
         </div>
 
         {/* Mobile Nav Toggle & Language */}
         <div className="flex xl:hidden items-center gap-2 sm:gap-3">
-          <div className="flex gap-1 text-white/80 text-[10px] sm:text-xs font-sans font-medium uppercase bg-white/10 backdrop-blur-md border border-white/10 rounded-full px-2.5 py-2 sm:px-3 sm:py-2.5">
-            <button onClick={() => setLanguage('ES')} className={`transition-colors ${language === 'ES' ? 'text-white' : 'hover:text-white'}`}>ES</button>
-            <span className="opacity-50">|</span>
-            <button onClick={() => setLanguage('PT')} className={`transition-colors ${language === 'PT' ? 'text-white' : 'hover:text-white'}`}>PT</button>
-            <span className="opacity-50">|</span>
-            <button onClick={() => setLanguage('EN')} className={`transition-colors ${language === 'EN' ? 'text-white' : 'hover:text-white'}`}>EN</button>
+          <div className="flex p-0.5 bg-white/10 backdrop-blur-md border border-white/20 rounded-full items-center">
+            <button onClick={() => setLanguage('ES')} className={`px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-sans font-semibold uppercase transition-all duration-300 ${language === 'ES' ? 'bg-white text-black shadow-sm' : 'text-white/80 hover:text-white'}`}>ES</button>
+            <button onClick={() => setLanguage('PT')} className={`px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-sans font-semibold uppercase transition-all duration-300 ${language === 'PT' ? 'bg-white text-black shadow-sm' : 'text-white/80 hover:text-white'}`}>PT</button>
+            <button onClick={() => setLanguage('EN')} className={`px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-sans font-semibold uppercase transition-all duration-300 ${language === 'EN' ? 'bg-white text-black shadow-sm' : 'text-white/80 hover:text-white'}`}>EN</button>
           </div>
           <button
             onClick={() => setIsOpen(true)}

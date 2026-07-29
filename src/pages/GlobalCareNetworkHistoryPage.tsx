@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
-import { ArrowDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function GlobalCareNetworkHistoryPage() {
@@ -110,35 +109,7 @@ export function GlobalCareNetworkHistoryPage() {
         </div>
       </section>
 
-      {/* Simplified visual timeline */}
-      <section className="py-24 bg-white px-6 md:px-12 border-t border-gray-100 hidden md:block">
-         <div className="w-full max-w-5xl mx-auto text-center">
-            <div className="flex flex-col items-center gap-4 text-gray-400 font-light">
-               <span className="text-[#1A1A1A] font-semibold">2011</span>
-               <span>🌍 {t('gcn.history.2011.title')}</span>
-               <ArrowDown className="w-4 h-4 my-2 text-[#48C3B4]" />
-               
-               <span className="text-[#1A1A1A] font-semibold">2011–2022</span>
-               <span>🤝 {t('gcn.history.2011_2022.title')}</span>
-               <ArrowDown className="w-4 h-4 my-2 text-[#48C3B4]" />
 
-               <span className="text-[#1A1A1A] font-semibold">2023</span>
-               <span>🩺 {t('gcn.history.2023.title')}</span>
-               <ArrowDown className="w-4 h-4 my-2 text-[#48C3B4]" />
-
-               <span className="text-[#1A1A1A] font-semibold">2024</span>
-               <span>💻 {t('gcn.history.2024.title')}</span>
-               <ArrowDown className="w-4 h-4 my-2 text-[#48C3B4]" />
-
-               <span className="text-[#1A1A1A] font-semibold">2025</span>
-               <span>🔬 {t('gcn.history.2025.title')}</span>
-               <ArrowDown className="w-4 h-4 my-2 text-[#48C3B4]" />
-
-               <span className="text-[#1A1A1A] font-semibold text-lg text-[#48C3B4]">2026</span>
-               <span className="text-xl font-serif text-[#1A1A1A]">🌐 Global Care Network</span>
-            </div>
-         </div>
-      </section>
 
       {/* Outro */}
       <section className="py-24 md:py-32 px-6 md:px-12 bg-[#1A1A1A] text-center text-white">
