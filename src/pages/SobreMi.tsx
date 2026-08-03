@@ -37,6 +37,9 @@ export function SobreMi() {
             <h2 className="text-lg md:text-xl font-sans text-gray-300 font-light">
               {t('gcn.founder.role')}
             </h2>
+            <div className="text-xs md:text-sm font-sans text-gray-400 mt-2 font-medium tracking-wide border-t border-white/10 pt-2 inline-block">
+              {t('gcn.founder.tagline')}
+            </div>
           </motion.div>
         </div>
       </header>
