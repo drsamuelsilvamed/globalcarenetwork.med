@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { GCNNavigation } from '../components/GCNNavigation';
+import { GCNFooter } from '../components/GCNFooter';
 import { ArrowRight, Globe2, BookOpen, Lightbulb, Shield, Laptop, Compass, HeartPulse, Scale, Activity } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -122,34 +123,7 @@ export function GlobalCareNetworkPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#111111] text-white py-12 px-6 md:px-12 relative overflow-hidden mt-auto">
-        <div 
-          className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" 
-          style={{ 
-            backgroundImage: "url('/world-map.svg')", 
-            backgroundSize: 'cover', 
-            backgroundPosition: 'center', 
-            backgroundRepeat: 'no-repeat',
-            filter: 'invert(1) brightness(1.5)'
-          }}
-        ></div>
-        <div className="max-w-6xl mx-auto relative z-10 flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/10 pt-8">
-          <div className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter opacity-50">
-            <span className="text-white text-lg">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
-            <span className="text-white text-lg">NETWORK</span>
-          </div>
-          <p className="text-sm font-light text-gray-500 text-center md:text-left">&copy; {new Date().getFullYear()} Global Care Network. {t('footer.rights')}</p>
-          
-          {/* Institutional Presentation of Dr. Samuel Silva in Footer */}
-          <div className="flex flex-col text-center md:text-left gap-1">
-            <span className="text-xs uppercase tracking-widest font-semibold text-gray-500">{t('gcn.founder.title')}</span>
-            <Link to="/founder" className="text-gray-400 hover:text-white transition-colors text-sm font-semibold">
-              {t('gcn.founder.name')} <span className="font-light text-gray-500">({t('gcn.founder.role')})</span>
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <GCNFooter />
     </main>
   );
 }

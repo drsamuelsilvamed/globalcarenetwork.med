@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { GCNNavigation } from '../components/GCNNavigation';
 import { Link } from 'react-router-dom';
+import { GCNFooter } from '../components/GCNFooter';
 
 export function SobreMi() {
   const { t } = useLanguage();
@@ -127,19 +128,7 @@ export function SobreMi() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-[#111111] text-white py-12 px-6 md:px-12 mt-auto">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/10 pt-8">
-          <div className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter opacity-50">
-            <span className="text-white text-lg">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
-            <span className="text-white text-lg">NETWORK</span>
-          </div>
-          <p className="text-sm font-light text-gray-500 text-center md:text-left">&copy; {new Date().getFullYear()} Global Care Network. {t('footer.rights')}</p>
-          <Link to="/" className="text-gray-400 hover:text-white transition-colors uppercase tracking-widest text-xs font-semibold">
-            {t('gcn.nav.home')}
-          </Link>
-        </div>
-      </footer>
+      <GCNFooter hideFounderLink={true} />
     </div>
   );
 }
