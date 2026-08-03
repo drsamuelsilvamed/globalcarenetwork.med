@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { GCNNavigation } from '../components/GCNNavigation';
-import { ArrowRight, ArrowLeft, BookOpen, Globe2, Lightbulb, Shield } from 'lucide-react';
+import { ArrowRight, Globe2, BookOpen, Lightbulb, Shield, Laptop, Compass, HeartPulse, Scale, Activity } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function GlobalCareNetworkPage() {
@@ -11,9 +11,8 @@ export function GlobalCareNetworkPage() {
     <main className="min-h-screen bg-[#FDFBF7] font-sans selection:bg-[#48C3B4] selection:text-white flex flex-col">
       <GCNNavigation />
       
-      {/* Hero Section */}
-      <section className="pt-48 pb-32 md:pt-56 md:pb-40 bg-[#1A1A1A] text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[85vh]" id="#">
-        {/* Map Background */}
+      {/* Hero Section (Reduced Height by 25-30%) */}
+      <section className="pt-32 pb-20 md:pt-40 md:pb-24 bg-[#1A1A1A] text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[60vh]" id="#">
         <div 
           className="absolute inset-0 z-0 opacity-10 pointer-events-none" 
           style={{ 
@@ -33,180 +32,98 @@ export function GlobalCareNetworkPage() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="flex flex-col items-center"
           >
-            <div className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter mb-8 md:mb-12">
-              <span className="text-white text-4xl md:text-5xl lg:text-6xl">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
-              <span className="text-white text-4xl md:text-5xl lg:text-6xl">NETWORK</span>
+            <div className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter mb-6">
+              <span className="text-white text-3xl md:text-4xl lg:text-6xl">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
+              <span className="text-white text-3xl md:text-4xl lg:text-6xl">NETWORK</span>
             </div>
             
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-serif tracking-tight leading-[1.2] mb-12 max-w-4xl text-gray-200">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-serif tracking-tight leading-[1.2] mb-6 max-w-4xl text-gray-100">
               {t('gcn.hero.title')}
             </h2>
+
+            <p className="text-base md:text-lg font-light text-gray-300 max-w-3xl mb-8 leading-relaxed">
+              {t('gcn.hero.subtitle')}
+            </p>
             
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-              <Link to="/" className="inline-flex items-center gap-3 px-8 py-4 border-2 border-white text-white font-sans tracking-widest uppercase text-sm font-semibold hover:bg-white hover:text-[#1A1A1A] transition-colors duration-300">
-                <ArrowLeft className="w-4 h-4" /> {t('nav.home')}
+              <Link to="/about" className="inline-flex items-center gap-3 px-6 py-3 border-2 border-white text-white font-sans tracking-widest uppercase text-xs font-semibold hover:bg-white hover:text-[#1A1A1A] transition-colors duration-300">
+                {t('gcn.hero.learn')} <ArrowRight className="w-4 h-4" />
               </Link>
-              <a href="#reason" className="inline-flex items-center gap-3 px-8 py-4 bg-[#48C3B4] text-white font-sans tracking-widest uppercase text-sm font-semibold hover:bg-[#3ba598] transition-colors duration-300">
-                {t('gcn.hero.desc')} <ArrowRight className="w-4 h-4" />
-              </a>
+              <Link to="/projects" className="inline-flex items-center gap-3 px-6 py-3 bg-[#48C3B4] text-white font-sans tracking-widest uppercase text-xs font-semibold hover:bg-[#3ba598] transition-colors duration-300">
+                {t('gcn.hero.explore')} <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Razón de existir */}
-      <section className="py-24 md:py-32 px-6 md:px-12 bg-white" id="reason">
+      {/* ¿Por qué existe Global Care Network? (New Section immediately below Hero) */}
+      <section className="py-20 md:py-24 px-6 md:px-12 bg-white">
         <div className="w-full max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h3 className="text-sm uppercase tracking-widest font-semibold mb-12 text-[#48C3B4] border-b border-gray-100 pb-4">
+            <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-8 text-[#1A1A1A] text-center md:text-left">
               {t('gcn.reason.title')}
             </h3>
-            <div className="text-xl md:text-2xl font-serif leading-relaxed text-[#1A1A1A] flex flex-col gap-8">
-              <p className="font-medium text-2xl md:text-3xl">{t('gcn.reason.p1')}</p>
-              <p className="text-gray-600">{t('gcn.reason.p2')}</p>
-              <p className="text-gray-600">{t('gcn.reason.p3')}</p>
-              <p className="text-gray-800 font-medium pl-6 border-l-2 border-[#48C3B4]">{t('gcn.reason.p4')}</p>
+            <div className="text-lg md:text-xl font-light leading-relaxed text-gray-700 flex flex-col gap-6">
+              <p>{t('gcn.reason.p1')}</p>
+              <p>{t('gcn.reason.p2')}</p>
+              <p>{t('gcn.reason.p3')}</p>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Visión y Misión */}
-      <section className="py-24 md:py-32 px-6 md:px-12 bg-[#F9F8F6] border-y border-gray-200" id="vision">
-        <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-            className="bg-white p-10 md:p-14 shadow-sm border border-gray-100"
-          >
-            <h3 className="text-sm uppercase tracking-widest font-semibold mb-8 text-[#48C3B4]">
-              {t('gcn.vision.title')}
-            </h3>
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-[#1A1A1A]">
-              "{t('gcn.vision.desc')}"
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            id="mission"
-            className="bg-[#1A1A1A] text-white p-10 md:p-14 shadow-xl"
-          >
-            <h3 className="text-sm uppercase tracking-widest font-semibold mb-8 text-[#48C3B4]">
-              {t('gcn.mission.title')}
-            </h3>
-            <div className="text-lg md:text-xl font-light leading-relaxed text-gray-300 flex flex-col gap-6">
-              <p>{t('gcn.mission.desc1')}</p>
-              <p>{t('gcn.mission.desc2')}</p>
-            </div>
-          </motion.div>
+      {/* Institutional Principle block */}
+      <section className="py-16 bg-[#1A1A1A] text-white text-center px-6 border-y border-white/5">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs uppercase tracking-widest font-semibold text-[#48C3B4] mb-4">Principio Institucional</p>
+          <h4 className="text-xl md:text-2xl font-serif font-light leading-relaxed italic text-gray-200">
+            "{t('gcn.about.subtitle')}"
+          </h4>
         </div>
       </section>
 
-      {/* Áreas de Actuación */}
-      <section className="py-24 md:py-32 px-6 md:px-12 bg-white" id="areas">
+      {/* Guiding Principles (Reordered: Patient, Evidence, Innovation, Transparency, Professionalism) */}
+      <section className="py-20 md:py-24 px-6 md:px-12 bg-white" id="principles">
         <div className="w-full max-w-6xl mx-auto">
           <h3 className="text-sm uppercase tracking-widest font-semibold mb-16 text-gray-400 text-center">
-            {t('gcn.areas.title')}
+            {t('gcn.about.principles.title')}
           </h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { id: 1, icon: Globe2 },
-              { id: 2, icon: BookOpen },
-              { id: 3, icon: Lightbulb },
-              { id: 4, icon: Shield }
-            ].map((area) => (
+              { id: 'patient', icon: HeartPulse },
+              { id: 'evidence', icon: BookOpen },
+              { id: 'innovation', icon: Lightbulb },
+              { id: 'transparency', icon: Compass },
+              { id: 'professionalism', icon: Shield }
+            ].map((principle) => (
               <motion.div 
-                key={area.id}
+                key={principle.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="flex flex-col gap-5 p-8 border border-gray-100 bg-[#FAFAFA] hover:bg-white hover:shadow-md transition-all duration-300"
+                className="flex flex-col gap-4 p-8 border border-gray-100 bg-[#FAFAFA] hover:bg-white hover:shadow-md transition-all duration-300"
               >
-                <div className="w-12 h-12 bg-[#48C3B4]/10 flex items-center justify-center rounded-full mb-2">
-                  <area.icon className="w-6 h-6 text-[#48C3B4]" strokeWidth={1.5} />
+                <div className="w-12 h-12 bg-[#48C3B4]/10 flex items-center justify-center rounded-full mb-2 text-[#48C3B4]">
+                  <principle.icon className="w-6 h-6" strokeWidth={1.5} />
                 </div>
-                <h4 className="text-2xl font-serif text-[#1A1A1A]">{t(`gcn.areas.${area.id}.title`)}</h4>
-                <p className="text-gray-600 font-light text-lg leading-relaxed">{t(`gcn.areas.${area.id}.desc`)}</p>
+                <h4 className="text-2xl font-serif text-[#1A1A1A]">{t(`gcn.about.principles.${principle.id}.title`)}</h4>
+                <p className="text-gray-600 font-light text-base leading-relaxed">{t(`gcn.about.principles.${principle.id}.desc`)}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Investigación / Publicaciones & Colaboraciones */}
-      <section className="py-24 md:py-32 px-6 md:px-12 bg-[#1A1A1A] text-white" id="research">
-        <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-            id="publications"
-            className="flex flex-col justify-between"
-          >
-            <div>
-              <h3 className="text-sm uppercase tracking-widest font-semibold mb-8 text-[#48C3B4]">
-                {t('gcn.research.title')}
-              </h3>
-              <p className="text-2xl font-serif leading-relaxed text-gray-200 mb-8">
-                {t('gcn.research.desc')}
-              </p>
-            </div>
-            <div className="w-12 h-[2px] bg-[#48C3B4]"></div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            id="collaborations"
-            className="flex flex-col justify-between"
-          >
-            <div>
-              <h3 className="text-sm uppercase tracking-widest font-semibold mb-8 text-[#48C3B4]">
-                {t('gcn.colab.title')}
-              </h3>
-              <p className="text-2xl font-serif leading-relaxed text-gray-200 mb-8">
-                {t('gcn.colab.desc')}
-              </p>
-            </div>
-            <div className="w-12 h-[2px] bg-[#48C3B4]"></div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Contacto Institucional */}
-      <section className="py-24 md:py-32 px-6 md:px-12 bg-[#F9F8F6] text-center" id="contact">
-        <div className="w-full max-w-3xl mx-auto">
-          <h3 className="text-sm uppercase tracking-widest font-semibold mb-8 text-[#48C3B4]">
-            {t('gcn.contact.title')}
-          </h3>
-          <p className="text-3xl font-serif text-[#1A1A1A] mb-12">
-            {t('gcn.contact.desc')}
-          </p>
-          <a href="mailto:info@globalcarenetwork.org" className="inline-flex items-center gap-3 px-8 py-4 bg-[#1A1A1A] text-white font-sans tracking-widest uppercase text-sm font-semibold hover:bg-black transition-colors duration-300">
-            Contactar <ArrowRight className="w-4 h-4" />
-          </a>
-        </div>
-      </section>
-
-      {/* Footer minimalista para GCN */}
-      <footer className="bg-[#111111] text-white py-16 px-6 md:px-12 relative overflow-hidden">
-        {/* Map Background for Footer */}
+      {/* Footer */}
+      <footer className="bg-[#111111] text-white py-12 px-6 md:px-12 relative overflow-hidden mt-auto">
         <div 
           className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" 
           style={{ 
@@ -223,9 +140,14 @@ export function GlobalCareNetworkPage() {
             <span className="text-white text-lg">NETWORK</span>
           </div>
           <p className="text-sm font-light text-gray-500 text-center md:text-left">&copy; {new Date().getFullYear()} Global Care Network. {t('footer.rights')}</p>
-          <Link to="/" className="text-gray-400 hover:text-white transition-colors uppercase tracking-widest text-xs font-semibold">
-            {t('nav.title')} (Dr. Samuel Silva)
-          </Link>
+          
+          {/* Institutional Presentation of Dr. Samuel Silva in Footer */}
+          <div className="flex flex-col text-center md:text-left gap-1">
+            <span className="text-xs uppercase tracking-widest font-semibold text-gray-500">{t('gcn.founder.title')}</span>
+            <Link to="/founder" className="text-gray-400 hover:text-white transition-colors text-sm font-semibold">
+              {t('gcn.founder.name')} <span className="font-light text-gray-500">({t('gcn.founder.role')})</span>
+            </Link>
+          </div>
         </div>
       </footer>
     </main>

@@ -9,21 +9,17 @@ export function GCNNavigation() {
   const { language, setLanguage, t } = useLanguage();
 
   const links = [
-    { label: t('gcn.nav.home'), href: '/global-care-network' },
-    { label: t('gcn.nav.history'), href: '/global-care-network/historia' },
-    { label: t('gcn.nav.reason'), href: '#reason' },
-    { label: t('gcn.nav.vision'), href: '#vision' },
-    { label: t('gcn.nav.mission'), href: '#mission' },
-    { label: t('gcn.nav.areas'), href: '#areas' },
-    { label: t('gcn.nav.research'), href: '#research' },
-    { label: t('gcn.nav.publications'), href: '#publications' },
-    { label: t('gcn.nav.collaborations'), href: '#collaborations' },
-    { label: t('gcn.nav.contact'), href: '#contact' },
+    { label: t('gcn.nav.home'), to: '/' },
+    { label: t('gcn.nav.about'), to: '/about' },
+    { label: t('gcn.nav.projects'), to: '/projects' },
+    { label: t('gcn.nav.telemedicine'), to: '/telemedicine' },
+    { label: t('gcn.nav.digitalHealth'), to: '/digital-health' },
+    { label: t('gcn.nav.resources'), to: '/resources' },
   ];
 
   return (
     <header className="absolute top-0 left-0 w-full z-50 py-5 px-4 md:py-8 md:px-12 flex justify-between items-center">
-      <Link to="/global-care-network" className="flex items-center z-50 relative shrink-0 mr-4">
+      <Link to="/" className="flex items-center z-50 relative shrink-0 mr-4">
         <div className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter">
           <span className="text-white text-lg md:text-xl">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
           <span className="text-white text-lg md:text-xl">NETWORK</span>
@@ -31,24 +27,16 @@ export function GCNNavigation() {
       </Link>
 
       <div className="flex items-center gap-3 sm:gap-6 z-50 relative">
-        <Link to="/" className="hidden xl:flex items-center gap-2 text-[#48C3B4] hover:text-white transition-colors text-xs font-sans font-medium uppercase tracking-widest mr-4">
-          <ArrowLeft className="w-4 h-4" />
-          <span>{t('nav.back')}</span>
-        </Link>
         {/* Desktop Nav */}
         <nav className="hidden xl:flex bg-white/10 backdrop-blur-md border border-white/10 rounded-full px-8 py-3 items-center gap-6">
-          <Link to="/" onClick={() => setIsOpen(false)} className="text-[#48C3B4] flex items-center gap-2 text-sm font-sans tracking-widest uppercase font-semibold mb-4">
-                <ArrowLeft className="w-4 h-4" />
-                <span>{t('nav.back')}</span>
-              </Link>
-              {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-white hover:text-gray-300 font-sans text-[10px] tracking-wide transition-colors uppercase whitespace-nowrap"
+          {links.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="text-white hover:text-gray-300 font-sans text-xs tracking-wider transition-colors uppercase whitespace-nowrap"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -58,7 +46,8 @@ export function GCNNavigation() {
            <span className="opacity-50">|</span>
            <button onClick={() => setLanguage('PT')} className={`transition-colors ${language === 'PT' ? 'text-white' : 'hover:text-white'}`}>PT</button>
            <span className="opacity-50">|</span>
-           <button onClick={() => setLanguage('EN')} className={`transition-colors ${language === 'EN' ? 'text-white' : 'hover:text-white'}`}>EN</button>        </div>
+           <button onClick={() => setLanguage('EN')} className={`transition-colors ${language === 'EN' ? 'text-white' : 'hover:text-white'}`}>EN</button>
+        </div>
 
         {/* Mobile Nav Toggle & Language */}
         <div className="flex xl:hidden items-center gap-2 sm:gap-3">
@@ -101,14 +90,14 @@ export function GCNNavigation() {
             
             <nav className="flex flex-col gap-6 items-center mt-4 pb-12">
               {links.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
+                <Link
+                  key={link.to}
+                  to={link.to}
                   onClick={() => setIsOpen(false)}
                   className="text-white text-lg font-serif tracking-wide hover:text-gray-300 uppercase text-center"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
           </motion.div>

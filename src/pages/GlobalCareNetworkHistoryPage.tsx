@@ -43,15 +43,15 @@ export function GlobalCareNetworkHistoryPage() {
       {/* Mini Nav for GCN */}
       <header className="fixed top-0 left-0 w-full z-50 bg-[#1A1A1A]/95 backdrop-blur-md border-b border-white/10">
         <div className="w-full max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-          <Link to="/global-care-network" className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter">
+          <Link to="/" className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter">
             <span className="text-white text-lg">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
             <span className="text-white text-lg">NETWORK</span>
           </Link>
           <nav className="flex items-center gap-8">
-            <Link to="/global-care-network" className="text-gray-300 hover:text-white text-sm font-semibold tracking-widest uppercase transition-colors">
+            <Link to="/" className="text-gray-300 hover:text-white text-sm font-semibold tracking-widest uppercase transition-colors">
               {t('gcn.nav.home')}
             </Link>
-            <Link to="/global-care-network/historia" className="text-white text-sm font-semibold tracking-widest uppercase border-b-2 border-[#48C3B4] pb-1">
+            <Link to="/historia" className="text-white text-sm font-semibold tracking-widest uppercase border-b-2 border-[#48C3B4] pb-1">
               {t('gcn.nav.history')}
             </Link>
           </nav>
@@ -151,8 +151,8 @@ export function GlobalCareNetworkHistoryPage() {
             <span className="text-white text-lg">NETWORK</span>
           </div>
           <p className="text-sm font-light text-gray-500 text-center md:text-left">&copy; {new Date().getFullYear()} Global Care Network. {t('footer.rights')}</p>
-          <Link to="/" className="text-gray-400 hover:text-white transition-colors uppercase tracking-widest text-xs font-semibold">
-            {t('nav.title')} (Dr. Samuel Silva)
+          <Link to="/founder" className="text-gray-400 hover:text-white transition-colors uppercase tracking-widest text-xs font-semibold">
+            {t('gcn.nav.founder')} (Dr. Samuel Silva)
           </Link>
         </div>
       </footer>
