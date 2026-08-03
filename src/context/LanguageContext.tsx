@@ -12,6 +12,10 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 const translations = {
   ES: {
+    'gcn.founder.about': 'Sobre el Director Médico',
+    'gcn.founder.why.title': '¿Por qué existe Global Care Network?',
+    'gcn.founder.why.p1': 'Global Care Network nació a partir de la práctica clínica durante años en comunidades rurales y entornos con recursos limitados, donde el acceso a la salud suele verse dificultado por la distancia y la falta de soporte especializado.',
+    'gcn.founder.why.p2': 'En lugar de crear tecnología por sí misma, GCN desarrolla soluciones prácticas que responden a necesidades clínicas reales observadas en el ejercicio cotidiano de la medicina.',
     'nav.who': 'Quién soy',
     'nav.what': 'Qué hago',
     'nav.contact': 'Contacto',
@@ -122,6 +126,10 @@ const translations = {
     'gcn.partners.p1': 'Colaboramos activamente con universidades, redes médicas y profesionales de salud interesados en la validación clínica y científica de herramientas de telemedicina.',
   },
   PT: {
+    'gcn.founder.about': 'Sobre o Diretor Médico',
+    'gcn.founder.why.title': 'Por que existe a Global Care Network?',
+    'gcn.founder.why.p1': 'A Global Care Network nasceu a partir da prática clínica durante anos em comunidades rurais e ambientes com recursos limitados, onde o acesso à saúde costuma ser dificultado pela distância e pela falta de suporte especializado.',
+    'gcn.founder.why.p2': 'Em vez de criar tecnologia por si só, a GCN desenvolve soluções práticas que respondem a necessidades clínicas reais observadas no exercício cotidiano da medicina.',
     'nav.who': 'Quem sou',
     'nav.what': 'O que faço',
     'nav.contact': 'Contato',
@@ -232,6 +240,10 @@ const translations = {
     'gcn.partners.p1': 'Colaboramos ativamente com universidades, redes médicas e profissionais de saúde interessados na validação clínica e científica de ferramentas de telemedicina.',
   },
   EN: {
+    'gcn.founder.about': 'About the Medical Director',
+    'gcn.founder.why.title': 'Why Global Care Network Exists',
+    'gcn.founder.why.p1': 'Global Care Network was created after years of clinical practice in rural and remote communities where access to healthcare was often limited by distance, lack of resources and limited access to specialist support.',
+    'gcn.founder.why.p2': 'Rather than creating technology for its own sake, GCN develops practical healthcare solutions that respond to real clinical needs observed in everyday medical practice.',
     'nav.who': 'Who I am',
     'nav.what': 'What I do',
     'nav.contact': 'Contact',
