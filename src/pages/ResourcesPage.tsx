@@ -1,12 +1,14 @@
+import { useState } from 'react';
 import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { GCNNavigation } from '../components/GCNNavigation';
-import { Link } from 'react-router-dom';
-import { BookOpen, FileText, ClipboardList, GraduationCap, HardDrive, Wifi } from 'lucide-react';
+import { BookOpen, FileText, ClipboardList, GraduationCap, HardDrive, Wifi, Search } from 'lucide-react';
 import { GCNFooter } from '../components/GCNFooter';
 
 export function ResourcesPage() {
   const { t } = useLanguage();
+  const [activeFilter, setActiveFilter] = useState<'ALL' | 'CHURCHES' | 'AGENCIES' | 'PROFESSIONALS'>('ALL');
+  const [searchQuery, setSearchQuery] = useState('');
 
   const resources = [
     {
@@ -14,45 +16,58 @@ export function ResourcesPage() {
       icon: ClipboardList,
       title: t('gcn.resources.item1.title'),
       desc: t('gcn.resources.item1.desc'),
+      categories: ['PROFESSIONALS']
     },
     {
       id: 2,
       icon: BookOpen,
       title: t('gcn.resources.item2.title'),
       desc: t('gcn.resources.item2.desc'),
+      categories: ['AGENCIES', 'PROFESSIONALS']
     },
     {
       id: 3,
       icon: HardDrive,
       title: t('gcn.resources.item3.title'),
       desc: t('gcn.resources.item3.desc'),
+      categories: ['AGENCIES', 'PROFESSIONALS']
     },
     {
       id: 4,
       icon: FileText,
       title: t('gcn.resources.item4.title'),
       desc: t('gcn.resources.item4.desc'),
+      categories: ['PROFESSIONALS']
     },
     {
       id: 5,
       icon: GraduationCap,
       title: t('gcn.resources.item5.title'),
       desc: t('gcn.resources.item5.desc'),
+      categories: ['CHURCHES', 'AGENCIES']
     },
     {
       id: 6,
       icon: Wifi,
       title: t('gcn.resources.item6.title'),
       desc: t('gcn.resources.item6.desc'),
+      categories: ['AGENCIES', 'PROFESSIONALS']
     },
   ];
+
+  const filteredResources = resources.filter(res => {
+    const matchesFilter = activeFilter === 'ALL' || res.categories.includes(activeFilter);
+    const matchesSearch = res.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                          res.desc.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesFilter && matchesSearch;
+  });
 
   return (
     <main className="min-h-screen bg-[#FDFBF7] font-sans selection:bg-[#48C3B4] selection:text-white flex flex-col">
       <GCNNavigation />
 
       {/* Hero Section */}
-      <section className="pt-48 pb-20 md:pt-56 md:pb-28 bg-[#1A1A1A] text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[45vh]">
+      <section className="pt-40 pb-20 md:pt-48 md:pb-28 bg-[#1A1A1A] text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[45vh]">
         <div 
           className="absolute inset-0 z-0 opacity-10 pointer-events-none" 
           style={{ 
@@ -72,55 +87,94 @@ export function ResourcesPage() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight leading-[1.2] mb-6">
-              {t('gcn.resources.title')}
+              {t('gcn.resources.title.header')}
             </h1>
             <p className="text-xl md:text-2xl font-light text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              {t('gcn.resources.subtitle')}
+              {t('gcn.resources.subtitle.header')}
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Intro */}
-      <section className="py-16 px-6 md:px-12 bg-white">
-        <div className="w-full max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="text-xl md:text-2xl font-serif text-gray-700 leading-relaxed max-w-3xl mx-auto font-light">
-              {t('gcn.resources.p1')}
-            </p>
-          </motion.div>
+      {/* Interactive Toolbar: Filter Tabs + Search bar */}
+      <section className="py-8 px-6 md:px-12 bg-white border-b border-gray-150 sticky top-0 z-30 shadow-xs">
+        <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          {/* Tabs */}
+          <div className="flex flex-wrap gap-2 justify-center">
+            {[
+              { key: 'ALL', label: t('gcn.resources.filter.all') },
+              { key: 'CHURCHES', label: t('gcn.resources.filter.churches') },
+              { key: 'AGENCIES', label: t('gcn.resources.filter.agencies') },
+              { key: 'PROFESSIONALS', label: t('gcn.resources.filter.professionals') }
+            ].map((tab) => (
+              <button
+                key={tab.key}
+                onClick={() => setActiveFilter(tab.key as any)}
+                className={`px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded-sm border ${
+                  activeFilter === tab.key 
+                    ? 'bg-[#48C3B4] border-[#48C3B4] text-white shadow-xs' 
+                    : 'bg-white border-gray-200 text-gray-600 hover:border-gray-400'
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Search Input */}
+          <div className="relative w-full md:w-80">
+            <Search className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" />
+            <input
+              type="text"
+              placeholder={t('gcn.resources.search')}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-9 pr-4 py-2 border border-gray-200 rounded-sm text-sm focus:outline-hidden focus:border-[#48C3B4] focus:ring-1 focus:ring-[#48C3B4] transition-all bg-[#FAFAFA]"
+            />
+          </div>
         </div>
       </section>
 
       {/* Grid of resources */}
-      <section className="py-20 px-6 md:px-12 bg-[#F9F8F6] border-y border-gray-200">
-        <div className="w-full max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {resources.map((res, idx) => (
-              <motion.div
-                key={res.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.05 }}
-                className="bg-white p-8 border border-gray-150 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col gap-4"
-              >
-                <div className="w-12 h-12 bg-[#48C3B4]/10 flex items-center justify-center rounded-full text-[#48C3B4]">
-                  <res.icon className="w-6 h-6" strokeWidth={1.5} />
-                </div>
-                <h3 className="text-xl font-serif text-[#1A1A1A] font-semibold">{res.title}</h3>
-                <p className="text-gray-600 font-light text-base leading-relaxed">{res.desc}</p>
-                <div className="mt-auto pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">
-                  Próximamente disponible
-                </div>
-              </motion.div>
-            ))}
-          </div>
+      <section className="py-16 px-6 md:px-12 bg-[#F9F8F6] flex-grow">
+        <div className="w-full max-w-5xl mx-auto">
+          {filteredResources.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredResources.map((res, idx) => (
+                <motion.div
+                  key={res.id}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: idx * 0.05 }}
+                  className="bg-white p-8 border border-gray-150 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col gap-4 rounded-sm"
+                >
+                  <div className="w-12 h-12 bg-[#48C3B4]/10 flex items-center justify-center rounded-full text-[#48C3B4]">
+                    <res.icon className="w-6 h-6" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="text-xl font-serif text-[#1A1A1A] font-semibold">{res.title}</h3>
+                  <p className="text-gray-600 font-light text-base leading-relaxed">{res.desc}</p>
+                  
+                  {/* Category badges */}
+                  <div className="flex flex-wrap gap-1.5 mt-2">
+                    {res.categories.map(cat => (
+                      <span key={cat} className="px-2.5 py-0.5 bg-gray-150/50 text-[10px] text-gray-500 font-semibold tracking-wider uppercase rounded-sm">
+                        {cat === 'CHURCHES' ? 'Iglesia' : cat === 'AGENCIES' ? 'Agencia' : 'Profesional'}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="mt-auto pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                    Próximamente disponible
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-20 bg-white border border-gray-150 rounded-sm">
+              <p className="text-gray-500 font-light">No se encontraron recursos que coincidan con tu búsqueda.</p>
+            </div>
+          )}
         </div>
       </section>
 

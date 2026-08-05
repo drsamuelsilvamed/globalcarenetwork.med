@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, ArrowLeft } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { Link } from 'react-router-dom';
@@ -11,9 +11,9 @@ export function GCNNavigation() {
   const links = [
     { label: t('gcn.nav.home'), to: '/' },
     { label: t('gcn.nav.about'), to: '/about' },
+    { label: t('gcn.nav.what'), to: '/what-we-do' },
     { label: t('gcn.nav.projects'), to: '/projects' },
-    { label: t('gcn.nav.telemedicine'), to: '/telemedicine' },
-    { label: t('gcn.nav.digitalHealth'), to: '/digital-health' },
+    { label: t('gcn.nav.founder'), to: '/leadership' },
     { label: t('gcn.nav.resources'), to: '/resources' },
   ];
 
@@ -21,8 +21,8 @@ export function GCNNavigation() {
     <header className="absolute top-0 left-0 w-full z-50 py-5 px-4 md:py-8 md:px-12 flex justify-between items-center">
       <Link to="/" className="flex items-center z-50 relative shrink-0 mr-4">
         <div className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter">
-          <span className="text-white text-lg md:text-xl">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
-          <span className="text-white text-lg md:text-xl">NETWORK</span>
+          <span className="text-white text-lg md:text-xl">MISSIONARY <span className="text-[#48C3B4]">MEDICAL</span></span>
+          <span className="text-white text-lg md:text-xl">CARE</span>
         </div>
       </Link>
 
@@ -79,8 +79,8 @@ export function GCNNavigation() {
             <div className="flex justify-between items-start mb-12 shrink-0">
               <div className="flex items-center gap-3 mt-2">
                 <div className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter">
-                  <span className="text-white text-lg">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
-                  <span className="text-white text-lg">NETWORK</span>
+                  <span className="text-white text-lg">MISSIONARY <span className="text-[#48C3B4]">MEDICAL</span></span>
+                  <span className="text-white text-lg">CARE</span>
                 </div>
               </div>
               <button onClick={() => setIsOpen(false)} className="p-2 text-white bg-white/10 rounded-full">
