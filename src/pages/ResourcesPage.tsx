@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { GCNNavigation } from '../components/GCNNavigation';
-import { BookOpen, FileText, ClipboardList, GraduationCap, HardDrive, Wifi, Search } from 'lucide-react';
+import { BookOpen, FileText, ClipboardList, GraduationCap, HardDrive, Wifi, Search, Download } from 'lucide-react';
 import { GCNFooter } from '../components/GCNFooter';
 
 export function ResourcesPage() {
@@ -16,7 +16,8 @@ export function ResourcesPage() {
       icon: ClipboardList,
       title: t('gcn.resources.item1.title'),
       desc: t('gcn.resources.item1.desc'),
-      categories: ['PROFESSIONALS']
+      categories: ['PROFESSIONALS'],
+      pdfUrl: '/resources/ejemplo.pdf' // <-- AQUÍ SE CONFIGURA EL PDF
     },
     {
       id: 2,
@@ -164,9 +165,21 @@ export function ResourcesPage() {
                     ))}
                   </div>
 
-                  <div className="mt-auto pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">
-                    Próximamente disponible
-                  </div>
+                  {res.pdfUrl ? (
+                    <a 
+                      href={res.pdfUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="mt-auto pt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#48C3B4] hover:text-[#3ba598] transition-colors"
+                    >
+                      <Download className="w-4 h-4" />
+                      Descargar PDF
+                    </a>
+                  ) : (
+                    <div className="mt-auto pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                      Próximamente disponible
+                    </div>
+                  )}
                 </motion.div>
               ))}
             </div>
