@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { GCNNavigation } from '../components/GCNNavigation';
-import { BookOpen, FileText, ClipboardList, GraduationCap, HardDrive, Wifi, Search, Download } from 'lucide-react';
+import { BookOpen, FileText, ClipboardList, GraduationCap, HardDrive, Wifi, Search, Download, ExternalLink } from 'lucide-react';
 import { GCNFooter } from '../components/GCNFooter';
 
 export function ResourcesPage() {
   const { t } = useLanguage();
-  const [activeFilter, setActiveFilter] = useState<'ALL' | 'CHURCHES' | 'AGENCIES' | 'PROFESSIONALS'>('ALL');
+  const [activeFilter, setActiveFilter] = useState<'ALL' | 'MISSIONARIES' | 'CHURCHES' | 'AGENCIES' | 'PROFESSIONALS' | 'FAMILIES'>('ALL');
   const [searchQuery, setSearchQuery] = useState('');
 
   const resources = [
@@ -16,7 +16,7 @@ export function ResourcesPage() {
       icon: ClipboardList,
       title: t('gcn.resources.item1.title'),
       desc: t('gcn.resources.item1.desc'),
-      categories: ['PROFESSIONALS', 'CHURCHES', 'AGENCIES'],
+      categories: ['MISSIONARIES'],
       pdfUrl: '/resources/donde-no-hay-doctor.pdf',
       coverUrl: '/resources/donde-no-hay-doctor-cover.png'
     },
@@ -25,36 +25,28 @@ export function ResourcesPage() {
       icon: BookOpen,
       title: t('gcn.resources.item2.title'),
       desc: t('gcn.resources.item2.desc'),
-      categories: ['AGENCIES', 'PROFESSIONALS']
+      categories: ['PROFESSIONALS', 'MISSIONARIES'],
+      externalLink: 'https://idoctus.com/',
+      coverUrl: 'https://logo.clearbit.com/idoctus.com'
     },
     {
       id: 3,
       icon: HardDrive,
       title: t('gcn.resources.item3.title'),
       desc: t('gcn.resources.item3.desc'),
-      categories: ['AGENCIES', 'PROFESSIONALS']
+      categories: ['PROFESSIONALS', 'MISSIONARIES'],
+      externalLink: 'https://ada.com/',
+      coverUrl: 'https://logo.clearbit.com/ada.com'
     },
     {
       id: 4,
       icon: FileText,
       title: t('gcn.resources.item4.title'),
       desc: t('gcn.resources.item4.desc'),
-      categories: ['PROFESSIONALS']
-    },
-    {
-      id: 5,
-      icon: GraduationCap,
-      title: t('gcn.resources.item5.title'),
-      desc: t('gcn.resources.item5.desc'),
-      categories: ['CHURCHES', 'AGENCIES']
-    },
-    {
-      id: 6,
-      icon: Wifi,
-      title: t('gcn.resources.item6.title'),
-      desc: t('gcn.resources.item6.desc'),
-      categories: ['AGENCIES', 'PROFESSIONALS']
-    },
+      categories: ['PROFESSIONALS', 'MISSIONARIES'],
+      externalLink: 'https://www.msdmanuals.com/home',
+      coverUrl: 'https://logo.clearbit.com/msdmanuals.com'
+    }
   ];
 
   const filteredResources = resources.filter(res => {
@@ -105,9 +97,11 @@ export function ResourcesPage() {
           <div className="flex flex-wrap gap-2 justify-center">
             {[
               { key: 'ALL', label: t('gcn.resources.filter.all') },
+              { key: 'MISSIONARIES', label: t('gcn.resources.filter.missionaries') },
               { key: 'CHURCHES', label: t('gcn.resources.filter.churches') },
               { key: 'AGENCIES', label: t('gcn.resources.filter.agencies') },
-              { key: 'PROFESSIONALS', label: t('gcn.resources.filter.professionals') }
+              { key: 'PROFESSIONALS', label: t('gcn.resources.filter.professionals') },
+              { key: 'FAMILIES', label: t('gcn.resources.filter.families') }
             ].map((tab) => (
               <button
                 key={tab.key}
@@ -152,8 +146,8 @@ export function ResourcesPage() {
                   className="bg-white border border-gray-150 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col rounded-sm overflow-hidden h-full"
                 >
                   {res.coverUrl && (
-                    <div className="w-full aspect-[4/3] bg-gray-100 border-b border-gray-150 relative">
-                      <img src={res.coverUrl} alt={res.title} className="absolute inset-0 w-full h-full object-cover" />
+                    <div className="w-full aspect-[4/3] bg-white border-b border-gray-150 relative flex items-center justify-center p-6">
+                      <img src={res.coverUrl} alt={res.title} className="w-full h-full object-contain" />
                     </div>
                   )}
                   <div className="p-8 flex flex-col gap-4 flex-grow">
@@ -164,31 +158,50 @@ export function ResourcesPage() {
                     )}
                     <h3 className="text-xl font-serif text-[#1A1A1A] font-semibold">{res.title}</h3>
                     <p className="text-gray-600 font-light text-base leading-relaxed">{res.desc}</p>
-                  
-                  {/* Category badges */}
-                  <div className="flex flex-wrap gap-1.5 mt-2">
-                    {res.categories.map(cat => (
-                      <span key={cat} className="px-2.5 py-0.5 bg-gray-150/50 text-[10px] text-gray-500 font-semibold tracking-wider uppercase rounded-sm">
-                        {cat === 'CHURCHES' ? 'Iglesia' : cat === 'AGENCIES' ? 'Agencia' : 'Profesional'}
-                      </span>
-                    ))}
-                  </div>
-
-                  {res.pdfUrl ? (
-                    <a 
-                      href={res.pdfUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="mt-auto pt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#48C3B4] hover:text-[#3ba598] transition-colors"
-                    >
-                      <Download className="w-4 h-4" />
-                      Descargar PDF
-                    </a>
-                  ) : (
-                    <div className="mt-auto pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">
-                      Próximamente disponible
+                    
+                    {/* Category badges */}
+                    <div className="flex flex-wrap gap-1.5 mt-2">
+                      {res.categories.map(cat => {
+                        let label = cat;
+                        if (cat === 'MISSIONARIES') label = 'Misionero';
+                        if (cat === 'CHURCHES') label = 'Iglesia';
+                        if (cat === 'AGENCIES') label = 'Agencia';
+                        if (cat === 'PROFESSIONALS') label = 'Profesional';
+                        if (cat === 'FAMILIES') label = 'Familia';
+                        
+                        return (
+                          <span key={cat} className="px-2.5 py-0.5 bg-gray-150 text-[10px] text-gray-500 font-semibold tracking-wider uppercase rounded-sm">
+                            {label}
+                          </span>
+                        );
+                      })}
                     </div>
-                  )}
+
+                    {(res as any).pdfUrl ? (
+                      <a 
+                        href={(res as any).pdfUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="mt-auto pt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#48C3B4] hover:text-[#3ba598] transition-colors"
+                      >
+                        <Download className="w-4 h-4" />
+                        Descargar PDF
+                      </a>
+                    ) : (res as any).externalLink ? (
+                      <a 
+                        href={(res as any).externalLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="mt-auto pt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-600 hover:text-blue-700 transition-colors"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        Visitar Sitio Web
+                      </a>
+                    ) : (
+                      <div className="mt-auto pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                        Próximamente disponible
+                      </div>
+                    )}
                   </div>
                 </motion.div>
               ))}

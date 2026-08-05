@@ -224,8 +224,22 @@ const translations = {
 
     // Recursos
     'gcn.resources.title.header': 'Centro de Recursos',
-    'gcn.resources.subtitle.header': 'Protocolos, guías y cursos de formación para el cuidado misionero.',
+    'gcn.resources.subtitle.header': 'Protocolos, guías y recursos para el cuidado misionero.',
     'gcn.resources.search': 'Buscar recurso...',
+    'gcn.resources.filter.all': 'Todos',
+    'gcn.resources.filter.missionaries': 'Misionero',
+    'gcn.resources.filter.churches': 'Iglesia',
+    'gcn.resources.filter.agencies': 'Agencia Misionera',
+    'gcn.resources.filter.professionals': 'Profesional de Salud',
+    'gcn.resources.filter.families': 'Familia Misionera',
+    'gcn.resources.item1.title': 'Donde no hay médico',
+    'gcn.resources.item1.desc': 'Guía práctica de atención primaria y cuidado de salud para el contexto misionero rural y de acceso limitado. Conocimiento que salva vidas.',
+    'gcn.resources.item2.title': 'iDoctus',
+    'gcn.resources.item2.desc': 'La app de referencia para médicos en español. Ofrece ayuda para diagnósticos y acceso rápido a información farmacológica.',
+    'gcn.resources.item3.title': 'Health. Powered by Ada.',
+    'gcn.resources.item3.desc': 'Asistente de evaluación de síntomas impulsado por IA para orientar decisiones de salud tempranas.',
+    'gcn.resources.item4.title': 'MSD Manual Consumer Version',
+    'gcn.resources.item4.desc': 'Información médica clara, práctica y gratuita sobre enfermedades y tratamientos en un lenguaje accesible.',
   },
   PT: {
     'nav.who': 'Quem sou',
@@ -440,8 +454,22 @@ const translations = {
 
     // Recursos
     'gcn.resources.title.header': 'Centro de Recursos',
-    'gcn.resources.subtitle.header': 'Protocolos, guias e cursos de formação para o cuidado missionário.',
+    'gcn.resources.subtitle.header': 'Protocolos, guias e recursos para o cuidado missionário.',
     'gcn.resources.search': 'Buscar recurso...',
+    'gcn.resources.filter.all': 'Todos',
+    'gcn.resources.filter.missionaries': 'Missionário',
+    'gcn.resources.filter.churches': 'Igreja',
+    'gcn.resources.filter.agencies': 'Agência Missionária',
+    'gcn.resources.filter.professionals': 'Profissional de Saúde',
+    'gcn.resources.filter.families': 'Família Missionária',
+    'gcn.resources.item1.title': 'Onde não há médico',
+    'gcn.resources.item1.desc': 'Guia prático de atenção primária e cuidados de saúde para o contexto missionário rural e de acesso restrito. Conhecimento que salva vidas.',
+    'gcn.resources.item2.title': 'iDoctus',
+    'gcn.resources.item2.desc': 'O aplicativo de referência para médicos em espanhol. Oferece auxílio para diagnósticos e acesso rápido a informações farmacológicas.',
+    'gcn.resources.item3.title': 'Health. Powered by Ada.',
+    'gcn.resources.item3.desc': 'Assistente de avaliação de sintomas impulsionado por IA para orientar decisões de saúde precoces.',
+    'gcn.resources.item4.title': 'MSD Manual Consumer Version',
+    'gcn.resources.item4.desc': 'Informação médica clara, prática e gratuita sobre doenças e tratamentos em uma linguagem acessível.',
   },
   EN: {
     'nav.who': 'Who I am',
@@ -654,10 +682,24 @@ const translations = {
     'gcn.projects.p3.solution': 'Establishment of strict operational security (OPSEC) guidelines applied to telemedicine and medical recording, using encryption and anonymity.',
     'gcn.projects.p3.impact': '• Comprehensive protection of missionary privacy.\n• Compliance with international ethical and safety standards.\n• Minimization of digital gaps in clinical communication.',
 
-    // Resources
+    // Recursos
     'gcn.resources.title.header': 'Resource Center',
-    'gcn.resources.subtitle.header': 'Protocols, guidelines, and training courses for missionary care.',
+    'gcn.resources.subtitle.header': 'Protocols, guides and resources for missionary care.',
     'gcn.resources.search': 'Search resource...',
+    'gcn.resources.filter.all': 'All',
+    'gcn.resources.filter.missionaries': 'Missionary',
+    'gcn.resources.filter.churches': 'Church',
+    'gcn.resources.filter.agencies': 'Mission Agency',
+    'gcn.resources.filter.professionals': 'Healthcare Professional',
+    'gcn.resources.filter.families': 'Missionary Family',
+    'gcn.resources.item1.title': 'Where There Is No Doctor',
+    'gcn.resources.item1.desc': 'Practical primary health care guide for rural and limited-access missionary contexts. Knowledge that saves lives.',
+    'gcn.resources.item2.title': 'iDoctus',
+    'gcn.resources.item2.desc': 'The reference app for doctors in Spanish. Offers diagnostic support and quick access to pharmacological information.',
+    'gcn.resources.item3.title': 'Health. Powered by Ada.',
+    'gcn.resources.item3.desc': 'AI-powered symptom assessment assistant to guide early health decisions.',
+    'gcn.resources.item4.title': 'MSD Manual Consumer Version',
+    'gcn.resources.item4.desc': 'Clear, practical, and free medical information on diseases and treatments in accessible language.',
   }
 };
 
