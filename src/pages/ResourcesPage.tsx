@@ -16,8 +16,9 @@ export function ResourcesPage() {
       icon: ClipboardList,
       title: t('gcn.resources.item1.title'),
       desc: t('gcn.resources.item1.desc'),
-      categories: ['PROFESSIONALS'],
-      pdfUrl: '/resources/ejemplo.pdf' // <-- AQUÍ SE CONFIGURA EL PDF
+      categories: ['PROFESSIONALS', 'CHURCHES', 'AGENCIES'],
+      pdfUrl: '/resources/donde-no-hay-doctor.pdf',
+      coverUrl: '/resources/donde-no-hay-doctor-cover.png'
     },
     {
       id: 2,
@@ -148,13 +149,21 @@ export function ResourcesPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.05 }}
-                  className="bg-white p-8 border border-gray-150 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col gap-4 rounded-sm"
+                  className="bg-white border border-gray-150 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col rounded-sm overflow-hidden h-full"
                 >
-                  <div className="w-12 h-12 bg-[#48C3B4]/10 flex items-center justify-center rounded-full text-[#48C3B4]">
-                    <res.icon className="w-6 h-6" strokeWidth={1.5} />
-                  </div>
-                  <h3 className="text-xl font-serif text-[#1A1A1A] font-semibold">{res.title}</h3>
-                  <p className="text-gray-600 font-light text-base leading-relaxed">{res.desc}</p>
+                  {res.coverUrl && (
+                    <div className="w-full aspect-[4/3] bg-gray-100 border-b border-gray-150 relative">
+                      <img src={res.coverUrl} alt={res.title} className="absolute inset-0 w-full h-full object-cover" />
+                    </div>
+                  )}
+                  <div className="p-8 flex flex-col gap-4 flex-grow">
+                    {!res.coverUrl && (
+                      <div className="w-12 h-12 bg-[#48C3B4]/10 flex items-center justify-center rounded-full text-[#48C3B4] shrink-0">
+                        <res.icon className="w-6 h-6" strokeWidth={1.5} />
+                      </div>
+                    )}
+                    <h3 className="text-xl font-serif text-[#1A1A1A] font-semibold">{res.title}</h3>
+                    <p className="text-gray-600 font-light text-base leading-relaxed">{res.desc}</p>
                   
                   {/* Category badges */}
                   <div className="flex flex-wrap gap-1.5 mt-2">
@@ -180,6 +189,7 @@ export function ResourcesPage() {
                       Próximamente disponible
                     </div>
                   )}
+                  </div>
                 </motion.div>
               ))}
             </div>
