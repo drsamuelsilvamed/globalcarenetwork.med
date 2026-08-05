@@ -6,6 +6,7 @@ import { WhatWeDoPage } from './pages/WhatWeDoPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { ResourcesPage } from './pages/ResourcesPage';
 import { SobreMi } from './pages/SobreMi';
+import { FieldRealityPage } from './pages/FieldRealityPage';
 import { ScrollToTop } from './components/ScrollToTop';
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/leadership" element={<SobreMi />} />
           <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/reality" element={<FieldRealityPage />} />
         </Routes>
       </BrowserRouter>
     </LanguageProvider>

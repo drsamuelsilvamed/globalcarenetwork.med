@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import { Instagram, Mail } from 'lucide-react';
 
 interface GCNFooterProps {
   hideFounderLink?: boolean;
@@ -24,6 +25,16 @@ export function GCNFooter({ hideFounderLink = false }: GCNFooterProps) {
         <div className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter opacity-50">
           <span className="text-white text-lg">MISSIONARY <span className="text-[#48C3B4]">MEDICAL</span></span>
           <span className="text-white text-lg">CARE</span>
+        </div>
+
+        {/* Social & Contact */}
+        <div className="flex items-center gap-6 opacity-70">
+          <a href="https://www.instagram.com/missionarymedicalcare/" target="_blank" rel="noopener noreferrer" className="hover:text-[#48C3B4] transition-colors" aria-label="Instagram">
+            <Instagram className="w-5 h-5" />
+          </a>
+          <a href="mailto:drsamuelsilva.med@gmail.com" className="hover:text-[#48C3B4] transition-colors" aria-label="Email">
+            <Mail className="w-5 h-5" />
+          </a>
         </div>
 
         {/* Copyright & Leadership */}

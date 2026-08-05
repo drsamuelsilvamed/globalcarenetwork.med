@@ -123,44 +123,14 @@ export function GlobalCareNetworkPage() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* SECCIÓN 2: LOS DESAFÍOS DEL CAMPO MISIONERO */}
-      <section className="py-24 px-6 md:px-12 bg-[#F9F8F6] border-y border-gray-200">
-        <div className="w-full max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="text-[#48C3B4] uppercase tracking-widest text-xs font-semibold mb-2 block">
-              Dificultades Reales
-            </span>
-            <h3 className="text-3xl md:text-4xl font-serif text-[#1A1A1A] mb-4">
-              {t('gcn.challenges.title')}
-            </h3>
-            <p className="text-gray-500 font-light text-base md:text-lg">
-              {t('gcn.challenges.subtitle')}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3, 4, 5, 6].map((num) => (
-              <motion.div 
-                key={num}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: num * 0.05 }}
-                className="bg-white p-8 border border-gray-150 rounded-sm shadow-xs hover:shadow-md hover:border-[#48C3B4]/30 transition-all duration-300 flex flex-col gap-3"
-              >
-                <h4 className="text-lg font-serif font-semibold text-[#1A1A1A]">
-                  {t(`gcn.challenges.c${num}.title`)}
-                </h4>
-                <p className="text-gray-600 font-light text-sm md:text-base leading-relaxed">
-                  {t(`gcn.challenges.c${num}.desc`)}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+        <div className="w-full max-w-5xl mx-auto mt-12 flex justify-center lg:justify-start">
+          <Link to="/reality" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#1A1A1A] text-white font-sans tracking-widest uppercase text-xs font-semibold hover:bg-[#333] transition-colors duration-300">
+            {t('gcn.reality.readMore')} <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </section>
+
+      {/* SECCIÓN 2 MOVIDA A /reality */}
 
       {/* SECCIÓN 3: FUNDAMENTO BÍBLICO */}
       <section className="py-24 px-6 md:px-12 bg-white">
@@ -267,35 +237,7 @@ export function GlobalCareNetworkPage() {
         </div>
       </section>
 
-      {/* SECCIÓN 6: NUESTRO IMPACTO */}
-      <section className="py-20 px-6 md:px-12 bg-[#1A1A1A] text-white">
-        <div className="w-full max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="text-[#48C3B4] uppercase tracking-widest text-xs font-semibold mb-2 block">
-              Misión Cumplida
-            </span>
-            <h3 className="text-3xl md:text-4xl font-serif mb-4 text-white">
-              {t('gcn.impact.title')}
-            </h3>
-            <p className="text-gray-400 font-light text-base">
-              {t('gcn.impact.subtitle')}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
-            {[1, 2, 3, 4, 5].map((num) => (
-              <div key={num} className="flex flex-col gap-2">
-                <span className="text-3xl md:text-4xl lg:text-5xl font-serif text-[#48C3B4] font-bold">
-                  {t(`gcn.impact.stat${num}.val`)}
-                </span>
-                <span className="text-xs md:text-sm font-sans tracking-wide uppercase font-semibold text-gray-400 leading-tight">
-                  {t(`gcn.impact.stat${num}.lbl`)}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* SECCIÓN IMPACTO ELIMINADA */}
 
       {/* SECCIÓN 7: PARTICIPA */}
       <section className="py-24 px-6 md:px-12 bg-white">
@@ -321,11 +263,14 @@ export function GlobalCareNetworkPage() {
               { num: 5, icon: Lightbulb },
               { num: 6, icon: Heart }
             ].map((role) => (
-              <motion.div
+              <motion.a
+                href="https://wa.me/59162439185"
+                target="_blank"
+                rel="noopener noreferrer"
                 key={role.num}
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.2 }}
-                className="p-8 border border-gray-150 bg-white hover:border-[#48C3B4] hover:shadow-md transition-all duration-300 flex flex-col justify-between gap-6 rounded-sm cursor-pointer"
+                className="p-8 border border-gray-150 bg-white hover:border-[#48C3B4] hover:shadow-md transition-all duration-300 flex flex-col justify-between gap-6 rounded-sm cursor-pointer block"
               >
                 <div className="flex flex-col gap-3">
                   <div className="w-10 h-10 bg-[#48C3B4]/10 flex items-center justify-center rounded-full text-[#48C3B4] mb-2 shrink-0">
@@ -342,7 +287,7 @@ export function GlobalCareNetworkPage() {
                   <span>Participar</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </div>

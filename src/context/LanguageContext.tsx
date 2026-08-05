@@ -44,6 +44,10 @@ const translations = {
 
     // Sección 1: La realidad del misionero
     'gcn.reality.title': 'La realidad del misionero',
+    'gcn.reality.readMore': 'Leer más sobre el campo misionero',
+    'gcn.reality.page.title': 'La Realidad del Campo',
+    'gcn.reality.page.subtitle': 'Dificultades Reales',
+    'gcn.reality.page.desc': 'Conoce los desafíos de salud, aislamiento y barreras culturales que enfrentan los misioneros en el campo.',
     'gcn.reality.p1': 'Los misioneros que sirven en contextos transculturales frecuentemente viven junto a sus familias en regiones rurales, montañosas, desérticas o de acceso restringido.',
     'gcn.reality.p2': 'Muchos trabajan lejos de hospitales, especialistas y laboratorios.',
     'gcn.reality.p3': 'Su principal herramienta de comunicación suele ser un teléfono móvil. Con frecuencia, una simple conversación por WhatsApp representa el único acceso posible a orientación médica especializada.',
@@ -256,6 +260,10 @@ const translations = {
 
     // Seção 1: A realidade do missionário
     'gcn.reality.title': 'A realidade do missionário',
+    'gcn.reality.readMore': 'Ler mais sobre o campo missionário',
+    'gcn.reality.page.title': 'A Realidade do Campo',
+    'gcn.reality.page.subtitle': 'Dificuldades Reais',
+    'gcn.reality.page.desc': 'Conheça os desafios de saúde, isolamento e barreiras culturais que os missionários enfrentam no campo.',
     'gcn.reality.p1': 'Os missionários que servem em contextos transculturais frequentemente vivem com suas famílias em regiões rurais, montanhosas, desérticas ou de acesso restrito.',
     'gcn.reality.p2': 'Muitos trabalham longe de hospitais, especialistas e laboratórios.',
     'gcn.reality.p3': 'Sua principal ferramenta de comunicação costuma ser um telefone celular. Com frequência, uma simples conversa por WhatsApp representa o único acesso possível a orientações médicas especializadas.',
@@ -468,6 +476,10 @@ const translations = {
 
     // Section 1: The missionary's reality
     'gcn.reality.title': "The missionary's reality",
+    'gcn.reality.readMore': 'Read more about the mission field',
+    'gcn.reality.page.title': 'The Reality of the Field',
+    'gcn.reality.page.subtitle': 'Real Challenges',
+    'gcn.reality.page.desc': 'Discover the health challenges, isolation, and cultural barriers that missionaries face in the field.',
     'gcn.reality.p1': 'Missionaries serving in cross-cultural contexts frequently live with their families in rural, mountainous, desert, or restricted-access regions.',
     'gcn.reality.p2': 'Many work far from hospitals, specialists, and laboratories.',
     'gcn.reality.p3': 'Their main communication tool is usually a mobile phone. Often, a simple WhatsApp conversation represents the only possible access to specialized medical guidance.',
