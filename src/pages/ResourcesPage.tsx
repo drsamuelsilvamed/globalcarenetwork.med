@@ -27,7 +27,7 @@ export function ResourcesPage() {
       desc: t('gcn.resources.item2.desc'),
       categories: ['PROFESSIONALS', 'MISSIONARIES'],
       externalLink: 'https://idoctus.com/',
-      coverUrl: 'https://logo.clearbit.com/idoctus.com'
+      coverUrl: '/resources/idoctus-logo.png'
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ export function ResourcesPage() {
       desc: t('gcn.resources.item3.desc'),
       categories: ['PROFESSIONALS', 'MISSIONARIES'],
       externalLink: 'https://ada.com/',
-      coverUrl: 'https://logo.clearbit.com/ada.com'
+      coverUrl: '/resources/ada-logo.jpg'
     },
     {
       id: 4,
