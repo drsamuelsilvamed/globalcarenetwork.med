@@ -30,22 +30,13 @@ export function ResourcesPage() {
       coverUrl: '/resources/idoctus-logo.png'
     },
     {
-      id: 3,
-      icon: HardDrive,
-      title: t('gcn.resources.item3.title'),
-      desc: t('gcn.resources.item3.desc'),
-      categories: ['PROFESSIONALS', 'MISSIONARIES'],
-      externalLink: 'https://ada.com/',
-      coverUrl: '/resources/ada-logo.jpg'
-    },
-    {
       id: 4,
       icon: FileText,
       title: t('gcn.resources.item4.title'),
       desc: t('gcn.resources.item4.desc'),
       categories: ['PROFESSIONALS', 'MISSIONARIES'],
       externalLink: 'https://www.msdmanuals.com/home',
-      coverUrl: 'https://logo.clearbit.com/msdmanuals.com'
+      coverUrl: '/resources/msd-logo.jpg'
     }
   ];
 
