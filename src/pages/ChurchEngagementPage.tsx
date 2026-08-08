@@ -8,17 +8,17 @@ import { AIBadge } from "../components/AIBadge";
 export function ChurchEngagementPage() {
   const { t } = useLanguage();
   return (
-    <div className="bg-light-gray min-h-screen font-body">
+    <div className="bg-light-gray min-h-screen font-sans">
       {" "}
       <GCNNavigation /> {/* Hero */}{" "}
-      <section className="pt-32 pb-20 px-6 md:px-12 bg-[#1A365D] text-white">
+      <section className="pt-32 pb-20 px-6 md:px-12 bg-charcoal text-white">
         {" "}
         <div className="max-w-4xl mx-auto text-center">
           {" "}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-institutional font-bold mb-6 text-mustard"
+            className="text-4xl md:text-5xl font-heading font-bold mb-6 text-mustard"
           >
             {" "}
             {t("church.hero.title")}{" "}
@@ -39,7 +39,7 @@ export function ChurchEngagementPage() {
         {" "}
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {" "}
-          <h2 className="text-3xl md:text-4xl font-heading text-[#1A365D] font-bold">
+          <h2 className="text-3xl md:text-4xl font-heading text-charcoal font-bold">
             {" "}
             {t("gcn.biblical.title")}{" "}
           </h2>{" "}
@@ -72,7 +72,7 @@ export function ChurchEngagementPage() {
           {" "}
           <div className="text-center mb-16">
             {" "}
-            <h2 className="text-3xl font-institutional font-bold text-[#1A365D] mb-4">
+            <h2 className="text-3xl font-heading font-bold text-charcoal mb-4">
               {t("church.axes.title")}
             </h2>{" "}
           </div>{" "}
@@ -81,7 +81,7 @@ export function ChurchEngagementPage() {
             <div className="bg-light-gray p-8 rounded-sm border-t-4 border-inst-blue text-center">
               {" "}
               <BookOpen className="w-12 h-12 text-inst-blue mx-auto mb-4" />{" "}
-              <h3 className="text-xl font-bold text-[#1A365D] mb-3">
+              <h3 className="text-xl font-bold text-charcoal mb-3">
                 {t("church.axes.pray.title")}
               </h3>{" "}
               <p className="text-gray-600 text-sm">
@@ -92,7 +92,7 @@ export function ChurchEngagementPage() {
             <div className="bg-light-gray p-8 rounded-sm border-t-4 border-[#E91E63] text-center">
               {" "}
               <Heart className="w-12 h-12 text-[#E91E63] mx-auto mb-4" />{" "}
-              <h3 className="text-xl font-bold text-[#1A365D] mb-3">
+              <h3 className="text-xl font-bold text-charcoal mb-3">
                 {t("church.axes.give.title")}
               </h3>{" "}
               <p className="text-gray-600 text-sm">
@@ -103,7 +103,7 @@ export function ChurchEngagementPage() {
             <div className="bg-light-gray p-8 rounded-sm border-t-4 border-[#B8872C] text-center">
               {" "}
               <Globe className="w-12 h-12 text-mustard mx-auto mb-4" />{" "}
-              <h3 className="text-xl font-bold text-[#1A365D] mb-3">
+              <h3 className="text-xl font-bold text-charcoal mb-3">
                 {t("church.axes.go.title")}
               </h3>{" "}
               <p className="text-gray-600 text-sm">

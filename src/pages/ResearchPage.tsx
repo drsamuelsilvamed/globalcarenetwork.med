@@ -27,11 +27,11 @@ export function ResearchPage() {
  ];
 
  return (
- <main className="min-h-screen bg-[#FDFBF7] font-sans selection:bg-[#48C3B4] selection:text-white flex flex-col">
+ <main className="min-h-screen bg-light-gray font-sans selection:bg-inst-blue selection:text-white flex flex-col">
  <GCNNavigation />
 
  {/* Hero Section */}
- <section className="pt-48 pb-24 md:pt-56 md:pb-32 bg-[#1A1A1A] text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[50vh]">
+ <section className="pt-48 pb-24 md:pt-56 md:pb-32 bg-charcoal text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[60vh]">
  <div 
  className="absolute inset-0 z-0 opacity-10 pointer-events-none" 
  style={{ 
@@ -42,7 +42,7 @@ export function ResearchPage() {
  filter: 'invert(1) brightness(2)'
  }}
  ></div>
- <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1A1A1A] z-0 opacity-80 pointer-events-none"></div>
+ <div className="absolute inset-0 bg-gradient-to-b from-transparent to-charcoal z-0 opacity-80 pointer-events-none"></div>
 
  <div className="w-full max-w-5xl mx-auto relative z-10 text-center">
  <motion.div
@@ -80,7 +80,7 @@ export function ResearchPage() {
  {/* Publications List */}
  <section className="py-24 px-6 md:px-12 bg-[#F9F8F6] border-y border-gray-200">
  <div className="w-full max-w-5xl mx-auto">
- <h2 className="text-sm uppercase tracking-widest font-semibold mb-16 text-center text-[#48C3B4]">
+ <h2 className="text-sm uppercase tracking-widest font-semibold mb-16 text-center text-inst-blue">
  {t('gcn.nav.research')}
  </h2>
 
@@ -102,7 +102,7 @@ export function ResearchPage() {
  <h3 className="text-2xl md:text-3xl font-heading text-[#1A1A1A] mb-4 leading-snug">
  {pub.title}
  </h3>
- <p className="text-sm font-semibold text-[#48C3B4] mb-6">
+ <p className="text-sm font-semibold text-inst-blue mb-6">
  {pub.authors}
  </p>
  <div className="border-t border-gray-100 pt-6">
@@ -127,7 +127,7 @@ export function ResearchPage() {
  transition={{ duration: 0.8 }}
  className="flex flex-col gap-6"
  >
- <span className="w-12 h-12 bg-[#48C3B4]/10 text-[#48C3B4] rounded-full flex items-center justify-center"><Users className="w-6 h-6" /></span>
+ <span className="w-12 h-12 bg-inst-blue/10 text-inst-blue rounded-full flex items-center justify-center"><Users className="w-6 h-6" /></span>
  <h2 className="text-3xl font-heading text-[#1A1A1A]">{t('gcn.colab.title')}</h2>
  <p className="text-gray-600 font-light text-lg leading-relaxed">{t('gcn.colab.desc')}</p>
  </motion.div>
@@ -141,7 +141,7 @@ export function ResearchPage() {
  >
  <h3 className="text-xl font-heading mb-4 text-[#1A1A1A]">{t('gcn.partners.u.title')}</h3>
  <p className="text-gray-600 font-light mb-6">{t('gcn.partners.u.desc')}</p>
- <Link to="/partnerships" className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-[#48C3B4] hover:text-[#3ba598]">
+ <Link to="/partnerships" className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-inst-blue hover:text-inst-blue">
  {t('gcn.partners.form.submit')} <ArrowRight className="w-4 h-4" />
  </Link>
  </motion.div>
@@ -152,7 +152,7 @@ export function ResearchPage() {
  <footer className="bg-[#111111] text-white py-16 px-6 md:px-12 mt-auto">
  <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/10 pt-8">
  <div className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter opacity-50">
- <span className="text-white text-lg">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
+ <span className="text-white text-lg">GLOBAL <span className="text-inst-blue">CARE</span></span>
  <span className="text-white text-lg">NETWORK</span>
  </div>
  <p className="text-sm font-light text-gray-500 text-center md:text-left">&copy; {new Date().getFullYear()} Global Care Network. {t('footer.rights')}</p>

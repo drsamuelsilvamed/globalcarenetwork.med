@@ -44,17 +44,17 @@ export function VolunteerRecruitmentPage() {
     "Aprendizaje continuo",
   ];
   return (
-    <div className="bg-light-gray min-h-screen font-body">
+    <div className="bg-light-gray min-h-screen font-sans">
       {" "}
       <GCNNavigation /> {/* Hero Section */}{" "}
-      <section className="pt-32 pb-20 px-6 md:px-12 bg-[#1A365D] text-white">
+      <section className="pt-32 pb-20 px-6 md:px-12 bg-charcoal text-white">
         {" "}
         <div className="max-w-4xl mx-auto text-center">
           {" "}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-institutional font-bold mb-6 text-mustard"
+            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 text-mustard"
           >
             {" "}
             Colabora con Nosotros{" "}
@@ -91,7 +91,7 @@ export function VolunteerRecruitmentPage() {
               href="https://wa.me/59162439185"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-md font-bold tracking-wider uppercase text-sm flex items-center justify-center gap-2 transition-all "
+              className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-sm font-bold tracking-wider uppercase text-sm flex items-center justify-center gap-2 transition-all "
             >
               {" "}
               <MessageCircle size={20} /> Hablar por WhatsApp{" "}
@@ -99,7 +99,7 @@ export function VolunteerRecruitmentPage() {
             <a
               href="mailto:missionarymedicalcare@gmail.com"
               target="_top"
-              className="w-full sm:w-auto bg-white text-[#1A365D] hover:bg-gray-100 px-8 py-4 rounded-md font-bold tracking-wider uppercase text-sm flex items-center justify-center gap-2 transition-all "
+              className="w-full sm:w-auto bg-white text-charcoal hover:bg-light-gray px-8 py-4 rounded-sm font-bold tracking-wider uppercase text-sm flex items-center justify-center gap-2 transition-all "
             >
               {" "}
               <Mail size={20} /> Escribir por correo electrónico{" "}
@@ -114,7 +114,7 @@ export function VolunteerRecruitmentPage() {
           {" "}
           <div className="text-center mb-16">
             {" "}
-            <h2 className="text-3xl md:text-4xl font-institutional font-bold text-[#1A365D]">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal">
               ¿Quién puede colaborar?
             </h2>{" "}
           </div>{" "}
@@ -139,7 +139,7 @@ export function VolunteerRecruitmentPage() {
                     {" "}
                     <Icon size={32} style={{ color: item.color }} />{" "}
                   </div>{" "}
-                  <h3 className="text-xl font-bold text-[#1A365D] mb-4">
+                  <h3 className="text-xl font-bold text-charcoal mb-4">
                     {item.title}
                   </h3>{" "}
                   <p className="text-gray-600 leading-relaxed text-sm">
@@ -159,7 +159,7 @@ export function VolunteerRecruitmentPage() {
           {" "}
           <div className="text-center mb-16">
             {" "}
-            <h2 className="text-3xl md:text-4xl font-institutional font-bold text-[#1A365D]">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal">
               ¿Cómo funciona?
             </h2>{" "}
           </div>{" "}
@@ -167,10 +167,10 @@ export function VolunteerRecruitmentPage() {
             {" "}
             <div className="bg-white p-8 rounded-sm shadow-sm border border-[#B8872C]/20 text-center flex-1 w-full relative z-10">
               {" "}
-              <div className="w-10 h-10 rounded-full bg-[#1A365D] text-white font-bold flex items-center justify-center mx-auto mb-4 font-institutional text-xl">
+              <div className="w-10 h-10 rounded-full bg-charcoal text-white font-bold flex items-center justify-center mx-auto mb-4 font-heading text-xl">
                 1
               </div>{" "}
-              <h4 className="font-bold text-[#1A365D] text-lg">
+              <h4 className="font-bold text-charcoal text-lg">
                 Escríbenos
               </h4>{" "}
             </div>{" "}
@@ -178,10 +178,10 @@ export function VolunteerRecruitmentPage() {
             <div className="md:hidden h-8 w-px bg-mustard my-2"></div>{" "}
             <div className="bg-white p-8 rounded-sm shadow-sm border border-[#B8872C]/20 text-center flex-1 w-full relative z-10">
               {" "}
-              <div className="w-10 h-10 rounded-full bg-[#1A365D] text-white font-bold flex items-center justify-center mx-auto mb-4 font-institutional text-xl">
+              <div className="w-10 h-10 rounded-full bg-charcoal text-white font-bold flex items-center justify-center mx-auto mb-4 font-heading text-xl">
                 2
               </div>{" "}
-              <h4 className="font-bold text-[#1A365D] text-lg">
+              <h4 className="font-bold text-charcoal text-lg">
                 Conversemos
               </h4>{" "}
             </div>{" "}
@@ -189,10 +189,10 @@ export function VolunteerRecruitmentPage() {
             <div className="md:hidden h-8 w-px bg-mustard my-2"></div>{" "}
             <div className="bg-white p-8 rounded-sm shadow-sm border border-[#B8872C]/20 text-center flex-1 w-full relative z-10">
               {" "}
-              <div className="w-10 h-10 rounded-full bg-[#1A365D] text-white font-bold flex items-center justify-center mx-auto mb-4 font-institutional text-xl">
+              <div className="w-10 h-10 rounded-full bg-charcoal text-white font-bold flex items-center justify-center mx-auto mb-4 font-heading text-xl">
                 3
               </div>{" "}
-              <h4 className="font-bold text-[#1A365D] text-lg">
+              <h4 className="font-bold text-charcoal text-lg">
                 Descubramos juntos
                 <br />
                 cómo puedes colaborar
@@ -220,7 +220,7 @@ export function VolunteerRecruitmentPage() {
           {" "}
           <div className="text-center mb-16">
             {" "}
-            <h2 className="text-3xl md:text-4xl font-institutional font-bold text-[#1A365D]">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal">
               Nuestros Valores
             </h2>{" "}
           </div>{" "}
@@ -237,7 +237,7 @@ export function VolunteerRecruitmentPage() {
               >
                 {" "}
                 <CheckCircle2 className="w-5 h-5 text-mustard shrink-0" />{" "}
-                <span className="font-bold text-[#1A365D] text-sm md:text-base">
+                <span className="font-bold text-charcoal text-sm md:text-base">
                   {val}
                 </span>{" "}
               </motion.div>
@@ -246,11 +246,11 @@ export function VolunteerRecruitmentPage() {
         </div>{" "}
       </section>{" "}
       {/* Contacto Final */}{" "}
-      <section className="py-24 px-6 md:px-12 bg-[#1A365D] text-white border-t-8 border-[#B8872C]">
+      <section className="py-24 px-6 md:px-12 bg-charcoal text-white border-t-8 border-[#B8872C]">
         {" "}
-        <div className="max-w-3xl mx-auto bg-white/5 border border-white/10 p-10 md:p-16 rounded-sm text-center backdrop-blur-sm ">
+        <div className="max-w-3xl mx-auto bg-white/5 border border-white/10 p-10 md:p-16 rounded-sm text-center ">
           {" "}
-          <h2 className="text-3xl md:text-4xl font-institutional font-bold text-mustard mb-6">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-mustard mb-6">
             {" "}
             ¿Te gustaría conversar?{" "}
           </h2>{" "}
@@ -267,7 +267,7 @@ export function VolunteerRecruitmentPage() {
               href="https://wa.me/59162439185"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-5 rounded-md font-bold tracking-wider uppercase text-sm flex items-center justify-center gap-2 transition-all "
+              className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-5 rounded-sm font-bold tracking-wider uppercase text-sm flex items-center justify-center gap-2 transition-all "
             >
               {" "}
               <MessageCircle size={20} /> Enviar mensaje por WhatsApp{" "}
@@ -275,7 +275,7 @@ export function VolunteerRecruitmentPage() {
             <a
               href="mailto:missionarymedicalcare@gmail.com"
               target="_top"
-              className="w-full sm:w-auto bg-white text-[#1A365D] hover:bg-gray-100 px-8 py-5 rounded-md font-bold tracking-wider uppercase text-sm flex items-center justify-center gap-2 transition-all "
+              className="w-full sm:w-auto bg-white text-charcoal hover:bg-light-gray px-8 py-5 rounded-sm font-bold tracking-wider uppercase text-sm flex items-center justify-center gap-2 transition-all "
             >
               {" "}
               <Mail size={20} /> Enviar correo electrónico{" "}

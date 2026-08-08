@@ -39,19 +39,19 @@ export function GlobalCareNetworkHistoryPage() {
  ];
 
  return (
- <main className="min-h-screen bg-[#F9F8F6] font-sans selection:bg-[#48C3B4] selection:text-white flex flex-col">
+ <main className="min-h-screen bg-[#F9F8F6] font-sans selection:bg-inst-blue selection:text-white flex flex-col">
  {/* Mini Nav for GCN */}
- <header className="fixed top-0 left-0 w-full z-50 bg-[#1A1A1A]/95 border-b border-white/10">
+ <header className="fixed top-0 left-0 w-full z-50 bg-charcoal/95 border-b border-white/10">
  <div className="w-full max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
  <Link to="/" className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter">
- <span className="text-white text-lg">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
+ <span className="text-white text-lg">GLOBAL <span className="text-inst-blue">CARE</span></span>
  <span className="text-white text-lg">NETWORK</span>
  </Link>
  <nav className="flex items-center gap-8">
  <Link to="/" className="text-gray-300 hover:text-white text-sm font-semibold tracking-widest uppercase transition-colors">
  {t('gcn.nav.home')}
  </Link>
- <Link to="/historia" className="text-white text-sm font-semibold tracking-widest uppercase border-b-2 border-[#48C3B4] pb-1">
+ <Link to="/historia" className="text-white text-sm font-semibold tracking-widest uppercase border-b-2 border-inst-blue pb-1">
  {t('gcn.nav.history')}
  </Link>
  </nav>
@@ -85,7 +85,7 @@ export function GlobalCareNetworkHistoryPage() {
  {/* Timeline Section */}
  <section className="py-24 px-6 md:px-12 bg-[#F9F8F6]">
  <div className="w-full max-w-3xl mx-auto">
- <div className="relative border-l-2 border-[#48C3B4]/30 ml-4 md:ml-8">
+ <div className="relative border-l-2 border-inst-blue/30 ml-4 md:ml-8">
  {timeline.map((item, index) => (
  <motion.div 
  key={index}
@@ -96,9 +96,9 @@ export function GlobalCareNetworkHistoryPage() {
  className="mb-16 last:mb-0 pl-10 md:pl-16 relative"
  >
  {/* Timeline dot */}
- <div className="absolute left-[-9px] top-2 w-4 h-4 rounded-full bg-[#48C3B4] shadow-[0_0_0_4px_rgba(72,195,180,0.2)]"></div>
+ <div className="absolute left-[-9px] top-2 w-4 h-4 rounded-full bg-inst-blue shadow-[0_0_0_4px_rgba(72,195,180,0.2)]"></div>
  
- <span className="text-[#48C3B4] font-bold tracking-widest text-lg mb-2 block">{item.year}</span>
+ <span className="text-inst-blue font-bold tracking-widest text-lg mb-2 block">{item.year}</span>
  <div className="bg-white p-8 md:p-10 shadow-sm border border-gray-100 rounded-sm">
  <h3 className="text-2xl font-heading text-[#1A1A1A] mb-4">{item.title}</h3>
  <p className="text-gray-600 font-light leading-relaxed text-lg">{item.desc}</p>
@@ -112,7 +112,7 @@ export function GlobalCareNetworkHistoryPage() {
 
 
  {/* Outro */}
- <section className="py-24 md:py-32 px-6 md:px-12 bg-[#1A1A1A] text-center text-white">
+ <section className="py-24 md:py-32 px-6 md:px-12 bg-charcoal text-center text-white">
  <div className="w-full max-w-3xl mx-auto">
  <motion.div
  initial={{ opacity: 0, y: 30 }}
@@ -120,7 +120,7 @@ export function GlobalCareNetworkHistoryPage() {
  viewport={{ once: true, margin: "-100px" }}
  transition={{ duration: 0.8 }}
  >
- <h3 className="text-sm uppercase tracking-widest font-semibold mb-8 text-[#48C3B4]">
+ <h3 className="text-sm uppercase tracking-widest font-semibold mb-8 text-inst-blue">
  {t('gcn.history.outro.title')}
  </h3>
  <div className="text-xl md:text-2xl font-heading leading-relaxed text-gray-300 space-y-6">
@@ -147,7 +147,7 @@ export function GlobalCareNetworkHistoryPage() {
  
  <div className="max-w-6xl mx-auto relative z-10 flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/10 pt-8">
  <div className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter opacity-50">
- <span className="text-white text-lg">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
+ <span className="text-white text-lg">GLOBAL <span className="text-inst-blue">CARE</span></span>
  <span className="text-white text-lg">NETWORK</span>
  </div>
  <p className="text-sm font-light text-gray-500 text-center md:text-left">&copy; {new Date().getFullYear()} Global Care Network. {t('footer.rights')}</p>

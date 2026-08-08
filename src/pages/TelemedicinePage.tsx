@@ -30,11 +30,11 @@ export function TelemedicinePage() {
  ];
 
  return (
- <main className="min-h-screen bg-[#FDFBF7] font-sans selection:bg-[#48C3B4] selection:text-white flex flex-col">
+ <main className="min-h-screen bg-light-gray font-sans selection:bg-inst-blue selection:text-white flex flex-col">
  <GCNNavigation />
 
  {/* Hero Section */}
- <section className="pt-48 pb-24 md:pt-56 md:pb-32 bg-[#1A1A1A] text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[50vh]">
+ <section className="pt-48 pb-24 md:pt-56 md:pb-32 bg-charcoal text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[60vh]">
  <div 
  className="absolute inset-0 z-0 opacity-10 pointer-events-none" 
  style={{ 
@@ -45,7 +45,7 @@ export function TelemedicinePage() {
  filter: 'invert(1) brightness(2)'
  }}
  ></div>
- <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1A1A1A] z-0 opacity-80 pointer-events-none"></div>
+ <div className="absolute inset-0 bg-gradient-to-b from-transparent to-charcoal z-0 opacity-80 pointer-events-none"></div>
 
  <div className="w-full max-w-5xl mx-auto relative z-10 text-center">
  <motion.div
@@ -93,7 +93,7 @@ export function TelemedicinePage() {
  transition={{ duration: 0.6, delay: idx * 0.1 }}
  className="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col gap-4"
  >
- <div className="w-12 h-12 bg-[#48C3B4]/10 flex items-center justify-center rounded-full text-[#48C3B4]">
+ <div className="w-12 h-12 bg-inst-blue/10 flex items-center justify-center rounded-full text-inst-blue">
  <feature.icon className="w-6 h-6" strokeWidth={1.5} />
  </div>
  <h3 className="text-xl font-heading text-[#1A1A1A] font-semibold">{feature.title}</h3>
@@ -105,13 +105,13 @@ export function TelemedicinePage() {
  </section>
 
  {/* Call to Action */}
- <section className="py-20 bg-[#1A1A1A] text-white text-center px-6">
+ <section className="py-20 bg-charcoal text-white text-center px-6">
  <div className="max-w-3xl mx-auto">
  <h3 className="text-2xl md:text-3xl font-heading mb-6">{t('gcn.nav.innovation')}</h3>
  <p className="text-gray-400 font-light mb-8 max-w-xl mx-auto">{t('gcn.innov.subtitle')}</p>
  <Link
  to="/innovation"
- className="inline-flex items-center gap-3 px-8 py-4 bg-[#48C3B4] text-white font-sans tracking-widest uppercase text-sm font-semibold hover:bg-[#3ba598] transition-colors duration-300"
+ className="inline-flex items-center gap-3 px-8 py-4 bg-inst-blue text-white font-sans tracking-widest uppercase text-sm font-semibold hover:bg-inst-blue transition-colors duration-300"
  >
  {t('gcn.nav.innovation')} <ArrowRight className="w-4 h-4" />
  </Link>

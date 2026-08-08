@@ -29,17 +29,17 @@ export function BoardOfDirectorsPage() {
     },
   ];
   return (
-    <div className="bg-light-gray min-h-screen font-body">
+    <div className="bg-light-gray min-h-screen font-sans">
       {" "}
       <GCNNavigation /> {/* Hero */}{" "}
-      <section className="pt-32 pb-20 px-6 md:px-12 bg-[#1A365D] text-white">
+      <section className="pt-32 pb-20 px-6 md:px-12 bg-charcoal text-white">
         {" "}
         <div className="max-w-4xl mx-auto text-center">
           {" "}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-institutional font-bold mb-6 text-mustard"
+            className="text-4xl md:text-5xl font-heading font-bold mb-6 text-mustard"
           >
             {" "}
             {t("board.hero.title")}{" "}
@@ -62,7 +62,7 @@ export function BoardOfDirectorsPage() {
           {" "}
           <div className="text-center mb-16">
             {" "}
-            <h2 className="text-3xl font-institutional font-bold text-[#1A365D] mb-4">
+            <h2 className="text-3xl font-heading font-bold text-charcoal mb-4">
               {t("board.team.title")}
             </h2>{" "}
             <p className="text-gray-600">{t("board.team.subtitle")}</p>{" "}
@@ -85,7 +85,7 @@ export function BoardOfDirectorsPage() {
                 </div>{" "}
                 <div className="text-center md:text-left">
                   {" "}
-                  <h3 className="text-xl font-bold text-[#1A365D]">
+                  <h3 className="text-xl font-bold text-charcoal">
                     {member.name}
                   </h3>{" "}
                   <p className="text-mustard font-bold text-sm tracking-wider uppercase mb-3">

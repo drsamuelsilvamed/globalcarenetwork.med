@@ -7,11 +7,11 @@ export function FieldRealityPage() {
  const { t } = useLanguage();
 
  return (
- <main className="min-h-screen bg-[#FDFBF7] font-sans selection:bg-[#48C3B4] selection:text-white flex flex-col">
+ <main className="min-h-screen bg-light-gray font-sans selection:bg-inst-blue selection:text-white flex flex-col">
  <GCNNavigation />
  
  {/* Hero Section */}
- <section className="pt-40 pb-20 md:pt-48 md:pb-32 bg-[#1A1A1A] text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[50vh]">
+ <section className="pt-40 pb-20 md:pt-48 md:pb-32 bg-charcoal text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[60vh]">
  <div 
  className="absolute inset-0 z-0 opacity-20 pointer-events-none" 
  style={{ 
@@ -28,7 +28,7 @@ export function FieldRealityPage() {
  animate={{ opacity: 1, y: 0 }}
  transition={{ duration: 0.8 }}
  >
- <span className="text-[#48C3B4] uppercase tracking-widest text-xs font-semibold mb-4 block">
+ <span className="text-inst-blue uppercase tracking-widest text-xs font-semibold mb-4 block">
  {t('gcn.reality.page.subtitle')}
  </span>
  <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-white mb-6 leading-tight">
@@ -45,7 +45,7 @@ export function FieldRealityPage() {
  <section className="py-24 px-6 md:px-12 bg-white">
  <div className="w-full max-w-5xl mx-auto">
  <div className="text-center mb-16">
- <span className="text-[#48C3B4] uppercase tracking-widest text-xs font-semibold mb-2 block">
+ <span className="text-inst-blue uppercase tracking-widest text-xs font-semibold mb-2 block">
  {t('gcn.reality.page.subtitle')}
  </span>
  <h3 className="text-3xl md:text-4xl font-heading text-[#1A1A1A] mb-4">
@@ -64,7 +64,7 @@ export function FieldRealityPage() {
  whileInView={{ opacity: 1, y: 0 }}
  viewport={{ once: true }}
  transition={{ duration: 0.5, delay: num * 0.05 }}
- className="bg-[#FDFBF7] p-8 border border-gray-150 rounded-sm shadow-xs hover:shadow-md hover:border-[#48C3B4]/30 transition-all duration-300 flex flex-col gap-3"
+ className="bg-light-gray p-8 border border-gray-150 rounded-sm shadow-xs hover:shadow-md hover:border-inst-blue/30 transition-all duration-300 flex flex-col gap-3"
  >
  <h4 className="text-lg font-heading font-semibold text-[#1A1A1A]">
  {t(`gcn.challenges.c${num}.title`)}

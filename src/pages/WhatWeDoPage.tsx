@@ -91,11 +91,11 @@ export function WhatWeDoPage() {
  ];
 
  return (
- <main className="min-h-screen bg-[#FDFBF7] font-sans selection:bg-[#48C3B4] selection:text-white flex flex-col">
+ <main className="min-h-screen bg-light-gray font-sans selection:bg-inst-blue selection:text-white flex flex-col">
  <GCNNavigation />
 
  {/* Hero Section */}
- <section className="pt-40 pb-20 md:pt-48 md:pb-28 bg-[#1A1A1A] text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[40vh]">
+ <section className="pt-40 pb-20 md:pt-48 md:pb-28 bg-charcoal text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[60vh]">
  <div 
  className="absolute inset-0 z-0 opacity-10 pointer-events-none" 
  style={{ 
@@ -106,7 +106,7 @@ export function WhatWeDoPage() {
  filter: 'invert(1) brightness(2)'
  }}
  ></div>
- <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1A1A1A] z-0 opacity-80 pointer-events-none"></div>
+ <div className="absolute inset-0 bg-gradient-to-b from-transparent to-charcoal z-0 opacity-80 pointer-events-none"></div>
 
  <div className="w-full max-w-5xl mx-auto relative z-10 text-center">
  <motion.div
@@ -114,7 +114,7 @@ export function WhatWeDoPage() {
  animate={{ opacity: 1, y: 0 }}
  transition={{ duration: 0.8, ease: "easeOut" }}
  >
- <span className="text-[#48C3B4] uppercase tracking-widest text-xs font-semibold mb-2 block">
+ <span className="text-inst-blue uppercase tracking-[0.25em] text-xs font-bold mb-2 block">
  {t('gcn.nav.what')}
  </span>
  <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading tracking-tight leading-[1.2] mb-6">
@@ -142,7 +142,7 @@ export function WhatWeDoPage() {
  transition={{ duration: 0.6, delay: idx * 0.05 }}
  className="bg-[#FAFAFA] border border-gray-100 p-8 hover:bg-white hover:shadow-md transition-all duration-300 flex gap-5 items-start rounded-sm"
  >
- <div className="w-12 h-12 bg-[#48C3B4]/10 flex items-center justify-center rounded-full text-[#48C3B4] shrink-0">
+ <div className="w-12 h-12 bg-inst-blue/10 flex items-center justify-center rounded-full text-inst-blue shrink-0">
  <area.icon className="w-6 h-6" strokeWidth={1.5} />
  </div>
  <div>

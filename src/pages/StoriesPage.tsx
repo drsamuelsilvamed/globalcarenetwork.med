@@ -8,17 +8,17 @@ import { useLanguage } from "../context/LanguageContext";
 export function StoriesPage() {
   const { t } = useLanguage();
   return (
-    <div className="bg-light-gray min-h-screen font-body">
+    <div className="bg-light-gray min-h-screen font-sans">
       {" "}
       <GCNNavigation /> {/* Hero */}{" "}
-      <section className="pt-32 pb-20 px-6 md:px-12 bg-[#1A365D] text-white">
+      <section className="pt-32 pb-20 px-6 md:px-12 bg-charcoal text-white">
         {" "}
         <div className="max-w-4xl mx-auto text-center">
           {" "}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-institutional font-bold mb-6 text-mustard"
+            className="text-4xl md:text-5xl font-heading font-bold mb-6 text-mustard"
           >
             {" "}
             {t("stories.hero.title")}{" "}
@@ -49,8 +49,8 @@ export function StoriesPage() {
               className="bg-light-gray p-10 rounded-sm border border-light-gray h-full flex flex-col transition-all hover: hover:border-[#B8872C]"
             >
               {" "}
-              <HeartPulse className="w-12 h-12 text-[#2C82C9] mb-6" />{" "}
-              <h2 className="text-3xl font-institutional font-bold text-[#1A365D] mb-4">
+              <HeartPulse className="w-12 h-12 text-inst-blue mb-6" />{" "}
+              <h2 className="text-3xl font-heading font-bold text-charcoal mb-4">
                 {t("stories.patients.title")}
               </h2>{" "}
               <p className="text-gray-600 mb-8 flex-grow">
@@ -76,7 +76,7 @@ export function StoriesPage() {
             >
               {" "}
               <FileText className="w-12 h-12 text-inst-blue mb-6" />{" "}
-              <h2 className="text-3xl font-institutional font-bold text-[#1A365D] mb-4">
+              <h2 className="text-3xl font-heading font-bold text-charcoal mb-4">
                 {t("stories.reality.title")}
               </h2>{" "}
               <p className="text-gray-600 mb-8 flex-grow">

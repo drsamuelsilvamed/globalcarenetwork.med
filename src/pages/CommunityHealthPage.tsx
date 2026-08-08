@@ -8,17 +8,17 @@ import { useLanguage } from "../context/LanguageContext";
 export function CommunityHealthPage() {
   const { t } = useLanguage();
   return (
-    <div className="bg-light-gray min-h-screen font-body">
+    <div className="bg-light-gray min-h-screen font-sans">
       {" "}
       <GCNNavigation /> {/* Hero */}{" "}
-      <section className="pt-32 pb-20 px-6 md:px-12 bg-[#1A365D] text-white">
+      <section className="pt-32 pb-20 px-6 md:px-12 bg-charcoal text-white">
         {" "}
         <div className="max-w-4xl mx-auto text-center">
           {" "}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-institutional font-bold mb-6 text-mustard"
+            className="text-4xl md:text-5xl font-heading font-bold mb-6 text-mustard"
           >
             {" "}
             {t("health.hero.title")}{" "}
@@ -41,7 +41,7 @@ export function CommunityHealthPage() {
           {" "}
           <div className="text-center mb-16">
             {" "}
-            <h2 className="text-3xl font-institutional font-bold text-[#1A365D] mb-4">
+            <h2 className="text-3xl font-heading font-bold text-charcoal mb-4">
               {t("health.pillars.title")}
             </h2>{" "}
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -63,7 +63,7 @@ export function CommunityHealthPage() {
             <div className="bg-light-gray p-8 rounded-sm border-t-4 border-inst-blue shadow-sm">
               {" "}
               <ShieldAlert className="w-10 h-10 text-inst-blue mb-4" />{" "}
-              <h3 className="text-xl font-bold text-[#1A365D] mb-3">
+              <h3 className="text-xl font-bold text-charcoal mb-3">
                 {t("health.p1.title")}
               </h3>{" "}
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -74,7 +74,7 @@ export function CommunityHealthPage() {
             <div className="bg-light-gray p-8 rounded-sm border-t-4 border-[#E91E63] shadow-sm">
               {" "}
               <HeartPulse className="w-10 h-10 text-[#E91E63] mb-4" />{" "}
-              <h3 className="text-xl font-bold text-[#1A365D] mb-3">
+              <h3 className="text-xl font-bold text-charcoal mb-3">
                 {t("health.p2.title")}
               </h3>{" "}
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -84,8 +84,8 @@ export function CommunityHealthPage() {
             </div>{" "}
             <div className="bg-light-gray p-8 rounded-sm border-t-4 border-[#2C82C9] shadow-sm">
               {" "}
-              <Activity className="w-10 h-10 text-[#2C82C9] mb-4" />{" "}
-              <h3 className="text-xl font-bold text-[#1A365D] mb-3">
+              <Activity className="w-10 h-10 text-inst-blue mb-4" />{" "}
+              <h3 className="text-xl font-bold text-charcoal mb-3">
                 {t("health.p3.title")}
               </h3>{" "}
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -103,7 +103,7 @@ export function CommunityHealthPage() {
           {" "}
           <div className="flex-1 space-y-6">
             {" "}
-            <h2 className="text-3xl font-institutional font-bold text-[#1A365D]">
+            <h2 className="text-3xl font-heading font-bold text-charcoal">
               {" "}
               Estrategia CHE <br />{" "}
               <span className="text-mustard text-2xl">
@@ -140,7 +140,7 @@ export function CommunityHealthPage() {
               </li>{" "}
               <li className="flex items-start gap-3 text-gray-700">
                 {" "}
-                <Activity className="w-5 h-5 text-[#2C82C9] shrink-0 mt-0.5" />{" "}
+                <Activity className="w-5 h-5 text-inst-blue shrink-0 mt-0.5" />{" "}
                 <span>
                   Desarrollo comunitario sostenible a largo plazo.
                 </span>{" "}
@@ -152,7 +152,7 @@ export function CommunityHealthPage() {
                 href="https://chenetwork.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#1A365D] hover:bg-[#112440] text-white px-6 py-3 rounded-md font-bold tracking-wider uppercase text-xs transition-colors"
+                className="inline-block bg-charcoal hover:bg-[#112440] text-white px-6 py-3 rounded-sm font-bold tracking-wider uppercase text-xs transition-colors"
               >
                 {" "}
                 Conoce más sobre CHE Network{" "}

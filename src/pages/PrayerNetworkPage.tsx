@@ -47,17 +47,17 @@ export function PrayerNetworkPage() {
     },
   ];
   return (
-    <div className="bg-light-gray min-h-screen font-body">
+    <div className="bg-light-gray min-h-screen font-sans">
       {" "}
       <GCNNavigation /> {/* Hero */}{" "}
-      <section className="pt-32 pb-20 px-6 md:px-12 bg-[#1A365D] text-white">
+      <section className="pt-32 pb-20 px-6 md:px-12 bg-charcoal text-white">
         {" "}
         <div className="max-w-4xl mx-auto text-center">
           {" "}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-institutional font-bold mb-6 text-mustard"
+            className="text-4xl md:text-5xl font-heading font-bold mb-6 text-mustard"
           >
             {" "}
             {t("prayer.hero.title")}{" "}
@@ -84,7 +84,7 @@ export function PrayerNetworkPage() {
           <div className="flex items-center justify-center gap-4">
             {" "}
             <Heart className="w-10 h-10 text-[#E91E63]" />{" "}
-            <span className="text-5xl font-institutional font-bold text-[#1A365D]">
+            <span className="text-5xl font-heading font-bold text-charcoal">
               {" "}
               {prayedCount.toLocaleString()}{" "}
             </span>{" "}
@@ -111,12 +111,12 @@ export function PrayerNetworkPage() {
               {" "}
               <div className="flex justify-between items-start mb-4">
                 {" "}
-                <span className="bg-[#1A365D] text-white text-xs font-bold px-3 py-1 rounded-sm uppercase tracking-wider">
+                <span className="bg-charcoal text-white text-xs font-bold px-3 py-1 rounded-sm uppercase tracking-wider">
                   {" "}
                   {req.category}{" "}
                 </span>{" "}
                 <span
-                  className={`text-xs font-opsec font-bold px-3 py-1 rounded-sm uppercase tracking-wider ${req.confidentiality === "Alta" ? "bg-[#E91E63]/10 text-[#E91E63]" : "bg-inst-blue/10 text-inst-blue"}`}
+                  className={`text-xs font-sans font-bold px-3 py-1 rounded-sm uppercase tracking-wider ${req.confidentiality === "Alta" ? "bg-[#E91E63]/10 text-[#E91E63]" : "bg-inst-blue/10 text-inst-blue"}`}
                 >
                   {" "}
                   Confidencialidad: {req.confidentiality}{" "}

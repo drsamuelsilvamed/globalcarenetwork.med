@@ -48,11 +48,11 @@ export function ResourcesPage() {
  });
 
  return (
- <main className="min-h-screen bg-[#FDFBF7] font-sans selection:bg-[#48C3B4] selection:text-white flex flex-col">
+ <main className="min-h-screen bg-light-gray font-sans selection:bg-inst-blue selection:text-white flex flex-col">
  <GCNNavigation />
 
  {/* Hero Section */}
- <section className="pt-40 pb-20 md:pt-48 md:pb-28 bg-[#1A1A1A] text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[45vh]">
+ <section className="pt-40 pb-20 md:pt-48 md:pb-28 bg-charcoal text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[60vh]">
  <div 
  className="absolute inset-0 z-0 opacity-10 pointer-events-none" 
  style={{ 
@@ -63,7 +63,7 @@ export function ResourcesPage() {
  filter: 'invert(1) brightness(2)'
  }}
  ></div>
- <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1A1A1A] z-0 opacity-80 pointer-events-none"></div>
+ <div className="absolute inset-0 bg-gradient-to-b from-transparent to-charcoal z-0 opacity-80 pointer-events-none"></div>
 
  <div className="w-full max-w-5xl mx-auto relative z-10 text-center">
  <motion.div
@@ -99,7 +99,7 @@ export function ResourcesPage() {
  onClick={() => setActiveFilter(tab.key as any)}
  className={`px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded-sm border ${
  activeFilter === tab.key 
- ? 'bg-[#48C3B4] border-[#48C3B4] text-white shadow-xs' 
+ ? 'bg-inst-blue border-inst-blue text-white shadow-xs' 
  : 'bg-white border-gray-200 text-gray-600 hover:border-gray-400'
  }`}
  >
@@ -116,7 +116,7 @@ export function ResourcesPage() {
  placeholder={t('gcn.resources.search')}
  value={searchQuery}
  onChange={(e) => setSearchQuery(e.target.value)}
- className="w-full pl-9 pr-4 py-2 border border-gray-200 rounded-sm text-sm focus:outline-hidden focus:border-[#48C3B4] focus:ring-1 focus:ring-[#48C3B4] transition-all bg-[#FAFAFA]"
+ className="w-full pl-9 pr-4 py-2 border border-gray-200 rounded-sm text-sm focus:outline-hidden focus:border-inst-blue focus:ring-1 focus:ring-[#48C3B4] transition-all bg-[#FAFAFA]"
  />
  </div>
  </div>
@@ -143,7 +143,7 @@ export function ResourcesPage() {
  )}
  <div className="p-8 flex flex-col gap-4 flex-grow">
  {!res.coverUrl && (
- <div className="w-12 h-12 bg-[#48C3B4]/10 flex items-center justify-center rounded-full text-[#48C3B4] shrink-0">
+ <div className="w-12 h-12 bg-inst-blue/10 flex items-center justify-center rounded-full text-inst-blue shrink-0">
  <res.icon className="w-6 h-6" strokeWidth={1.5} />
  </div>
  )}
@@ -173,7 +173,7 @@ export function ResourcesPage() {
  href={(res as any).pdfUrl} 
  target="_blank" 
  rel="noopener noreferrer"
- className="mt-auto pt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#48C3B4] hover:text-[#3ba598] transition-colors"
+ className="mt-auto pt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-inst-blue hover:text-inst-blue transition-colors"
  >
  <Download className="w-4 h-4" />
  Descargar PDF
@@ -183,7 +183,7 @@ export function ResourcesPage() {
  href={(res as any).externalLink} 
  target="_blank" 
  rel="noopener noreferrer"
- className="mt-auto pt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-600 hover:text-blue-700 transition-colors"
+ className="mt-auto pt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-inst-blue hover:text-blue-700 transition-colors"
  >
  <ExternalLink className="w-4 h-4" />
  Visitar Sitio Web

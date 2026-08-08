@@ -20,12 +20,12 @@ export function PatientStoriesPage() {
   ]; 
   
   return ( 
-    <div className="bg-light-gray min-h-screen font-body"> 
+    <div className="bg-light-gray min-h-screen font-sans"> 
       <GCNNavigation /> 
       {/* Hero Section */} 
-      <section className="pt-32 pb-20 px-6 md:px-12 bg-[#1A365D] text-white"> 
+      <section className="pt-32 pb-20 px-6 md:px-12 bg-charcoal text-white"> 
         <div className="max-w-6xl mx-auto text-center"> 
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-4xl md:text-5xl font-institutional font-bold mb-6 text-mustard" > 
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-4xl md:text-5xl font-heading font-bold mb-6 text-mustard" > 
             {t('patientStories.title')} 
           </motion.h1> 
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto" > 
@@ -41,14 +41,14 @@ export function PatientStoriesPage() {
               <motion.div key={story.id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.1 }} className="bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-light-gray flex flex-col" > 
                 <div className="h-48 overflow-hidden relative"> 
                   <img src={story.image} alt={`Historia en ${story.region}`} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" /> 
-                  <div className="absolute top-4 left-4 bg-inst-blue text-white text-xs font-opsec px-3 py-1 rounded-sm shadow-sm tracking-wider uppercase"> 
+                  <div className="absolute top-4 left-4 bg-inst-blue text-white text-xs font-sans px-3 py-1 rounded-sm shadow-sm tracking-wider uppercase"> 
                     {story.region} 
                   </div> 
                 </div> 
                 <div className="p-8 flex flex-col flex-grow"> 
                   <p className="text-gray-600 text-sm italic mb-6 flex-grow leading-relaxed"> "{story.content}" </p> 
                   <div className="mt-4 pt-4 border-t border-light-gray"> 
-                    <p className="text-xs font-bold text-[#1A365D] uppercase tracking-wider"> Misionero en el campo </p> 
+                    <p className="text-xs font-bold text-charcoal uppercase tracking-wider"> Misionero en el campo </p> 
                   </div> 
                 </div> 
               </motion.div> 

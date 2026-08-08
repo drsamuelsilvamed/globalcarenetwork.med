@@ -23,11 +23,11 @@ export function EducationPage() {
  ];
 
  return (
- <main className="min-h-screen bg-[#FDFBF7] font-sans selection:bg-[#48C3B4] selection:text-white flex flex-col">
+ <main className="min-h-screen bg-light-gray font-sans selection:bg-inst-blue selection:text-white flex flex-col">
  <GCNNavigation />
 
  {/* Hero Section */}
- <section className="pt-48 pb-24 md:pt-56 md:pb-32 bg-[#1A1A1A] text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[50vh]">
+ <section className="pt-48 pb-24 md:pt-56 md:pb-32 bg-charcoal text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[60vh]">
  <div 
  className="absolute inset-0 z-0 opacity-10 pointer-events-none" 
  style={{ 
@@ -38,7 +38,7 @@ export function EducationPage() {
  filter: 'invert(1) brightness(2)'
  }}
  ></div>
- <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1A1A1A] z-0 opacity-80 pointer-events-none"></div>
+ <div className="absolute inset-0 bg-gradient-to-b from-transparent to-charcoal z-0 opacity-80 pointer-events-none"></div>
 
  <div className="w-full max-w-5xl mx-auto relative z-10 text-center">
  <motion.div
@@ -86,13 +86,13 @@ export function EducationPage() {
  transition={{ duration: 0.6, delay: idx * 0.1 }}
  className="bg-white p-8 md:p-12 border border-gray-100 shadow-sm rounded-sm hover:shadow-md transition-all duration-300 flex flex-col gap-6"
  >
- <div className="w-12 h-12 bg-[#48C3B4]/10 flex items-center justify-center rounded-full text-[#48C3B4]">
+ <div className="w-12 h-12 bg-inst-blue/10 flex items-center justify-center rounded-full text-inst-blue">
  <course.icon className="w-6 h-6" strokeWidth={1.5} />
  </div>
  <h3 className="text-2xl font-heading text-[#1A1A1A]">{course.title}</h3>
  <p className="text-gray-600 font-light text-base md:text-lg leading-relaxed">{course.desc}</p>
  <div className="mt-auto pt-6 border-t border-gray-50">
- <Link to="/partnerships" className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-[#48C3B4] hover:text-[#3ba598]">
+ <Link to="/partnerships" className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-inst-blue hover:text-inst-blue">
  Inscribirse o Consultar <ArrowRight className="w-4 h-4" />
  </Link>
  </div>
@@ -106,7 +106,7 @@ export function EducationPage() {
  <footer className="bg-[#111111] text-white py-16 px-6 md:px-12 mt-auto">
  <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/10 pt-8">
  <div className="flex flex-col leading-[1.1] font-sans font-bold tracking-tighter opacity-50">
- <span className="text-white text-lg">GLOBAL <span className="text-[#48C3B4]">CARE</span></span>
+ <span className="text-white text-lg">GLOBAL <span className="text-inst-blue">CARE</span></span>
  <span className="text-white text-lg">NETWORK</span>
  </div>
  <p className="text-sm font-light text-gray-500 text-center md:text-left">&copy; {new Date().getFullYear()} Global Care Network. {t('footer.rights')}</p>

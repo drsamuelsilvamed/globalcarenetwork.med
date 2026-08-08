@@ -41,11 +41,11 @@ export function ProjectsPage() {
  ];
 
  return (
- <main className="min-h-screen bg-[#FDFBF7] font-sans selection:bg-[#48C3B4] selection:text-white flex flex-col">
+ <main className="min-h-screen bg-light-gray font-sans selection:bg-inst-blue selection:text-white flex flex-col">
  <GCNNavigation />
 
  {/* Hero Section */}
- <section className="pt-40 pb-20 md:pt-48 md:pb-28 bg-[#1A1A1A] text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[45vh]">
+ <section className="pt-40 pb-20 md:pt-48 md:pb-28 bg-charcoal text-white px-6 md:px-12 relative overflow-hidden flex items-center justify-center min-h-[60vh]">
  <div 
  className="absolute inset-0 z-0 opacity-10 pointer-events-none" 
  style={{ 
@@ -56,7 +56,7 @@ export function ProjectsPage() {
  filter: 'invert(1) brightness(2)'
  }}
  ></div>
- <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1A1A1A] z-0 opacity-80 pointer-events-none"></div>
+ <div className="absolute inset-0 bg-gradient-to-b from-transparent to-charcoal z-0 opacity-80 pointer-events-none"></div>
 
  <div className="w-full max-w-5xl mx-auto relative z-10 text-center">
  <motion.div
@@ -64,7 +64,7 @@ export function ProjectsPage() {
  animate={{ opacity: 1, y: 0 }}
  transition={{ duration: 0.8, ease: "easeOut" }}
  >
- <span className="text-[#48C3B4] uppercase tracking-widest text-xs font-semibold mb-2 block">
+ <span className="text-inst-blue uppercase tracking-widest text-xs font-semibold mb-2 block">
  Iniciativas en Desarrollo
  </span>
  <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading tracking-tight leading-[1.2] mb-6">
@@ -109,7 +109,7 @@ export function ProjectsPage() {
  {/* Header */}
  <div className="p-8 md:p-10 border-b border-gray-100 bg-[#FAFAFA] flex flex-col md:flex-row md:items-center justify-between gap-4">
  <div className="flex items-center gap-4">
- <div className="w-12 h-12 bg-[#48C3B4]/10 flex items-center justify-center rounded-full text-[#48C3B4] shrink-0">
+ <div className="w-12 h-12 bg-inst-blue/10 flex items-center justify-center rounded-full text-inst-blue shrink-0">
  <project.icon className="w-6 h-6" strokeWidth={1.5} />
  </div>
  <div>
@@ -127,7 +127,7 @@ export function ProjectsPage() {
  <div className="p-8 md:p-10 flex flex-col gap-8">
  {/* Qué problema real resuelve */}
  <div>
- <h4 className="text-xs uppercase tracking-wider font-semibold text-[#48C3B4] mb-2">
+ <h4 className="text-xs uppercase tracking-wider font-semibold text-inst-blue mb-2">
  {t('gcn.projects.headers.problem')}
  </h4>
  <p className="text-gray-700 font-light text-base md:text-lg leading-relaxed">
