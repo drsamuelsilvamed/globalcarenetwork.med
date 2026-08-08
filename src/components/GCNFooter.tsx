@@ -22,7 +22,7 @@ export function GCNFooter() {
  <img 
  src="/3-removebg-preview.png" 
  alt="Missionary Medical Care Logo" 
- className="h-16 md:h-20 object-contain self-start" 
+ className="h-20 md:h-24 lg:h-28 object-contain self-start" 
  />
  </Link>
  </div>

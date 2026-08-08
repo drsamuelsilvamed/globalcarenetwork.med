@@ -115,11 +115,11 @@ export function GCNNavigation() {
 
  {/* Main Navbar - Charcoal Theme */}
  <div className="bg-charcoal py-4 px-6 md:px-12 flex justify-between items-center border-b border-white/10">
-  <Link to="/" className="flex items-center z-50 relative shrink-0 mr-8 w-auto max-w-[280px] md:max-w-[350px] lg:w-1/3">
+  <Link to="/" className="flex items-center z-50 relative shrink-0 mr-6 w-auto max-w-[320px] md:max-w-[420px] lg:w-1/2 lg:max-w-[520px]">
     <img
       src="/3-removebg-preview.png"
       alt="Missionary Medical Care Logo"
-      className="h-14 md:h-16 lg:h-20 w-auto object-contain drop-shadow-md"
+      className="h-16 md:h-20 lg:h-24 xl:h-28 w-auto max-w-full object-contain drop-shadow-lg py-1 transition-all"
     />
   </Link>
 
