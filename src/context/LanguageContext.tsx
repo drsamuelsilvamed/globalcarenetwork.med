@@ -240,6 +240,43 @@ const translations = {
  'gcn.resources.item3.desc': 'Asistente de evaluación de síntomas impulsado por IA para orientar decisiones de salud tempranas.',
  'gcn.resources.item4.title': 'MSD Manual Consumer Version',
  'gcn.resources.item4.desc': 'Información médica clara, práctica y gratuita sobre enfermedades y tratamientos en un lenguaje accesible.',
+
+ // Board of Directors
+ 'board.hero.title': 'Junta Directiva y Liderazgo',
+ 'board.hero.subtitle': 'Un equipo comprometido con la gobernanza, la integridad médica y el cuidado integral de los misioneros.',
+ 'board.team.title': 'Nuestro Equipo Directivo',
+ 'board.team.subtitle': 'Profesionales de la salud, seguridad y cuidado pastoral sirviendo juntos.',
+
+ // Community Health
+ 'health.hero.title': 'Salud Comunitaria y Prevención',
+ 'health.hero.subtitle': 'Promoviendo el bienestar, la prevención de enfermedades y la resiliencia en las comunidades misioneras.',
+ 'health.pillars.title': 'Pilares de la Salud Comunitaria',
+ 'health.pillars.subtitle': 'Estrategias integrales para fortalecer el cuidado en el campo.',
+ 'health.p1.title': 'Prevención y Promoción',
+ 'health.p1.desc': 'Educación en hábitos saludables, saneamiento y prevención de enfermedades endémicas en el campo.',
+ 'health.p2.title': 'Atención Primaria e Integral',
+ 'health.p2.desc': 'Soporte de atención médica preventiva e intervención oportuna para misioneros y sus familias.',
+ 'health.p3.title': 'Estrategia y Capacitación',
+ 'health.p3.desc': 'Capacitación a líderes locales e iglesias para el cuidado continuo de la salud en la comunidad.',
+
+ // Donate
+ 'donate.hero.title': 'Apoya a la Red de Cuidado Misionero',
+ 'donate.hero.subtitle': 'Tu donación permite llevar atención médica, soporte emocional y protección a quienes sirven en los lugares más remotos.',
+
+ // Church Engagement
+ 'church.hero.title': 'Involucramiento de la Iglesia',
+ 'church.hero.subtitle': 'Uniendo a la iglesia local con la misión global para sostener dignamente a quienes son enviados.',
+ 'church.axes.title': 'Tres Ejes de Participación',
+ 'church.axes.pray.title': 'Orar',
+ 'church.axes.pray.desc': 'Sostener en oración continua la salud física, emocional y espiritual de los obreros.',
+ 'church.axes.give.title': 'Dar',
+ 'church.axes.give.desc': 'Aportar recursos para sostener las consultas médicas, telemedicina y logística de emergencias.',
+ 'church.axes.go.title': 'Servir / Ir',
+ 'church.axes.go.desc': 'Voluntarios profesionales de la salud que dedican su tiempo y conocimiento al servicio del campo.',
+
+ // Prayer Network
+ 'prayer.hero.title': 'Red de Intercesión y Oración',
+ 'prayer.hero.subtitle': 'Unidos en oración por la protección, sanidad y fortaleza de nuestros misioneros en todo el mundo.',
  },
  PT: {
  'nav.who': 'Quem sou',
@@ -470,6 +507,43 @@ const translations = {
  'gcn.resources.item3.desc': 'Assistente de avaliação de sintomas impulsionado por IA para orientar decisões de saúde precoces.',
  'gcn.resources.item4.title': 'MSD Manual Consumer Version',
  'gcn.resources.item4.desc': 'Informação médica clara, prática e gratuita sobre doenças e tratamentos em uma linguagem acessível.',
+
+ // Board of Directors
+ 'board.hero.title': 'Diretoria e Liderança',
+ 'board.hero.subtitle': 'Uma equipe comprometida com a governança, integridade médica e cuidado integral dos missionários.',
+ 'board.team.title': 'Nossa Equipe Diretiva',
+ 'board.team.subtitle': 'Profissionais de saúde, segurança e cuidado pastoral servindo juntos.',
+
+ // Community Health
+ 'health.hero.title': 'Saúde Comunitária e Prevenção',
+ 'health.hero.subtitle': 'Promovendo o bem-estar, prevenção de doenças e resiliência nas comunidades missionárias.',
+ 'health.pillars.title': 'Pilares da Saúde Comunitária',
+ 'health.pillars.subtitle': 'Estratégias integrais para fortalecer o cuidado em campo.',
+ 'health.p1.title': 'Prevenção e Promoção',
+ 'health.p1.desc': 'Educação em hábitos saudáveis, saneamento e prevenção de doenças endêmicas no campo.',
+ 'health.p2.title': 'Atenção Primária e Integral',
+ 'health.p2.desc': 'Suporte de atenção médica preventiva e intervenção oportuna para missionários e suas famílias.',
+ 'health.p3.title': 'Estratégia e Capacitação',
+ 'health.p3.desc': 'Capacitação de líderes locais e igrejas para o cuidado contínuo da saúde na comunidade.',
+
+ // Donate
+ 'donate.hero.title': 'Apoie a Rede de Cuidado Missionário',
+ 'donate.hero.subtitle': 'Sua doação permite levar atendimento médico, suporte emocional e proteção a quem serve nos lugares mais remotos.',
+
+ // Church Engagement
+ 'church.hero.title': 'Envolvimento da Igreja',
+ 'church.hero.subtitle': 'Unindo a igreja local à missão global para sustentar dignamente aqueles que são enviados.',
+ 'church.axes.title': 'Três Eixos de Participação',
+ 'church.axes.pray.title': 'Orar',
+ 'church.axes.pray.desc': 'Sustentar em oração contínua a saúde física, emocional e espiritual dos obreiros.',
+ 'church.axes.give.title': 'Dar',
+ 'church.axes.give.desc': 'Contribuir com recursos para sustentar consultas médicas, telemedicina e logística de emergência.',
+ 'church.axes.go.title': 'Servir / Ir',
+ 'church.axes.go.desc': 'Voluntários profissionais de saúde dedicando seu tempo e conhecimento ao serviço do campo.',
+
+ // Prayer Network
+ 'prayer.hero.title': 'Rede de Intercessão e Oração',
+ 'prayer.hero.subtitle': 'Unidos em oração pela proteção, cura e fortalecimento dos nossos missionários no mundo todo.',
  },
  EN: {
  'nav.who': 'Who I am',
@@ -700,6 +774,43 @@ const translations = {
  'gcn.resources.item3.desc': 'AI-powered symptom assessment assistant to guide early health decisions.',
  'gcn.resources.item4.title': 'MSD Manual Consumer Version',
  'gcn.resources.item4.desc': 'Clear, practical, and free medical information on diseases and treatments in accessible language.',
+
+ // Board of Directors
+ 'board.hero.title': 'Board of Directors & Leadership',
+ 'board.hero.subtitle': 'A team committed to governance, medical integrity, and holistic care for missionaries.',
+ 'board.team.title': 'Our Leadership Team',
+ 'board.team.subtitle': 'Healthcare, security, and pastoral care professionals serving together.',
+
+ // Community Health
+ 'health.hero.title': 'Community Health & Prevention',
+ 'health.hero.subtitle': 'Promoting well-being, disease prevention, and resilience in missionary communities.',
+ 'health.pillars.title': 'Pillars of Community Health',
+ 'health.pillars.subtitle': 'Comprehensive strategies to strengthen care in the field.',
+ 'health.p1.title': 'Prevention & Promotion',
+ 'health.p1.desc': 'Education on healthy habits, sanitation, and prevention of endemic diseases in the field.',
+ 'health.p2.title': 'Primary & Holistic Care',
+ 'health.p2.desc': 'Preventive healthcare support and timely intervention for missionaries and their families.',
+ 'health.p3.title': 'Strategy & Training',
+ 'health.p3.desc': 'Training local leaders and churches for continuous community health care.',
+
+ // Donate
+ 'donate.hero.title': 'Support the Missionary Care Network',
+ 'donate.hero.subtitle': 'Your donation enables us to provide medical care, emotional support, and protection to those serving in remote areas.',
+
+ // Church Engagement
+ 'church.hero.title': 'Church Engagement',
+ 'church.hero.subtitle': 'Connecting the local church with global missions to sustainably care for those who are sent.',
+ 'church.axes.title': 'Three Axes of Engagement',
+ 'church.axes.pray.title': 'Pray',
+ 'church.axes.pray.desc': 'Sustain the physical, emotional, and spiritual health of workers through continuous prayer.',
+ 'church.axes.give.title': 'Give',
+ 'church.axes.give.desc': 'Provide financial support for medical consultations, telehealth, and emergency logistics.',
+ 'church.axes.go.title': 'Serve / Go',
+ 'church.axes.go.desc': 'Healthcare professional volunteers contributing their time and knowledge to field service.',
+
+ // Prayer Network
+ 'prayer.hero.title': 'Prayer & Intercession Network',
+ 'prayer.hero.subtitle': 'United in prayer for the protection, healing, and strength of our missionaries worldwide.',
  }
 };
 

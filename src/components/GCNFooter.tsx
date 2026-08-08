@@ -59,7 +59,6 @@ export function GCNFooter() {
  <li><Link to="/what-we-do" className="hover:text-white transition-colors">{getTranslation('Qué Hacemos', 'O Que Fazemos', 'What We Do')}</Link></li>
  <li><Link to="/community-health" className="hover:text-white transition-colors">{getTranslation('Salud Comunitaria', 'Saúde Comunitária', 'Community Health')}</Link></li>
  <li><Link to="/telemedicine" className="hover:text-white transition-colors">{getTranslation('Telemedicina', 'Telemedicina', 'Telemedicine')}</Link></li>
- <li><Link to="/education" className="hover:text-white transition-colors">{getTranslation('Educación', 'Educação', 'Education')}</Link></li>
  </ul>
  </div>
 
