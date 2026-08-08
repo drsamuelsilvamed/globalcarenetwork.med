@@ -63,6 +63,7 @@ export default function App() {
           <Route path="/community-health" element={<CommunityHealthPage />} />
           <Route path="/telemedicine" element={<TelemedicinePage />} />
           <Route path="/reality" element={<FieldRealityPage />} />
+          <Route path="/realitys" element={<FieldRealityPage />} />
           <Route path="/digital-health" element={<DigitalHealthPage />} />
 
           {/* PILAR 3: PARTICIPA */}
