@@ -18,11 +18,13 @@ export function GCNFooter() {
  {/* Col 1: Brand / Identity */}
  <div className="lg:col-span-2 space-y-6">
  <div className="flex flex-col">
+ <Link to="/">
  <img 
- src="/images/youtube-logo.png" 
+ src="/3-removebg-preview.png" 
  alt="Missionary Medical Care Logo" 
- className="h-14 object-contain brightness-0 invert self-start" 
+ className="h-12 md:h-14 object-contain self-start" 
  />
+ </Link>
  </div>
  <p className="text-gray-400 text-sm font-light leading-relaxed max-w-sm">
  {getTranslation(

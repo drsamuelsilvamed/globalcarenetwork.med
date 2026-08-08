@@ -59,22 +59,20 @@ export function AboutGCNPage() {
           >
             {" "}
             <span className="text-inst-blue uppercase tracking-[0.25em] text-xs font-bold block">
-              {" "}
-              {getTranslation("WHO WE ARE", "QUEM SOMOS", "WHO WE ARE")}{" "}
-            </span>{" "}
+              {getTranslation("QUIÉNES SOMOS", "QUEM SOMOS", "WHO WE ARE")}
+            </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading tracking-tight leading-[1.1] text-white">
-              {" "}
               {getTranslation(
-                "BUILT FROM SERVICE. ",
+                "CONSTRUIDA EN EL SERVICIO. ",
                 "CONSTRUÍDA NO SERVIÇO. ",
                 "BUILT FROM SERVICE. ",
-              )}{" "}
-              <br className="hidden md:block" />{" "}
+              )}
+              <br className="hidden md:block" />
               {getTranslation(
-                "GUIDED BY CONVICTION.",
+                "GUIADA POR LA CONVICCIÓN.",
                 "GUIADA PELA CONVICÇÃO.",
                 "GUIDED BY CONVICTION.",
-              )}{" "}
+              )}
             </h1>{" "}
             <p className="text-xl md:text-2xl font-light text-gray-300 max-w-3xl mx-auto leading-relaxed pt-2">
               {" "}

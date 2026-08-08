@@ -152,6 +152,15 @@ export function GCNNavigation() {
 
  {/* Right Action Buttons */}
  <div className="hidden lg:flex items-center gap-4 shrink-0 ml-4">
+ <a 
+ href="https://www.instagram.com/missionarymedicalcare/" 
+ target="_blank" 
+ rel="noopener noreferrer" 
+ className="w-9 h-9 border border-white/20 rounded-sm flex items-center justify-center text-gray-300 hover:bg-mustard hover:text-charcoal hover:border-mustard transition-all" 
+ aria-label="Instagram"
+ >
+ <Instagram size={18} />
+ </a>
  <Link 
  to="/donate" 
  className="bg-mustard text-charcoal px-6 py-2.5 rounded-sm font-bold text-xs uppercase tracking-widest hover:bg-[#a07424] hover:text-white transition-all whitespace-nowrap"
