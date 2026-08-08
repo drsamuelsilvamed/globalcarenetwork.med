@@ -277,6 +277,14 @@ const translations = {
  // Prayer Network
  'prayer.hero.title': 'Red de Intercesión y Oración',
  'prayer.hero.subtitle': 'Unidos en oración por la protección, sanidad y fortaleza de nuestros misioneros en todo el mundo.',
+
+ // Get Involved Hub
+ 'hub.hero.title': 'Participa con Nosotros',
+ 'hub.hero.subtitle': 'Únete a la red global de apoyo, voluntariado e intercesión para sostener la misión en el campo.',
+
+ // Stories & Impact
+ 'stories.hero.title': 'Historias e Impacto',
+ 'stories.hero.subtitle': 'Testimonios reales del cuidado integral y el acompañamiento a misioneros en el campo.',
  },
  PT: {
  'nav.who': 'Quem sou',
@@ -541,9 +549,17 @@ const translations = {
  'church.axes.go.title': 'Servir / Ir',
  'church.axes.go.desc': 'Voluntários profissionais de saúde dedicando seu tempo e conhecimento ao serviço do campo.',
 
- // Prayer Network
- 'prayer.hero.title': 'Rede de Intercessão e Oração',
- 'prayer.hero.subtitle': 'Unidos em oração pela proteção, cura e fortalecimento dos nossos missionários no mundo todo.',
+  // Prayer Network
+  'prayer.hero.title': 'Rede de Intercessão e Oração',
+  'prayer.hero.subtitle': 'Unidos em oração pela proteção, cura e fortalecimento dos nossos missionários no mundo todo.',
+
+  // Get Involved Hub
+  'hub.hero.title': 'Participe Conosco',
+  'hub.hero.subtitle': 'Junte-se à rede global de apoio, voluntariado e intercessão para sustentar a missão no campo.',
+
+  // Stories & Impact
+  'stories.hero.title': 'Histórias e Impacto',
+  'stories.hero.subtitle': 'Testemunhos reais do cuidado integral e acompanhamento de missionários no campo.',
  },
  EN: {
  'nav.who': 'Who I am',
@@ -811,6 +827,14 @@ const translations = {
  // Prayer Network
  'prayer.hero.title': 'Prayer & Intercession Network',
  'prayer.hero.subtitle': 'United in prayer for the protection, healing, and strength of our missionaries worldwide.',
+
+ // Get Involved Hub
+ 'hub.hero.title': 'Get Involved With Us',
+ 'hub.hero.subtitle': 'Join the global network of support, volunteering, and intercession to sustain mission work in the field.',
+
+ // Stories & Impact
+ 'stories.hero.title': 'Stories & Impact',
+ 'stories.hero.subtitle': 'Real testimonies of holistic care and accompaniment for missionaries in the field.',
  }
 };
 

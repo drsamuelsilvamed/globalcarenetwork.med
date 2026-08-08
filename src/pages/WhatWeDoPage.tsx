@@ -85,7 +85,7 @@ export function WhatWeDoPage() {
             </p>
             <p className="text-lg md:text-xl font-light text-gray-300 max-w-3xl mx-auto leading-relaxed pt-2">
               {getTranslation(
-                "Missionary Medical Care desarrolla una red de cuidado que integra a profesionales de la salud, tecnología, educación, iglesias y aliados para fortalecer la salud y la permanencia de misioneros y trabajadores transculturales.",
+                "Missionary Medical Care desarrolla una red de cuidado que integra profesionales de la salud, tecnología, educación, iglesias y aliados para fortalecer la salud y la permanencia de misioneros y trabajadores transculturales.",
                 "A Missionary Medical Care desenvolve uma rede de cuidado que integra profissionais de saúde, tecnologia, educação, igrejas e parceiros para fortalecer a saúde e a permanência de missionários e trabalhadores transculturais.",
                 "Missionary Medical Care develops a care network that integrates healthcare professionals, technology, education, churches, and partners to strengthen the health and retention of missionaries and cross-cultural workers."
               )}
@@ -95,7 +95,7 @@ export function WhatWeDoPage() {
                 href="#our-work"
                 className="w-full sm:w-auto px-8 py-4 bg-inst-blue text-white font-bold text-xs tracking-widest uppercase transition-colors rounded-sm shadow-sm hover:bg-inst-blue/90"
               >
-                {getTranslation("EXPLORAR NUESTRO TRABAJO", "EXPLORE NOSSO TRABALHO", "EXPLORE OUR WORK")}
+                {getTranslation("EXPLORAR NUESTRO TRABAJO", "EXPLORAR NOSSO TRABALHO", "EXPLORE OUR WORK")}
               </a>
               <Link
                 to="/volunteer"
@@ -152,7 +152,7 @@ export function WhatWeDoPage() {
               {getTranslation("ÁREAS DE TRABAJO", "ÁREAS DE ATUAÇÃO", "AREAS OF WORK")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              Our Work
+              {getTranslation("Nuestro Trabajo", "Nosso Trabalho", "Our Work")}
             </h2>
             <p className="text-mustard font-heading font-medium text-xl">
               {getTranslation(
@@ -174,7 +174,9 @@ export function WhatWeDoPage() {
             <motion.div variants={fadeUp} className="bg-white p-8 rounded-sm border border-light-gray flex flex-col justify-between hover:border-inst-blue transition-all group shadow-sm">
               <div className="space-y-4">
                 <HeartPulse className="w-10 h-10 text-inst-blue" strokeWidth={1.5} />
-                <h3 className="text-xl font-heading font-bold text-charcoal">Medical Care</h3>
+                <h3 className="text-xl font-heading font-bold text-charcoal">
+                  {getTranslation("Atención Médica", "Cuidados Médicos", "Medical Care")}
+                </h3>
                 <p className="text-gray-600 font-light text-sm leading-relaxed">
                   {getTranslation(
                     "Cuidado médico y orientación profesional para misioneros, trabajadores transculturales y sus familias, especialmente cuando el acceso local es limitado.",
@@ -194,7 +196,9 @@ export function WhatWeDoPage() {
             <motion.div variants={fadeUp} className="bg-white p-8 rounded-sm border border-light-gray flex flex-col justify-between hover:border-inst-blue transition-all group shadow-sm">
               <div className="space-y-4">
                 <Video className="w-10 h-10 text-inst-blue" strokeWidth={1.5} />
-                <h3 className="text-xl font-heading font-bold text-charcoal">Missionary Telemedicine</h3>
+                <h3 className="text-xl font-heading font-bold text-charcoal">
+                  {getTranslation("Telemedicina Misionera", "Telemedicina Missionária", "Missionary Telemedicine")}
+                </h3>
                 <p className="text-gray-600 font-light text-sm leading-relaxed">
                   {getTranslation(
                     "Conectamos misioneros con profesionales de la salud mediante telemedicina, acercando orientación, evaluación y seguimiento incluso en la distancia.",
@@ -214,7 +218,9 @@ export function WhatWeDoPage() {
             <motion.div variants={fadeUp} className="bg-white p-8 rounded-sm border border-light-gray flex flex-col justify-between hover:border-inst-blue transition-all group shadow-sm">
               <div className="space-y-4">
                 <Brain className="w-10 h-10 text-inst-blue" strokeWidth={1.5} />
-                <h3 className="text-xl font-heading font-bold text-charcoal">Mental Health & Resilience</h3>
+                <h3 className="text-xl font-heading font-bold text-charcoal">
+                  {getTranslation("Salud Mental y Resiliencia", "Saúde Mental e Resiliência", "Mental Health & Resilience")}
+                </h3>
                 <p className="text-gray-600 font-light text-sm leading-relaxed">
                   {getTranslation(
                     "Apoyamos la salud emocional y la resiliencia de los misioneros y sus familias ante los desafíos asociados a la vida transcultural.",
@@ -234,7 +240,9 @@ export function WhatWeDoPage() {
             <motion.div variants={fadeUp} className="bg-white p-8 rounded-sm border border-light-gray flex flex-col justify-between hover:border-inst-blue transition-all group shadow-sm">
               <div className="space-y-4">
                 <Globe className="w-10 h-10 text-inst-blue" strokeWidth={1.5} />
-                <h3 className="text-xl font-heading font-bold text-charcoal">Global Health</h3>
+                <h3 className="text-xl font-heading font-bold text-charcoal">
+                  {getTranslation("Salud Global", "Saúde Global", "Global Health")}
+                </h3>
                 <p className="text-gray-600 font-light text-sm leading-relaxed">
                   {getTranslation(
                     "Integramos principios de salud global, medicina intercultural y prevención para apoyar a profesionales y comunidades en diferentes contextos.",
@@ -254,7 +262,9 @@ export function WhatWeDoPage() {
             <motion.div variants={fadeUp} className="bg-white p-8 rounded-sm border border-light-gray flex flex-col justify-between hover:border-inst-blue transition-all group shadow-sm">
               <div className="space-y-4">
                 <BookOpen className="w-10 h-10 text-inst-blue" strokeWidth={1.5} />
-                <h3 className="text-xl font-heading font-bold text-charcoal">Training & Education</h3>
+                <h3 className="text-xl font-heading font-bold text-charcoal">
+                  {getTranslation("Capacitación y Educación", "Capacitação e Educação", "Training & Education")}
+                </h3>
                 <p className="text-gray-600 font-light text-sm leading-relaxed">
                   {getTranslation(
                     "Ofrecemos capacitación para profesionales, misioneros, iglesias y equipos que desean servir con mayor preparación clínica e intercultural.",
@@ -265,7 +275,7 @@ export function WhatWeDoPage() {
               </div>
               <div className="pt-6">
                 <Link to="/resources" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-inst-blue group-hover:text-charcoal transition-colors">
-                  {getTranslation("EXPLORAR CAPACITACIÓN", "EXPLORE CAPACITAÇÃO", "EXPLORE TRAINING")} <ArrowRight className="w-4 h-4" />
+                  {getTranslation("EXPLORAR CAPACITACIÓN", "EXPLORAR CAPACITAÇÃO", "EXPLORE TRAINING")} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </motion.div>
@@ -274,7 +284,9 @@ export function WhatWeDoPage() {
             <motion.div variants={fadeUp} className="bg-white p-8 rounded-sm border border-light-gray flex flex-col justify-between hover:border-inst-blue transition-all group shadow-sm">
               <div className="space-y-4">
                 <Cpu className="w-10 h-10 text-inst-blue" strokeWidth={1.5} />
-                <h3 className="text-xl font-heading font-bold text-charcoal">Technology & Innovation</h3>
+                <h3 className="text-xl font-heading font-bold text-charcoal">
+                  {getTranslation("Tecnología e Innovación", "Tecnologia e Inovação", "Technology & Innovation")}
+                </h3>
                 <p className="text-gray-600 font-light text-sm leading-relaxed">
                   {getTranslation(
                     "Desarrollamos y utilizamos tecnología para ampliar el acceso al conocimiento, facilitar conexiones y fortalecer la continuidad del cuidado.",
@@ -285,7 +297,7 @@ export function WhatWeDoPage() {
               </div>
               <div className="pt-6">
                 <Link to="/digital-health" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-inst-blue group-hover:text-charcoal transition-colors">
-                  {getTranslation("EXPLORAR TECNOLOGÍA", "EXPLORE TECNOLOGIA", "EXPLORE TECHNOLOGY")} <ArrowRight className="w-4 h-4" />
+                  {getTranslation("EXPLORAR TECNOLOGÍA", "EXPLORAR TECNOLOGIA", "EXPLORE TECHNOLOGY")} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </motion.div>
@@ -294,7 +306,9 @@ export function WhatWeDoPage() {
             <motion.div variants={fadeUp} className="bg-white p-8 rounded-sm border border-light-gray flex flex-col justify-between hover:border-inst-blue transition-all group shadow-sm">
               <div className="space-y-4">
                 <ShieldCheck className="w-10 h-10 text-inst-blue" strokeWidth={1.5} />
-                <h3 className="text-xl font-heading font-bold text-charcoal">Secure Telehealth</h3>
+                <h3 className="text-xl font-heading font-bold text-charcoal">
+                  {getTranslation("Telesalud Segura", "Telessaúde Segura", "Secure Telehealth")}
+                </h3>
                 <p className="text-gray-600 font-light text-sm leading-relaxed">
                   {getTranslation(
                     "Diseñamos soluciones de telemedicina considerando la privacidad, protección de datos y seguridad operacional en contextos de riesgo.",
@@ -314,7 +328,9 @@ export function WhatWeDoPage() {
             <motion.div variants={fadeUp} className="bg-white p-8 rounded-sm border border-light-gray flex flex-col justify-between hover:border-inst-blue transition-all group shadow-sm">
               <div className="space-y-4">
                 <Users className="w-10 h-10 text-inst-blue" strokeWidth={1.5} />
-                <h3 className="text-xl font-heading font-bold text-charcoal">Volunteer Network</h3>
+                <h3 className="text-xl font-heading font-bold text-charcoal">
+                  {getTranslation("Red de Voluntarios", "Rede de Voluntários", "Volunteer Network")}
+                </h3>
                 <p className="text-gray-600 font-light text-sm leading-relaxed">
                   {getTranslation(
                     "Conectamos a profesionales dispuestos a utilizar sus conocimientos y habilidades para servir más allá de las fronteras geográficas.",
@@ -343,7 +359,7 @@ export function WhatWeDoPage() {
               {getTranslation("NUESTRA NATURALEZA", "NOSSA NATUREZA", "OUR NATURE")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              More Than a Service
+              {getTranslation("Más que un Servicio", "Mais que um Serviço", "More Than a Service")}
             </h2>
             <p className="text-charcoal text-lg font-light max-w-2xl mx-auto">
               {getTranslation(
@@ -396,7 +412,7 @@ export function WhatWeDoPage() {
                 {getTranslation("Tecnología", "Tecnologia", "Technology")}
               </h3>
               <p className="text-gray-600 text-sm font-light">
-                {getTranslation("Apremia personas y conocimiento médico.", "Aproxima pessoas e conhecimento.", "Bridges people and medical knowledge.")}
+                {getTranslation("Aproxima personas y conocimiento médico.", "Aproxima pessoas e conhecimento.", "Bridges people and medical knowledge.")}
               </p>
             </div>
 
@@ -422,7 +438,7 @@ export function WhatWeDoPage() {
               {getTranslation("ESTRUCTURA DE RED", "ESTRUTURA DE REDE", "NETWORK ARCHITECTURE")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-white leading-tight">
-              The MMC Ecosystem
+              {getTranslation("El Ecosistema MMC", "O Ecossistema MMC", "The MMC Ecosystem")}
             </h2>
             <p className="text-gray-300 font-light text-lg">
               {getTranslation(
@@ -448,16 +464,16 @@ export function WhatWeDoPage() {
             {/* Grid of connected participants */}
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 w-full text-center">
               {[
-                "Missionaries",
-                "Families",
-                "Healthcare Professionals",
-                "Mental Health Professionals",
-                "Churches",
-                "Mission Organizations",
-                "Hospitals",
-                "Technology Partners",
-                "Educators",
-                "Volunteers",
+                getTranslation("Misioneros", "Missionários", "Missionaries"),
+                getTranslation("Familias", "Famílias", "Families"),
+                getTranslation("Profesionales de Salud", "Profissionais de Saúde", "Healthcare Professionals"),
+                getTranslation("Salud Mental", "Saúde Mental", "Mental Health Professionals"),
+                getTranslation("Iglesias", "Igrejas", "Churches"),
+                getTranslation("Organizaciones Misioneras", "Organizações Missionárias", "Mission Organizations"),
+                getTranslation("Hospitales", "Hospitais", "Hospitals"),
+                getTranslation("Aliados Tecnológicos", "Parceiros de Tecnologia", "Technology Partners"),
+                getTranslation("Educadores", "Educadores", "Educators"),
+                getTranslation("Voluntarios", "Voluntários", "Volunteers"),
               ].map((participant, idx) => (
                 <div
                   key={idx}
@@ -481,7 +497,11 @@ export function WhatWeDoPage() {
               {getTranslation("TELESALUD MISIONERA", "TELESSAÚDE MISSIONÁRIA", "MISSIONARY TELEHEALTH")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              When Distance Becomes a Barrier, Care Can Still Connect.
+              {getTranslation(
+                "Cuando la distancia es una barrera, el cuidado aún puede conectar.",
+                "Quando a distância se torna uma barreira, o cuidado ainda pode conectar.",
+                "When Distance Becomes a Barrier, Care Can Still Connect."
+              )}
             </h2>
           </div>
 
@@ -515,7 +535,7 @@ export function WhatWeDoPage() {
                 to="/telemedicine"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-inst-blue text-white font-bold text-xs tracking-widest uppercase rounded-sm hover:bg-inst-blue/90 transition-colors"
               >
-                Explore Missionary Telemedicine <ArrowRight className="w-4 h-4" />
+                {getTranslation("Explorar Telemedicina Misionera", "Explorar Telemedicina Missionária", "Explore Missionary Telemedicine")} <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
@@ -532,7 +552,7 @@ export function WhatWeDoPage() {
               {getTranslation("SALUD INTEGRAL", "SAÚDE INTEGRAL", "WHOLE-PERSON CARE")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              Caring Beyond Medicine
+              {getTranslation("Cuidar Más Allá de la Medicina", "Cuidar Além da Medicina", "Caring Beyond Medicine")}
             </h2>
             <p className="text-charcoal text-lg font-light">
               {getTranslation(
@@ -546,7 +566,7 @@ export function WhatWeDoPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: "Physical Health",
+                title: getTranslation("Salud Física", "Saúde Física", "Physical Health"),
                 desc: getTranslation(
                   "Prevención, diagnóstico y tratamiento médico adecuado en el campo.",
                   "Prevenção, diagnóstico e tratamento médico adequado em campo.",
@@ -555,7 +575,7 @@ export function WhatWeDoPage() {
                 icon: HeartPulse,
               },
               {
-                title: "Mental Health",
+                title: getTranslation("Salud Mental", "Saúde Mental", "Mental Health"),
                 desc: getTranslation(
                   "Apoyo psicológico para prevenir burnout y manejar el estrés.",
                   "Apoio psicológico para prevenir burnout e gerenciar o estresse.",
@@ -564,7 +584,7 @@ export function WhatWeDoPage() {
                 icon: Brain,
               },
               {
-                title: "Family",
+                title: getTranslation("Familia", "Família", "Family"),
                 desc: getTranslation(
                   "Acompañamiento a cónyuges e hijos en la vivencia transcultural.",
                   "Acompanhamento a cônjuges e filhos na vivência transcultural.",
@@ -573,16 +593,16 @@ export function WhatWeDoPage() {
                 icon: Users,
               },
               {
-                title: "Spiritual Care",
+                title: getTranslation("Cuidado Espiritual", "Cuidado Espiritual", "Spiritual Care"),
                 desc: getTranslation(
-                  "Sostén pastoral y pastoral de salud en sintonía con la fe.",
+                  "Sostén pastoral y espiritual alineado a la fe y la vocación.",
                   "Suporte pastoral e espiritual alinhado à fé e vocação.",
                   "Pastoral and spiritual support aligned with faith and vocation."
                 ),
                 icon: HeartHandshake,
               },
               {
-                title: "Cultural Context",
+                title: getTranslation("Contexto Cultural", "Contexto Cultural", "Cultural Context"),
                 desc: getTranslation(
                   "Comprensión de las dinámicas sociales y lingüísticas locales.",
                   "Compreensão das dinâmicas sociais e linguísticas locais.",
@@ -591,7 +611,7 @@ export function WhatWeDoPage() {
                 icon: Compass,
               },
               {
-                title: "Resilience",
+                title: getTranslation("Resiliencia", "Resiliência", "Resilience"),
                 desc: getTranslation(
                   "Herramientas para fortalecer la permanencia saludable en la misión.",
                   "Ferramentas para fortalecer a permanência saudável na missão.",
@@ -620,7 +640,7 @@ export function WhatWeDoPage() {
               {getTranslation("CAPACITACIÓN Y EDUCACIÓN", "CAPACITAÇÃO E EDUCAÇÃO", "TRAINING & EDUCATION")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              Preparing People to Serve Well
+              {getTranslation("Preparando Personas para Servir Bien", "Preparando Pessoas para Servir Bem", "Preparing People to Serve Well")}
             </h2>
             <p className="text-charcoal text-lg font-light max-w-2xl mx-auto">
               {getTranslation(
@@ -636,7 +656,7 @@ export function WhatWeDoPage() {
               to="/resources"
               className="inline-flex items-center gap-3 px-8 py-4 bg-inst-blue text-white font-bold text-xs tracking-widest uppercase rounded-sm hover:bg-inst-blue/90 transition-colors"
             >
-              Explore Training & Education <ArrowRight className="w-4 h-4" />
+              {getTranslation("Explorar Capacitación y Educación", "Explorar Capacitação e Educação", "Explore Training & Education")} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -652,7 +672,7 @@ export function WhatWeDoPage() {
               {getTranslation("TECNOLOGÍA RESPONSABLE", "TECNOLOGIA RESPONSÁVEL", "RESPONSIBLE TECHNOLOGY")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-white leading-tight">
-              Technology With a Purpose
+              {getTranslation("Tecnología con un Propósito", "Tecnologia com um Propósito", "Technology With a Purpose")}
             </h2>
             <p className="text-gray-300 font-light text-lg max-w-2xl mx-auto">
               {getTranslation(
@@ -665,7 +685,11 @@ export function WhatWeDoPage() {
 
           <div className="bg-white/10 p-8 rounded-sm border border-white/20 max-w-2xl mx-auto">
             <p className="text-2xl md:text-3xl font-heading font-bold text-mustard">
-              Technology should serve people — not the other way around.
+              {getTranslation(
+                "La tecnología debe servir a las personas, no al revés.",
+                "A tecnologia deve servir às pessoas — não o contrário.",
+                "Technology should serve people — not the other way around."
+              )}
             </p>
           </div>
         </div>
@@ -681,7 +705,7 @@ export function WhatWeDoPage() {
               {getTranslation("SEGURIDAD OPERACIONAL Y PRIVACIDAD", "SEGURANÇA OPERACIONAL E PRIVACIDADE", "OPSEC & PRIVACY")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              Care Without Exposure
+              {getTranslation("Cuidado Sin Exposición", "Cuidado Sem Exposição", "Care Without Exposure")}
             </h2>
             <p className="text-charcoal font-light text-lg leading-relaxed">
               {getTranslation(
@@ -693,7 +717,12 @@ export function WhatWeDoPage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            {["Privacy by Design", "Security by Default", "Need-to-Know", "Data Minimization"].map((principle, idx) => (
+            {[
+              getTranslation("Privacidad desde el Diseño", "Privacidade desde o Design", "Privacy by Design"),
+              getTranslation("Seguridad por Defecto", "Segurança por Padrão", "Security by Default"),
+              getTranslation("Necesidad de Saber", "Necessidade de Conhecer", "Need-to-Know"),
+              getTranslation("Minimización de Datos", "Minimização de Dados", "Data Minimization"),
+            ].map((principle, idx) => (
               <div key={idx} className="bg-white p-6 rounded-sm border border-light-gray font-bold text-xs uppercase tracking-widest text-charcoal shadow-sm">
                 {principle}
               </div>
@@ -702,7 +731,11 @@ export function WhatWeDoPage() {
 
           <div className="bg-charcoal text-white p-8 rounded-sm text-center border-l-4 border-mustard">
             <p className="text-xl md:text-3xl font-heading font-bold text-mustard">
-              Maximum clinical care. Minimum informational exposure.
+              {getTranslation(
+                "Máximo cuidado clínico. Mínima exposición informacional.",
+                "Máximo cuidado clínico. Mínima exposição informacional.",
+                "Maximum clinical care. Minimum informational exposure."
+              )}
             </p>
           </div>
         </div>
@@ -717,7 +750,7 @@ export function WhatWeDoPage() {
             {getTranslation("IGLESIAS LOCALES", "IGREJAS LOCAIS", "LOCAL CHURCHES")}
           </span>
           <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-            Churches Are Part of the Care Network
+            {getTranslation("Las Iglesias son Parte de la Red de Cuidado", "As Igrejas Fazem Parte da Rede de Cuidado", "Churches Are Part of the Care Network")}
           </h2>
           <p className="text-charcoal font-light text-lg leading-relaxed max-w-2xl mx-auto">
             {getTranslation(
@@ -731,7 +764,7 @@ export function WhatWeDoPage() {
               to="/church-engagement"
               className="inline-flex items-center gap-3 px-8 py-4 bg-inst-blue text-white font-bold text-xs tracking-widest uppercase rounded-sm hover:bg-inst-blue/90 transition-colors"
             >
-              For Churches <ArrowRight className="w-4 h-4" />
+              {getTranslation("Para Iglesias", "Para Igrejas", "For Churches")} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -746,7 +779,7 @@ export function WhatWeDoPage() {
             {getTranslation("ORGANIZACIONES MISIONERAS", "ORGANIZAÇÕES MISSIONÁRIAS", "MISSION ORGANIZATIONS")}
           </span>
           <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-            Supporting Mission Organizations
+            {getTranslation("Apoyando a Organizaciones Misioneras", "Apoiando Organizações Missionárias", "Supporting Mission Organizations")}
           </h2>
           <p className="text-charcoal font-light text-lg leading-relaxed max-w-2xl mx-auto">
             {getTranslation(
@@ -760,7 +793,7 @@ export function WhatWeDoPage() {
               to="/contact"
               className="inline-flex items-center gap-3 px-8 py-4 bg-charcoal text-white font-bold text-xs tracking-widest uppercase rounded-sm hover:bg-black transition-colors"
             >
-              Partner With MMC <ArrowRight className="w-4 h-4" />
+              {getTranslation("Colaborar con MMC", "Parceria com a MMC", "Partner With MMC")} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -775,7 +808,7 @@ export function WhatWeDoPage() {
             {getTranslation("PROFESIONALES DE LA SALUD", "PROFISSIONAIS DE SAÚDE", "HEALTHCARE PROFESSIONALS")}
           </span>
           <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-            Your Profession Can Become a Bridge.
+            {getTranslation("Tu Profesión Puede Ser un Puente.", "Sua Profissão Pode se Tornar uma Ponte.", "Your Profession Can Become a Bridge.")}
           </h2>
           <p className="text-charcoal font-light text-lg leading-relaxed max-w-2xl mx-auto">
             {getTranslation(
@@ -789,13 +822,13 @@ export function WhatWeDoPage() {
               to="/volunteer"
               className="w-full sm:w-auto px-8 py-4 bg-inst-blue text-white font-bold text-xs tracking-widest uppercase rounded-sm hover:bg-inst-blue/90 transition-colors"
             >
-              Become a Volunteer
+              {getTranslation("Sé un Voluntario", "Seja um Voluntário", "Become a Volunteer")}
             </Link>
             <Link
               to="/volunteer"
               className="w-full sm:w-auto px-8 py-4 bg-transparent border border-charcoal text-charcoal font-bold text-xs tracking-widest uppercase rounded-sm hover:bg-light-gray transition-colors"
             >
-              Explore Opportunities
+              {getTranslation("Explorar Oportunidades", "Explorar Oportunidades", "Explore Opportunities")}
             </Link>
           </div>
         </div>
@@ -811,23 +844,23 @@ export function WhatWeDoPage() {
               {getTranslation("CONTENIDO EDUCACIONAL", "CONTEÚDO EDUCACIONAL", "EDUCATIONAL CONTENT")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              Insights & Resources
+              {getTranslation("Recursos y Publicaciones", "Conteúdo e Recursos", "Insights & Resources")}
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: "Salud Misionera & Medicina Transcultural",
-                desc: "Artículos y recursos sobre adaptación, clima y salud en misiones.",
+                title: getTranslation("Salud Misionera & Medicina Transcultural", "Saúde Missionária & Medicina Transcultural", "Missionary Health & Cross-Cultural Medicine"),
+                desc: getTranslation("Artículos y recursos sobre adaptación, clima y salud en misiones.", "Artigos e recursos sobre adaptação, clima e saúde em missões.", "Articles and resources on adaptation, climate, and field health."),
               },
               {
-                title: "Telemedicina & Tecnología Segura",
-                desc: "Guías sobre comunicación remota y confidencialidad en el campo.",
+                title: getTranslation("Telemedicina & Tecnología Segura", "Telemedicina & Tecnologia Segura", "Telehealth & Secure Technology"),
+                desc: getTranslation("Guías sobre comunicación remota y confidencialidad en el campo.", "Guias sobre comunicação remota e confidencialidade no campo.", "Guides on remote communication and field confidentiality."),
               },
               {
-                title: "Resiliencia & Salud Emocional",
-                desc: "Herramientas de apoyo para prevención de burnout y vida familiar.",
+                title: getTranslation("Resiliencia & Salud Emocional", "Resiliência & Saúde Emocional", "Resilience & Emotional Health"),
+                desc: getTranslation("Herramientas de apoyo para prevención de burnout y vida familiar.", "Ferramentas de apoio para prevenção de burnout e vida familiar.", "Support tools for burnout prevention and family life."),
               },
             ].map((res, idx) => (
               <Link
@@ -841,7 +874,7 @@ export function WhatWeDoPage() {
                 </h3>
                 <p className="text-gray-600 font-light text-sm leading-relaxed">{res.desc}</p>
                 <div className="pt-2 inline-flex items-center gap-2 text-xs font-bold text-inst-blue uppercase tracking-widest">
-                  Ver recurso <ArrowRight className="w-4 h-4" />
+                  {getTranslation("Ver recurso", "Ver recurso", "View resource")} <ArrowRight className="w-4 h-4" />
                 </div>
               </Link>
             ))}
@@ -856,10 +889,14 @@ export function WhatWeDoPage() {
         <div className="max-w-4xl mx-auto space-y-4">
           <Globe2 className="w-12 h-12 text-mustard mx-auto mb-2" strokeWidth={1.5} />
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white">
-            A Global Network
+            {getTranslation("Una Red Global", "Uma Rede Global", "A Global Network")}
           </h2>
           <p className="text-xl font-light text-gray-300">
-            Connecting people, knowledge and care across borders.
+            {getTranslation(
+              "Conectando personas, conocimiento y cuidado a través de las fronteras.",
+              "Conectando pessoas, conhecimento e cuidado além das fronteiras.",
+              "Connecting people, knowledge and care across borders."
+            )}
           </p>
         </div>
       </section>
@@ -870,10 +907,10 @@ export function WhatWeDoPage() {
       <section className="py-24 px-6 md:px-12 bg-inst-blue text-white">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <span className="text-mustard uppercase tracking-widest text-xs font-bold block">
-            One mission. Many ways to serve. One network of care.
+            {getTranslation("Una misión. Muchas formas de servir. Una red de cuidado.", "Uma missão. Muitas formas de servir. Uma rede de cuidado.", "One mission. Many ways to serve. One network of care.")}
           </span>
           <h2 className="text-3xl md:text-5xl font-heading tracking-tight text-white leading-tight">
-            There Is a Place for You in This Mission.
+            {getTranslation("Hay un Lugar para Ti en Esta Misión.", "Há um Lugar para Você Nesta Missão.", "There Is a Place for You in This Mission.")}
           </h2>
           <p className="text-xl text-[#e0f2fe] font-light max-w-2xl mx-auto leading-relaxed">
             {getTranslation(
@@ -887,13 +924,13 @@ export function WhatWeDoPage() {
               to="/volunteer"
               className="w-full sm:w-auto px-8 py-4 bg-charcoal text-white font-bold text-xs tracking-widest uppercase transition-colors rounded-sm shadow-md hover:bg-black"
             >
-              Get Involved
+              {getTranslation("Involúcrate", "Participe", "Get Involved")}
             </Link>
             <Link
               to="/contact"
               className="w-full sm:w-auto px-8 py-4 bg-transparent border border-white text-white font-bold text-xs tracking-widest uppercase transition-all rounded-sm shadow-sm hover:bg-white/10"
             >
-              Contact MMC
+              {getTranslation("Contactar a MMC", "Contato com a MMC", "Contact MMC")}
             </Link>
           </div>
         </div>
