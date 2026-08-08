@@ -59,7 +59,7 @@ export function FieldRealityPage() {
         <div className="w-full max-w-5xl mx-auto relative z-10 text-center">
           <motion.div initial="hidden" animate="visible" variants={fadeUp} className="space-y-6">
             <span className="text-inst-blue uppercase tracking-[0.25em] text-xs font-bold block">
-              THE REALITY
+              {getTranslation("LA REALIDAD", "A REALIDADE", "THE REALITY")}
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading tracking-tight leading-[1.1] text-white">
               {getTranslation(
@@ -144,7 +144,7 @@ export function FieldRealityPage() {
               {getTranslation("DIVERSIDAD DE PERFILES", "DIVERSIDADE DE PERFIS", "POLL POPULATION DIVERSITY")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              Who Are We Talking About?
+              {getTranslation("¿De Quiénes Estamos Hablando?", "De Quem Estamos Falando?", "Who Are We Talking About?")}
             </h2>
             <p className="text-gray-600 font-light text-lg">
               {getTranslation(
@@ -157,14 +157,14 @@ export function FieldRealityPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
             {[
-              "Missionaries",
-              "Healthcare Missionaries",
-              "Humanitarian Workers",
-              "International Development Workers",
-              "Tentmakers",
-              "NGO Workers",
-              "Business-as-Mission",
-              "Expatriates",
+              getTranslation("Misioneros", "Missionários", "Missionaries"),
+              getTranslation("Misioneros de la Salud", "Missionários da Saúde", "Healthcare Missionaries"),
+              getTranslation("Trabajadores Humanitarios", "Trabalhadores Humanitários", "Humanitarian Workers"),
+              getTranslation("Desarrollo Internacional", "Desenvolvimento Internacional", "International Development Workers"),
+              getTranslation("Hacedores de Tiendas", "Fazedores de Tendas", "Tentmakers"),
+              getTranslation("Trabajadores de ONGs", "Trabalhadores de ONGs", "NGO Workers"),
+              getTranslation("Negocios como Misión", "Negócios como Missão", "Business-as-Mission"),
+              getTranslation("Expatriados", "Expatriados", "Expatriates"),
             ].map((pop, idx) => (
               <div key={idx} className="bg-white p-6 rounded-sm border border-light-gray font-bold text-xs uppercase tracking-widest text-charcoal shadow-sm">
                 {pop}
@@ -194,7 +194,7 @@ export function FieldRealityPage() {
               {getTranslation("ADAPTACIÓN Y DESGASTE", "ADAPTAÇÃO E DESGASTE", "ADAPTATION & COST")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              Living Between Cultures Has a Cost.
+              {getTranslation("Vivir Entre Culturas Tiene un Costo.", "Viver Entre Culturas Tem um Custo.", "Living Between Cultures Has a Cost.")}
             </h2>
             <p className="text-gray-600 font-light text-lg">
               {getTranslation(
@@ -208,7 +208,9 @@ export function FieldRealityPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-8 bg-light-gray rounded-sm border border-light-gray space-y-3">
               <Compass className="w-8 h-8 text-inst-blue" />
-              <h3 className="text-xl font-heading font-bold text-charcoal">Cultural Adjustment</h3>
+              <h3 className="text-xl font-heading font-bold text-charcoal">
+                {getTranslation("Ajuste Cultural", "Ajuste Cultural", "Cultural Adjustment")}
+              </h3>
               <p className="text-gray-600 text-sm font-light leading-relaxed">
                 {getTranslation(
                   "Aprender nuevas normas sociales, comportamientos y códigos no escritos genera sobrecarga adaptativa.",
@@ -220,7 +222,9 @@ export function FieldRealityPage() {
 
             <div className="p-8 bg-light-gray rounded-sm border border-light-gray space-y-3">
               <Globe className="w-8 h-8 text-inst-blue" />
-              <h3 className="text-xl font-heading font-bold text-charcoal">Language Barriers</h3>
+              <h3 className="text-xl font-heading font-bold text-charcoal">
+                {getTranslation("Barreras Lingüísticas", "Barreiras Linguísticas", "Language Barriers")}
+              </h3>
               <p className="text-gray-600 text-sm font-light leading-relaxed">
                 {getTranslation(
                   "Dificultad para comunicar síntomas físicos, emociones complejas y necesidades médicas urgentes.",
@@ -232,7 +236,9 @@ export function FieldRealityPage() {
 
             <div className="p-8 bg-light-gray rounded-sm border border-light-gray space-y-3">
               <Users className="w-8 h-8 text-inst-blue" />
-              <h3 className="text-xl font-heading font-bold text-charcoal">Social Isolation</h3>
+              <h3 className="text-xl font-heading font-bold text-charcoal">
+                {getTranslation("Aislamiento Social", "Isolamento Social", "Social Isolation")}
+              </h3>
               <p className="text-gray-600 text-sm font-light leading-relaxed">
                 {getTranslation(
                   "Distancia de las redes familiares, profesionales y de soporte conocidas en el país de origen.",
@@ -255,7 +261,7 @@ export function FieldRealityPage() {
               {getTranslation("DIMENSIONES CLÍNICAS", "DIMENSÕES CLÍNICAS", "CLINICAL DIMENSIONS")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-white leading-tight">
-              Health Does Not Pause Because the Mission Continues.
+              {getTranslation("La Salud No Se Detiene Porque la Misión Continúe.", "A Saúde Não Para Porque a Missão Continua.", "Health Does Not Pause Because the Mission Continues.")}
             </h2>
             <p className="text-gray-300 font-light text-lg">
               {getTranslation(
@@ -269,34 +275,40 @@ export function FieldRealityPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white/5 border border-white/10 p-8 rounded-sm space-y-4">
               <HeartPulse className="w-10 h-10 text-mustard" />
-              <h3 className="text-2xl font-heading font-bold text-white">Physical Health</h3>
+              <h3 className="text-2xl font-heading font-bold text-white">
+                {getTranslation("Salud Física", "Saúde Física", "Physical Health")}
+              </h3>
               <ul className="space-y-2 text-sm text-gray-300 font-light">
-                <li>• Enfermedades infecciosas y tropicales</li>
-                <li>• Enfermedades crónicas (hipertensión, diabetes)</li>
-                <li>• Problemas musculoesqueléticos</li>
-                <li>• Trastornos del sueño y fatiga crónica</li>
+                <li>• {getTranslation("Enfermedades infecciosas y tropicales", "Doenças infecciosas e tropicais", "Infectious & tropical diseases")}</li>
+                <li>• {getTranslation("Enfermedades crónicas (hipertensión, diabetes)", "Doenças crônicas (hipertensão, diabetes)", "Chronic conditions (hypertension, diabetes)")}</li>
+                <li>• {getTranslation("Problemas musculoesqueléticos", "Problemas musculoesqueléticos", "Musculoskeletal issues")}</li>
+                <li>• {getTranslation("Trastornos del sueño y fatiga crónica", "Distúrbios do sono e fadiga crônica", "Sleep disorders & chronic fatigue")}</li>
               </ul>
             </div>
 
             <div className="bg-white/5 border border-white/10 p-8 rounded-sm space-y-4">
               <Brain className="w-10 h-10 text-mustard" />
-              <h3 className="text-2xl font-heading font-bold text-white">Mental Health</h3>
+              <h3 className="text-2xl font-heading font-bold text-white">
+                {getTranslation("Salud Mental", "Saúde Mental", "Mental Health")}
+              </h3>
               <ul className="space-y-2 text-sm text-gray-300 font-light">
-                <li>• Ansiedad y depresión</li>
-                <li>• Burnout y agotamiento vocacional</li>
-                <li>• Estrés traumático y secundario</li>
-                <li>• Fatiga por compasión y sufrimiento moral</li>
+                <li>• {getTranslation("Ansiedad y depresión", "Ansiedade e depressão", "Anxiety & depression")}</li>
+                <li>• {getTranslation("Burnout y agotamiento vocacional", "Burnout e esgotamento vocacional", "Burnout & vocational fatigue")}</li>
+                <li>• {getTranslation("Estrés traumático y secundario", "Estresse traumático e secundário", "Traumatic & secondary stress")}</li>
+                <li>• {getTranslation("Fatiga por compasión y sufrimiento moral", "Fadiga por compaixão e sofrimento moral", "Compassion fatigue & moral injury")}</li>
               </ul>
             </div>
 
             <div className="bg-white/5 border border-white/10 p-8 rounded-sm space-y-4">
               <Activity className="w-10 h-10 text-mustard" />
-              <h3 className="text-2xl font-heading font-bold text-white">Preventive Health</h3>
+              <h3 className="text-2xl font-heading font-bold text-white">
+                {getTranslation("Salud Preventiva", "Saúde Preventiva", "Preventive Health")}
+              </h3>
               <ul className="space-y-2 text-sm text-gray-300 font-light">
-                <li>• Vacunación e inmunizaciones</li>
-                <li>• Chequeos y rastreo oportuno</li>
-                <li>• Salud bucal y reprodutiva</li>
-                <li>• Seguimiento continuo de tratamientos</li>
+                <li>• {getTranslation("Vacunación e inmunizaciones", "Vacinação e imunizações", "Vaccinations & immunizations")}</li>
+                <li>• {getTranslation("Chequeos y rastreo oportuno", "Check-ups e rastreamento", "Check-ups & timely screenings")}</li>
+                <li>• {getTranslation("Salud bucal y reproductiva", "Saúde bucal e reprodutiva", "Oral & reproductive health")}</li>
+                <li>• {getTranslation("Seguimiento continuo de tratamientos", "Acompanhamento contínuo de tratamentos", "Ongoing treatment monitoring")}</li>
               </ul>
             </div>
           </div>
@@ -313,7 +325,7 @@ export function FieldRealityPage() {
               {getTranslation("BARRERAS GEOGRÁFICAS", "BARREIRAS GEOGRÁFICAS", "GEOGRAPHIC BARRIERS")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              When Distance Becomes a Medical Problem.
+              {getTranslation("Cuando la Distancia Se Convierte en un Problema Médico.", "Quando a Distância Se Torna um Problema Médico.", "When Distance Becomes a Medical Problem.")}
             </h2>
             <p className="text-charcoal font-light text-lg max-w-3xl mx-auto">
               {getTranslation(
@@ -327,16 +339,16 @@ export function FieldRealityPage() {
           {/* Visual Flow diagram */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-6">
             <div className="bg-light-gray p-6 rounded-sm border border-light-gray font-bold text-charcoal">
-              NEED
+              {getTranslation("NECESIDAD", "NECESSIDADE", "NEED")}
             </div>
             <div className="bg-light-gray p-6 rounded-sm border border-light-gray font-bold text-charcoal">
-              DISTANCE
+              {getTranslation("DISTANCIA", "DISTÂNCIA", "DISTANCE")}
             </div>
             <div className="bg-light-gray p-6 rounded-sm border border-light-gray font-bold text-charcoal">
-              DELAY
+              {getTranslation("RETRASO", "ATRASO", "DELAY")}
             </div>
             <div className="bg-charcoal text-white p-6 rounded-sm border border-charcoal font-bold">
-              GREATER COMPLEXITY
+              {getTranslation("MAYOR COMPLEJIDAD", "MAIOR COMPLEXIDADE", "GREATER COMPLEXITY")}
             </div>
           </div>
         </div>
@@ -349,10 +361,10 @@ export function FieldRealityPage() {
         <div className="max-w-5xl mx-auto space-y-16">
           <div className="text-center space-y-4 max-w-3xl mx-auto">
             <span className="text-inst-blue uppercase tracking-widest text-xs font-bold block">
-              {getTranslation("SALUD MOCIONAL", "SAÚDE EMOCIONAL", "EMOTIONAL HEALTH")}
+              {getTranslation("SALUD EMOCIONAL", "SAÚDE EMOCIONAL", "EMOTIONAL HEALTH")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              The Silent Weight of Service.
+              {getTranslation("El Peso Silencioso del Servicio.", "O Peso Silencioso do Serviço.", "The Silent Weight of Service.")}
             </h2>
             <p className="text-gray-600 font-light text-lg">
               {getTranslation(
@@ -365,7 +377,7 @@ export function FieldRealityPage() {
 
           <div className="bg-white p-8 md:p-12 rounded-sm border border-light-gray shadow-sm space-y-6 max-w-3xl mx-auto text-center">
             <h3 className="text-2xl md:text-4xl font-heading font-bold text-charcoal">
-              When Asking for Help Feels Like Failure.
+              {getTranslation("Cuando Pedir Ayuda Se Siente Como un Fracaso.", "Quando Pedir Ajuda Parece um Fracasso.", "When Asking for Help Feels Like Failure.")}
             </h3>
             <p className="text-gray-600 font-light text-lg leading-relaxed">
               {getTranslation(
@@ -376,7 +388,7 @@ export function FieldRealityPage() {
             </p>
             <div className="pt-4 border-t border-light-gray">
               <p className="text-xl md:text-2xl font-heading font-bold text-inst-blue">
-                Resilience is not the absence of vulnerability.
+                {getTranslation("La resiliencia no es la ausencia de vulnerabilidad.", "Resiliência não é a ausência de vulnerabilidade.", "Resilience is not the absence of vulnerability.")}
               </p>
             </div>
           </div>
@@ -392,7 +404,7 @@ export function FieldRealityPage() {
             {getTranslation("LÍMITES HUMANOS", "LIMITES HUMANOS", "HUMAN LIMITS")}
           </span>
           <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-            Commitment Should Not Require Collapse.
+            {getTranslation("El Compromiso No Debe Exigir el Colapso.", "O Compromisso Não Deve Exigir o Colapso.", "Commitment Should Not Require Collapse.")}
           </h2>
           <p className="text-charcoal font-light text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
             {getTranslation(
@@ -414,7 +426,7 @@ export function FieldRealityPage() {
               {getTranslation("EL ECOSISTEMA FAMILIAR", "O ECOSSISTEMA FAMILIAR", "THE FAMILY ECOSYSTEM")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              The Missionary Is Not Alone.
+              {getTranslation("El Misionero No Está Solo.", "O Missionário Não Está Só.", "The Missionary Is Not Alone.")}
             </h2>
             <p className="text-gray-600 font-light text-lg">
               {getTranslation(
@@ -428,7 +440,9 @@ export function FieldRealityPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-sm border border-light-gray space-y-4 shadow-sm">
               <Users className="w-8 h-8 text-inst-blue" />
-              <h3 className="text-xl font-heading font-bold text-charcoal">Family & Marriage Dynamics</h3>
+              <h3 className="text-xl font-heading font-bold text-charcoal">
+                {getTranslation("Dinámica Familiar y Matrimonial", "Dinâmica Familiar e Matrimonial", "Family & Marriage Dynamics")}
+              </h3>
               <p className="text-gray-600 text-sm font-light leading-relaxed">
                 {getTranslation(
                   "La presión de adaptación, el aislamiento social y la distancia de los padres ancianos generan tensiones familiares significativas.",
@@ -440,7 +454,9 @@ export function FieldRealityPage() {
 
             <div className="bg-white p-8 rounded-sm border border-light-gray space-y-4 shadow-sm">
               <Baby className="w-8 h-8 text-inst-blue" />
-              <h3 className="text-xl font-heading font-bold text-charcoal">Growing Up Between Worlds (TCKs)</h3>
+              <h3 className="text-xl font-heading font-bold text-charcoal">
+                {getTranslation("Creciendo Entre Mundos (TCKs)", "Crescendo Entre Mundos (TCKs)", "Growing Up Between Worlds (TCKs)")}
+              </h3>
               <p className="text-gray-600 text-sm font-light leading-relaxed">
                 {getTranslation(
                   "Los hijos de misioneros (TCKs/MKs) desarrollan una valiosa flexibilidad cultural, pero también atraviesan constantes pérdidas e incertidumbres de pertenencia.",
@@ -463,7 +479,7 @@ export function FieldRealityPage() {
               {getTranslation("CONTEXTO Y SEGURIDAD", "CONTEXTO E SEGURANÇA", "CONTEXT & SECURITY")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-white leading-tight">
-              When Access and Privacy Become Part of Healthcare.
+              {getTranslation("Cuando el Acceso y la Privacidad Se Convierten en Parte de la Salud.", "Quando o Acesso e a Privacidade Se Tornam Parte dos Cuidados de Saúde.", "When Access and Privacy Become Part of Healthcare.")}
             </h2>
             <p className="text-gray-300 font-light text-lg max-w-3xl mx-auto">
               {getTranslation(
@@ -477,7 +493,7 @@ export function FieldRealityPage() {
           <div className="bg-white/5 border border-white/10 p-8 rounded-sm text-center space-y-4">
             <Lock className="w-10 h-10 text-mustard mx-auto" />
             <h3 className="text-2xl font-heading font-bold text-white">
-              Technology Can Close Distance. It Must Not Create New Risk.
+              {getTranslation("La Tecnología Puede Acortar Distancias. No Debe Crear Nuevos Riesgos.", "A Tecnologia Pode Encurtar Distâncias. Não Deve Criar Novos Riscos.", "Technology Can Close Distance. It Must Not Create New Risk.")}
             </h3>
             <p className="text-gray-300 font-light text-base max-w-2xl mx-auto">
               {getTranslation(
@@ -500,7 +516,7 @@ export function FieldRealityPage() {
               {getTranslation("ENFOQUE INTEGRAL", "ABORDAGEM INTEGRAL", "WHOLE PERSON CARE")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              The Goal Is Not Merely to Survive.
+              {getTranslation("El Objetivo No Es Simplemente Sobrevivir.", "O Objetivo Não É Apenas Sobreviver.", "The Goal Is Not Merely to Survive.")}
             </h2>
             <p className="text-gray-600 font-light text-lg">
               {getTranslation(
@@ -513,24 +529,48 @@ export function FieldRealityPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="p-6 bg-light-gray rounded-sm border border-light-gray space-y-2">
-              <span className="text-xs font-bold text-inst-blue tracking-widest uppercase">LEVEL 01</span>
-              <h3 className="text-xl font-bold text-charcoal">SURVIVAL</h3>
-              <p className="text-gray-600 text-xs font-light">Permanecer físicamente en el campo.</p>
+              <span className="text-xs font-bold text-inst-blue tracking-widest uppercase">
+                {getTranslation("NIVEL 01", "NÍVEL 01", "LEVEL 01")}
+              </span>
+              <h3 className="text-xl font-bold text-charcoal">
+                {getTranslation("SUPERVIVENCIA", "SOBREVIVÊNCIA", "SURVIVAL")}
+              </h3>
+              <p className="text-gray-600 text-xs font-light">
+                {getTranslation("Permanecer físicamente en el campo.", "Permanecer fisicamente no campo.", "Remain physically in the field.")}
+              </p>
             </div>
             <div className="p-6 bg-light-gray rounded-sm border border-light-gray space-y-2">
-              <span className="text-xs font-bold text-inst-blue tracking-widest uppercase">LEVEL 02</span>
-              <h3 className="text-xl font-bold text-charcoal">SUSTAINABILITY</h3>
-              <p className="text-gray-600 text-xs font-light">Continuar actividades sin colapso inmediato.</p>
+              <span className="text-xs font-bold text-inst-blue tracking-widest uppercase">
+                {getTranslation("NIVEL 02", "NÍVEL 02", "LEVEL 02")}
+              </span>
+              <h3 className="text-xl font-bold text-charcoal">
+                {getTranslation("SOSTENIBILIDAD", "SUSTENTABILIDADE", "SUSTAINABILITY")}
+              </h3>
+              <p className="text-gray-600 text-xs font-light">
+                {getTranslation("Continuar actividades sin colapso inmediato.", "Continuar atividades sem colapso imediato.", "Continue activities without immediate collapse.")}
+              </p>
             </div>
             <div className="p-6 bg-light-gray rounded-sm border border-light-gray space-y-2">
-              <span className="text-xs font-bold text-inst-blue tracking-widest uppercase">LEVEL 03</span>
-              <h3 className="text-xl font-bold text-charcoal">RESILIENCE</h3>
-              <p className="text-gray-600 text-xs font-light">Adaptarse y recuperarse ante la adversidad.</p>
+              <span className="text-xs font-bold text-inst-blue tracking-widest uppercase">
+                {getTranslation("NIVEL 03", "NÍVEL 03", "LEVEL 03")}
+              </span>
+              <h3 className="text-xl font-bold text-charcoal">
+                {getTranslation("RESILIENCIA", "RESILIÊNCIA", "RESILIENCE")}
+              </h3>
+              <p className="text-gray-600 text-xs font-light">
+                {getTranslation("Adaptarse y recuperarse ante la adversidad.", "Adaptar-se e recuperar-se diante da adversidade.", "Adapt and recover in the face of adversity.")}
+              </p>
             </div>
             <div className="p-6 bg-charcoal text-white rounded-sm space-y-2">
-              <span className="text-xs font-bold text-mustard tracking-widest uppercase">LEVEL 04</span>
-              <h3 className="text-xl font-bold text-white">FLOURISHING</h3>
-              <p className="text-gray-300 text-xs font-light">Experimentar salud, propósito e integración.</p>
+              <span className="text-xs font-bold text-mustard tracking-widest uppercase">
+                {getTranslation("NIVEL 04", "NÍVEL 04", "LEVEL 04")}
+              </span>
+              <h3 className="text-xl font-bold text-white">
+                {getTranslation("FLORECIMIENTO", "FLORESCIMENTO", "FLOURISHING")}
+              </h3>
+              <p className="text-gray-300 text-xs font-light">
+                {getTranslation("Experimentar salud, propósito e integración.", "Experimentar saúde, propósito e integração.", "Experience health, purpose, and integration.")}
+              </p>
             </div>
           </div>
         </div>
@@ -543,10 +583,10 @@ export function FieldRealityPage() {
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <span className="text-inst-blue uppercase tracking-widest text-xs font-bold block">
-              {getTranslation("LA LACUNA DE CUIDADO", "A LACUNA DE CUIDADO", "THE CARE GAP")}
+              {getTranslation("LA BRECHA DE CUIDADO", "A LACUNA DE CUIDADO", "THE CARE GAP")}
             </span>
             <h2 className="text-3xl md:text-5xl font-heading text-charcoal leading-tight">
-              There Is a Gap Between Need and Access.
+              {getTranslation("Existe una Brecha entre la Necesidad y el Acceso.", "Existe uma Lacuna entre a Necessidade e o Acesso.", "There Is a Gap Between Need and Access.")}
             </h2>
             <p className="text-charcoal font-light text-lg max-w-3xl mx-auto">
               {getTranslation(
@@ -559,16 +599,28 @@ export function FieldRealityPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-8 rounded-sm border border-light-gray space-y-3">
-              <h3 className="text-lg font-bold text-charcoal">EMERGENCY CARE</h3>
-              <p className="text-gray-600 text-sm font-light">Responde a eventos agudos y evacuaciones sanitarias.</p>
+              <h3 className="text-lg font-bold text-charcoal">
+                {getTranslation("ATENCIÓN DE EMERGENCIA", "ATENDIMENTO DE EMERGÊNCIA", "EMERGENCY CARE")}
+              </h3>
+              <p className="text-gray-600 text-sm font-light">
+                {getTranslation("Responde a eventos agudos y evacuaciones sanitarias.", "Responde a eventos agudos e evacuações médicas.", "Responds to acute events and medical evacuations.")}
+              </p>
             </div>
             <div className="bg-white p-8 rounded-sm border border-light-gray space-y-3">
-              <h3 className="text-lg font-bold text-charcoal">MEMBER CARE</h3>
-              <p className="text-gray-600 text-sm font-light">Soporte pastoral, relacional y acompañamiento organizacional.</p>
+              <h3 className="text-lg font-bold text-charcoal">
+                {getTranslation("CUIDADO DE MIEMBROS", "CUIDADO AO MISSIONÁRIO", "MEMBER CARE")}
+              </h3>
+              <p className="text-gray-600 text-sm font-light">
+                {getTranslation("Soporte pastoral, relacional y acompañamiento organizacional.", "Suporte pastoral, relacional e acompanhamento organizacional.", "Pastoral, relational, and organizational support.")}
+              </p>
             </div>
             <div className="bg-charcoal text-white p-8 rounded-sm space-y-3 border-2 border-mustard">
-              <h3 className="text-lg font-bold text-mustard">CLINICAL CONTINUITY</h3>
-              <p className="text-gray-300 text-sm font-light">Atención médica profesional continua adaptada al contexto transcultural.</p>
+              <h3 className="text-lg font-bold text-mustard">
+                {getTranslation("CONTINUIDAD CLÍNICA", "CONTINUIDADE CLÍNICA", "CLINICAL CONTINUITY")}
+              </h3>
+              <p className="text-gray-300 text-sm font-light">
+                {getTranslation("Atención médica profesional continua adaptada al contexto transcultural.", "Cuidados médicos profissionais contínuos adaptados ao contexto.", "Continuous professional clinical care tailored to cross-cultural contexts.")}
+              </p>
             </div>
           </div>
         </div>
@@ -581,10 +633,10 @@ export function FieldRealityPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="space-y-3">
             <span className="text-inst-blue uppercase tracking-widest text-xs font-bold block">
-              RESEARCH TRANSPARENCY
+              {getTranslation("TRANSPARENCIA EN INVESTIGACIÓN", "TRANSPARÊNCIA NA PESQUISA", "RESEARCH TRANSPARENCY")}
             </span>
             <h2 className="text-2xl md:text-4xl font-heading text-charcoal">
-              Evidence & Limitations
+              {getTranslation("Evidencias y Limitaciones", "Evidências e Limitações", "Evidence & Limitations")}
             </h2>
             <p className="text-gray-600 font-light text-base leading-relaxed">
               {getTranslation(
@@ -597,14 +649,18 @@ export function FieldRealityPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
             <div className="bg-light-gray p-6 rounded-sm border border-light-gray space-y-2">
-              <p className="text-xs font-bold text-inst-blue uppercase tracking-wider">HEALTHCARE MISSIONARY ANXIETY STUDY</p>
+              <p className="text-xs font-bold text-inst-blue uppercase tracking-wider">
+                {getTranslation("ESTUDIO DE ANSIEDAD EN MISIONEROS DE SALUD", "ESTUDO DE ANSIEDADE EM MISSIONÁRIOS DA SAÚDE", "HEALTHCARE MISSIONARY ANXIETY STUDY")}
+              </p>
               <p className="text-sm text-gray-700 italic">
                 "In one study of cross-cultural healthcare missionaries, 47.9% of women and 42.1% of men reported anxiety."
               </p>
             </div>
 
             <div className="bg-light-gray p-6 rounded-sm border border-light-gray space-y-2">
-              <p className="text-xs font-bold text-inst-blue uppercase tracking-wider">ReMAP I RESEARCH FINDINGS</p>
+              <p className="text-xs font-bold text-inst-blue uppercase tracking-wider">
+                {getTranslation("RESULTADOS DE INVESTIGACIÓN ReMAP I", "RESULTADOS DA PESQUISA ReMAP I", "ReMAP I RESEARCH FINDINGS")}
+              </p>
               <p className="text-sm text-gray-700 italic">
                 "Research from ReMAP I found that 71% of premature departures in its study were attributed to causes classified as preventable."
               </p>
@@ -619,10 +675,10 @@ export function FieldRealityPage() {
       <section id="why-mmc" className="py-24 px-6 md:px-12 bg-charcoal text-white">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <span className="text-mustard uppercase tracking-widest text-xs font-bold block">
-            PROPÓSITO INSTITUCIONAL
+            {getTranslation("PROPÓSITO INSTITUCIONAL", "PROPÓSITO INSTITUCIONAL", "INSTITUTIONAL PURPOSE")}
           </span>
           <h2 className="text-3xl md:text-5xl font-heading text-white leading-tight">
-            This Is Why Missionary Medical Care Exists.
+            {getTranslation("Por Esto Existe Missionary Medical Care.", "É por Isso que a Missionary Medical Care Existe.", "This Is Why Missionary Medical Care Exists.")}
           </h2>
           <p className="text-xl text-gray-300 font-light leading-relaxed max-w-3xl mx-auto">
             {getTranslation(
@@ -640,10 +696,10 @@ export function FieldRealityPage() {
       <section className="py-24 px-6 md:px-12 bg-inst-blue text-white">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <span className="text-mustard uppercase tracking-widest text-xs font-bold block">
-            Caring for Those Who Serve.
+            {getTranslation("Cuidando de Quienes Sirven.", "Cuidando de Quem Serve.", "Caring for Those Who Serve.")}
           </span>
           <h2 className="text-3xl md:text-5xl font-heading tracking-tight text-white leading-tight">
-            Those who serve across cultures also need someone to care for them.
+            {getTranslation("Quienes sirven entre las culturas también necesitan que alguien cuide de ellos.", "Aqueles que servem transculturalmente também precisam de quem cuide deles.", "Those who serve across cultures also need someone to care for them.")}
           </h2>
           <p className="text-xl text-[#e0f2fe] font-light max-w-2xl mx-auto leading-relaxed">
             {getTranslation(
@@ -657,13 +713,13 @@ export function FieldRealityPage() {
               to="/what-we-do"
               className="w-full sm:w-auto px-8 py-4 bg-charcoal text-white font-bold text-xs tracking-widest uppercase transition-colors rounded-sm shadow-md hover:bg-black"
             >
-              Explore What We Do
+              {getTranslation("Explorar Qué Hacemos", "Explorar O Que Fazemos", "Explore What We Do")}
             </Link>
             <Link
               to="/volunteer"
               className="w-full sm:w-auto px-8 py-4 bg-transparent border border-white text-white font-bold text-xs tracking-widest uppercase transition-all rounded-sm shadow-sm hover:bg-white/10"
             >
-              Get Involved
+              {getTranslation("Involúcrate", "Participe", "Get Involved")}
             </Link>
           </div>
         </div>
